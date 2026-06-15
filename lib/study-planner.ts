@@ -1,3 +1,4 @@
+import { addDays, isToday } from "date-fns";
 import { prisma } from "./db";
 import { getMasterySnapshot } from "./mastery";
 
@@ -14,14 +15,18 @@ export interface PlanFocus {
   reason: string;
   questionTarget: number;
 }
-export interface PlanWeek {
-  week: number;
+export interface PlanDay {
+  day: number;
+  date: string;
+  isFinalDay: boolean;
   focus: PlanFocus[];
 }
 
-// Build a prioritized study plan:
+// Build a prioritized study plan for the days remaining before the exam:
 //   1. High blueprint weight   2. Low mastery   3. Frequent mistakes
-export async function generatePlan(userId: number, weeks = 4, perWeek = 5): Promise<PlanWeek[]> {
+// The last day is reserved for a light review of the remaining weak spots
+// plus a full exit-exam simulation, rather than cramming new topics.
+export async function generatePlan(userId: number, days = 4, perDay = 5): Promise<PlanDay[]> {
   const [snap, mistakes] = await Promise.all([
     getMasterySnapshot(userId),
     prisma.mistake.groupBy({
@@ -82,11 +87,28 @@ export async function generatePlan(userId: number, weeks = 4, perWeek = 5): Prom
   }
 
   scored.sort((a, b) => b.priority - a.priority);
-  const top = scored.slice(0, weeks * perWeek);
 
-  const plan: PlanWeek[] = [];
-  for (let w = 0; w < weeks; w++) {
-    plan.push({ week: w + 1, focus: top.slice(w * perWeek, (w + 1) * perWeek) });
+  // Reserve the final day for review + simulation instead of new topics.
+  const studyDays = Math.max(1, days - 1);
+  const finalDayCount = Math.max(2, Math.round(perDay / 2));
+  const top = scored.slice(0, studyDays * perDay + finalDayCount);
+
+  const plan: PlanDay[] = [];
+  for (let d = 0; d < studyDays; d++) {
+    plan.push({
+      day: d + 1,
+      date: addDays(new Date(), d).toISOString(),
+      isFinalDay: false,
+      focus: top.slice(d * perDay, (d + 1) * perDay),
+    });
+  }
+  if (days > 1) {
+    plan.push({
+      day: days,
+      date: addDays(new Date(), days - 1).toISOString(),
+      isFinalDay: true,
+      focus: top.slice(studyDays * perDay, studyDays * perDay + finalDayCount),
+    });
   }
   return plan;
 }
@@ -96,15 +118,24 @@ export async function getOrCreatePlan(userId: number) {
     where: { userId, active: true },
     orderBy: { createdAt: "desc" },
   });
-  if (existing) return { weeks: JSON.parse(existing.weeks) as PlanWeek[], createdAt: existing.createdAt, id: existing.id };
+  if (existing) {
+    const parsed = JSON.parse(existing.weeks);
+    // Regenerate plans from the old week-based shape, or once their first
+    // day has fallen in the past, so the schedule always starts "today".
+    const isCurrentShape = Array.isArray(parsed) && parsed.length > 0 && typeof parsed[0]?.date === "string";
+    const isStale = isCurrentShape && !isToday(new Date(parsed[0].date));
+    if (isCurrentShape && !isStale) {
+      return { days: parsed as PlanDay[], createdAt: existing.createdAt, id: existing.id };
+    }
+  }
   return regeneratePlan(userId);
 }
 
 export async function regeneratePlan(userId: number) {
   await prisma.studyPlan.updateMany({ where: { userId, active: true }, data: { active: false } });
-  const weeks = await generatePlan(userId);
+  const days = await generatePlan(userId);
   const row = await prisma.studyPlan.create({
-    data: { userId, weeks: JSON.stringify(weeks), active: true },
+    data: { userId, weeks: JSON.stringify(days), active: true },
   });
-  return { weeks, createdAt: row.createdAt, id: row.id };
+  return { days, createdAt: row.createdAt, id: row.id };
 }

@@ -246,7 +246,7 @@ model StudyPlan {
   id        Int      @id @default(autoincrement())
   userId    Int
   user      User     @relation(fields: [userId], references: [id])
-  weeks     String // JSON: [{week, focus:[{courseId,topicId,reason,questionTarget}]}]
+  weeks     String // JSON: [{day, date, isFinalDay, focus:[{courseId,topicId,reason,questionTarget}]}]
   createdAt DateTime @default(now())
   active    Boolean  @default(true)
 }

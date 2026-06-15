@@ -50,7 +50,7 @@ export default async function Dashboard() {
   const topWeak = snap.courses.flatMap((c) => c.topics.map((t) => ({ ...t, courseName: c.name })))
     .filter((t) => t.band === "weak" || t.band === "untested")
     .sort((a, b) => a.mastery - b.mastery);
-  const planFocus = plan.weeks[0]?.focus ?? [];
+  const planFocus = plan.days[0]?.focus ?? [];
   const readinessColor = snap.overall.readiness >= MASTERY.readinessPass ? "hsl(var(--success))" : "hsl(var(--primary))";
 
   return (

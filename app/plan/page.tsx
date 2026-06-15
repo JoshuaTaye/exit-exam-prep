@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { CalendarDays, BookOpen } from "lucide-react";
+import { isToday, isTomorrow, format } from "date-fns";
+import { CalendarDays, BookOpen, GraduationCap } from "lucide-react";
 import { getCurrentUser } from "@/lib/user";
 import { getOrCreatePlan } from "@/lib/study-planner";
 import { PageHeader } from "@/components/page-header";
@@ -12,6 +13,13 @@ import { masteryColor } from "@/lib/colors";
 
 export const dynamic = "force-dynamic";
 
+function dayLabel(dateStr: string) {
+  const date = new Date(dateStr);
+  if (isToday(date)) return "Today";
+  if (isTomorrow(date)) return "Tomorrow";
+  return format(date, "EEEE");
+}
+
 export default async function PlanPage() {
   const user = await getCurrentUser();
   const plan = await getOrCreatePlan(user.id);
@@ -20,7 +28,7 @@ export default async function PlanPage() {
     <div className="space-y-6">
       <PageHeader
         title="Study Planner"
-        description="An auto-generated plan that prioritizes high-weight blueprint areas, your lowest mastery, and your most frequent mistakes — so your study time buys the most exam points."
+        description="A focused plan for the days you have left — front-loading high-weight blueprint areas, your lowest mastery, and your most frequent mistakes, then ending with a full simulation to check your readiness."
       >
         <RegeneratePlanButton />
       </PageHeader>
@@ -37,17 +45,37 @@ export default async function PlanPage() {
       </Card>
 
       <div className="grid gap-4 md:grid-cols-2">
-        {plan.weeks.map((w) => (
-          <Card key={w.week}>
+        {plan.days.map((d) => (
+          <Card key={d.day} className={d.isFinalDay ? "border-primary/40" : undefined}>
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
-                <CalendarDays size={18} /> Week {w.week}
+                {d.isFinalDay ? <GraduationCap size={18} className="text-primary" /> : <CalendarDays size={18} />}
+                Day {d.day} · {dayLabel(d.date)}
               </CardTitle>
-              <CardDescription>{w.focus.length} focus areas</CardDescription>
+              <CardDescription>
+                {format(new Date(d.date), "EEEE, MMM d")}
+                {d.isFinalDay ? " · Final review + full simulation" : ` · ${d.focus.length} focus areas`}
+              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
-              {w.focus.length === 0 && <p className="text-sm text-muted-foreground">Nothing scheduled — great coverage!</p>}
-              {w.focus.map((f) => (
+              {d.isFinalDay && (
+                <div className="rounded-lg border border-primary/30 bg-primary/5 p-3">
+                  <p className="text-sm font-semibold">Take the Exit Exam Simulation</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    A full 100-item, blueprint-matched, timed mock exam — the best signal for where you stand before the real thing.
+                  </p>
+                  <Link href="/exam" className="mt-2 inline-block">
+                    <Button size="sm">Open Simulation</Button>
+                  </Link>
+                </div>
+              )}
+              {d.focus.length === 0 && !d.isFinalDay && (
+                <p className="text-sm text-muted-foreground">Nothing scheduled — great coverage!</p>
+              )}
+              {d.focus.length > 0 && d.isFinalDay && (
+                <p className="text-xs font-medium text-muted-foreground">Quick review before the exam:</p>
+              )}
+              {d.focus.map((f) => (
                 <div key={f.topicId} className="rounded-lg border p-3">
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
