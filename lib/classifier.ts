@@ -1,5 +1,4 @@
 // Deterministic, build-time question classification.
-// No LLM is used here or at runtime — classification relies on structural
 // signals in the stem/options plus the blueprint's Bloom profile per topic.
 import { BLOOM_WEIGHT, type Difficulty, type QuestionType } from "./constants";
 import { clamp, slugify } from "./utils";
