@@ -49,7 +49,7 @@ export function AnalyticsDashboard({ data }: { data: AnalyticsData }) {
     <div className="space-y-6">
       {/* Improvement curve */}
       <div className="grid gap-6 lg:grid-cols-3">
-        <Card className="lg:col-span-2">
+        <Card className="min-w-0 lg:col-span-2">
           <CardHeader>
             <CardTitle className="text-base">Improvement curve</CardTitle>
             <CardDescription>Cumulative accuracy across every question you've answered.</CardDescription>
@@ -67,7 +67,7 @@ export function AnalyticsDashboard({ data }: { data: AnalyticsData }) {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="min-w-0">
           <CardHeader>
             <CardTitle className="text-base">Exam scores</CardTitle>
             <CardDescription>Initial vs current</CardDescription>
@@ -129,8 +129,8 @@ export function AnalyticsDashboard({ data }: { data: AnalyticsData }) {
       </Card>
 
       {/* Mastery by course + difficulty + type */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Card>
+      <div className="grid min-w-0 gap-6 lg:grid-cols-2">
+        <Card className="min-w-0">
           <CardHeader>
             <CardTitle className="text-base">Mastery by course</CardTitle>
           </CardHeader>

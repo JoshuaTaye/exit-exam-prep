@@ -224,7 +224,7 @@ export function QuizRunner({ session }: { session: Session }) {
             </button>
             <span className="text-xs text-muted-foreground">{q.externalId}</span>
           </div>
-          <CardTitle className="pt-2 text-lg leading-relaxed">{q.stem}</CardTitle>
+          <CardTitle className="pt-2 text-base leading-relaxed sm:text-lg [overflow-wrap:anywhere]">{q.stem}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2.5">
           {LETTERS.map((L) => {
@@ -248,7 +248,7 @@ export function QuizRunner({ session }: { session: Session }) {
                 >
                   {L}
                 </span>
-                <span className="pt-0.5">{q.options[L]}</span>
+                <span className="pt-0.5 [overflow-wrap:anywhere]">{q.options[L]}</span>
               </button>
             );
           })}
