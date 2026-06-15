@@ -155,15 +155,17 @@ export async function buildTopicQuiz(userId: number, topicId: number, n = 12): P
   return persist(userId, "topic", `Topic Quiz · ${topic.name}`, shuffle(picked.map((q) => q.id)), 0, { topicId, courseId: topic.courseId });
 }
 
-export async function buildCourseQuiz(userId: number, courseId: number, n = 25): Promise<BuiltSession> {
-  const ctx = await getServeContext(userId);
+export async function buildCourseQuiz(userId: number, courseId: number): Promise<BuiltSession> {
   const course = await prisma.course.findUnique({ where: { id: courseId } });
   if (!course) throw new Error("Course not found");
   const pool = await prisma.question.findMany({
-    where: { courseId }, select: { id: true, courseId: true, topicId: true, difficulty: true },
+    where: { courseId }, select: { id: true },
   });
-  const picked = rankPick(pool, ctx, Math.min(n, pool.length));
-  return persist(userId, "course", `Course Quiz · ${course.name}`, shuffle(picked.map((q) => q.id)), 0, { courseId });
+  const ids = shuffle(pool.map((q) => q.id));
+  return persist(
+    userId, "course", `Course Quiz · ${course.name} · ${ids.length} questions`,
+    ids, 0, { courseId, totalItems: ids.length },
+  );
 }
 
 export async function buildWeaknessQuiz(userId: number, n = 15): Promise<BuiltSession> {

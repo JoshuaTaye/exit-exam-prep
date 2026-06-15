@@ -38,7 +38,7 @@ export default async function CourseNotesPage({
             <h1 className="text-2xl font-bold tracking-tight">{notes.courseName}</h1>
             <p className="mt-1 max-w-2xl text-sm text-muted-foreground">{notes.generalObjective}</p>
           </div>
-          <StartQuizButton spec={{ mode: "course", courseId, n: 25 }}>Quiz this course</StartQuizButton>
+          <StartQuizButton spec={{ mode: "course", courseId }}>Quiz this course</StartQuizButton>
         </div>
       </div>
 

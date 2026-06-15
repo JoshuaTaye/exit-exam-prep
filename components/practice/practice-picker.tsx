@@ -40,7 +40,7 @@ export function PracticePicker({ courses }: { courses: CourseLite[] }) {
       <Card>
         <CardHeader>
           <CardTitle className="text-base">Topic &amp; Course Quiz</CardTitle>
-          <CardDescription>Drill a single learning outcome or an entire course.</CardDescription>
+          <CardDescription>Drill a single learning outcome, or every question in a course.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-3">
           <select
@@ -68,8 +68,8 @@ export function PracticePicker({ courses }: { courses: CourseLite[] }) {
           </select>
           <div className="flex gap-2">
             <StartQuizButton spec={{ mode: "topic", topicId, n: 12 }}>Topic Quiz</StartQuizButton>
-            <StartQuizButton spec={{ mode: "course", courseId, n: 25 }} variant="outline">
-              Course Quiz
+            <StartQuizButton spec={{ mode: "course", courseId }} variant="outline">
+              Course Quiz ({course?.count ?? 0} Q)
             </StartQuizButton>
           </div>
         </CardContent>

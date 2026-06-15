@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
         session = await buildTopicQuiz(user.id, topicId, n ?? 12); break;
       case "course":
         if (!courseId) return NextResponse.json({ error: "courseId required" }, { status: 400 });
-        session = await buildCourseQuiz(user.id, courseId, n ?? 25); break;
+        session = await buildCourseQuiz(user.id, courseId); break;
       case "weakness": session = await buildWeaknessQuiz(user.id, n ?? 15); break;
       case "mistake": session = await buildMistakeQuiz(user.id, n ?? 15); break;
       case "simulation": session = await buildSimulation(user.id); break;
