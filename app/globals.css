@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Design system — neutral surfaces + indigo accent.
+  Light: clean, airy. Dark: layered deep charcoal (never pure black),
+  inspired by Linear / Vercel / Raycast.
+*/
+:root {
+  --background: 240 24% 99%;
+  --foreground: 240 10% 9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 9%;
+  --elevated: 240 20% 97%;
+
+  --primary: 245 72% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 18% 95%;
+  --secondary-foreground: 240 10% 14%;
+  --muted: 240 16% 95.5%;
+  --muted-foreground: 240 5% 44%;
+  --accent: 245 72% 96%;
+  --accent-foreground: 245 60% 42%;
+
+  --success: 152 60% 40%;
+  --success-foreground: 0 0% 100%;
+  --warning: 35 92% 50%;
+  --warning-foreground: 30 50% 14%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 240 12% 90%;
+  --input: 240 12% 88%;
+  --ring: 245 72% 58%;
+  --radius: 0.75rem;
+
+  --shadow-color: 240 30% 30%;
+}
+
+.dark {
+  --background: 240 10% 6.5%;
+  --foreground: 240 12% 95%;
+  --card: 240 8% 9.5%;
+  --card-foreground: 240 12% 95%;
+  --popover: 240 9% 11%;
+  --popover-foreground: 240 12% 95%;
+  --elevated: 240 8% 12.5%;
+
+  --primary: 245 80% 67%;
+  --primary-foreground: 240 20% 10%;
+  --secondary: 240 6% 16%;
+  --secondary-foreground: 240 12% 92%;
+  --muted: 240 6% 15%;
+  --muted-foreground: 240 6% 62%;
+  --accent: 245 40% 20%;
+  --accent-foreground: 245 90% 88%;
+
+  --success: 152 55% 48%;
+  --success-foreground: 150 30% 8%;
+  --warning: 35 92% 58%;
+  --warning-foreground: 30 60% 10%;
+  --destructive: 0 70% 58%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 240 6% 17%;
+  --input: 240 6% 20%;
+  --ring: 245 80% 67%;
+
+  --shadow-color: 0 0% 0%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth, intentional theme transitions on surface colors only. */
+body,
+.themed-surface,
+[data-card],
+button,
+input,
+select,
+textarea,
+a {
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    color 0.18s ease;
+}
+
+/* Headings: tighter tracking for a modern, condensed feel. */
+h1, h2, h3, h4 {
+  letter-spacing: -0.018em;
+}
+
+/* Focus-visible ring for accessibility/keyboard nav. */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Highlighting in notes */
+mark.note-hl {
+  background: hsl(var(--warning) / 0.35);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* Custom scrollbar — subtle, app-like. */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.25);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground) / 0.4); background-clip: content-box; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Utility: glass top bar */
+.glass {
+  background: hsl(var(--background) / 0.72);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+
+/* Skeleton shimmer */
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: hsl(var(--muted));
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, hsl(var(--foreground) / 0.06), transparent);
+  animation: shimmer 1.5s infinite;
+}

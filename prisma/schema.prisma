@@ -1,0 +1,252 @@
+// Exit Exam Preparation Platform — data model.
+// Provider is SQLite for zero-config local use. Switch to "postgresql" + a
+// DATABASE_URL to deploy against Postgres; the schema is portable as-is.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ----------------------------- Blueprint structure -----------------------------
+
+model Theme {
+  id      Int      @id @default(autoincrement())
+  no      Int      @unique
+  name    String
+  weight  Float // percentage contribution to the exam
+  courses Course[]
+}
+
+model Course {
+  id               Int      @id @default(autoincrement())
+  no               Int      @unique
+  name             String
+  creditHours      Int
+  items            Int // expected questions in a full exam
+  generalObjective String
+  themeId          Int
+  theme            Theme    @relation(fields: [themeId], references: [id])
+  topics           Topic[]
+  questions        Question[]
+  notes            Note[]
+}
+
+model Topic {
+  id         Int        @id @default(autoincrement())
+  name       String
+  slug       String
+  items      Int // expected questions for this learning outcome
+  importance Float // 0..1, share of course questions
+  bloom      String // JSON map of bloom level -> count
+  courseId   Int
+  course     Course     @relation(fields: [courseId], references: [id])
+  questions  Question[]
+  note       Note?
+}
+
+// ----------------------------- Question bank -----------------------------
+
+model Question {
+  id            Int      @id @default(autoincrement())
+  externalId    String   @unique // e.g. "C1-Q15"
+  qnum          Int
+  stem          String
+  optionA       String
+  optionB       String
+  optionC       String
+  optionD       String
+  answer        String // "A" | "B" | "C" | "D"
+  explanation   String
+  difficulty    String // Easy | Medium | Hard | Very Hard
+  questionType  String // MCQ | Scenario | Case Study | Problem Solving
+  conceptCount  Int      @default(1)
+  baseDifficulty Float   @default(0.5) // 0..1 intrinsic complexity score
+  courseId      Int
+  course        Course   @relation(fields: [courseId], references: [id])
+  topicId       Int
+  topic         Topic    @relation(fields: [topicId], references: [id])
+
+  attempts     QuestionAttempt[]
+  mistakes     Mistake[]
+  reviewStates ReviewState[]
+
+  @@index([courseId])
+  @@index([topicId])
+  @@index([difficulty])
+}
+
+// ----------------------------- User & performance -----------------------------
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  // Onboarding / preferences
+  onboarded         Boolean @default(false)
+  program           String  @default("Software Engineering")
+  stream            String  @default("Software Engineering")
+  examYear          String  @default("2024")
+  dailyGoalMinutes  Int     @default(30)
+  targetReadiness   Int     @default(75)
+  diagnosticDone    Boolean @default(false)
+
+  attempts      QuestionAttempt[]
+  mistakes      Mistake[]
+  reviewStates  ReviewState[]
+  bookmarks     Bookmark[]
+  noteProgress  NoteProgress[]
+  exams         Exam[]
+  examResults   ExamResult[]
+  studyPlans    StudyPlan[]
+}
+
+model QuestionAttempt {
+  id             Int       @id @default(autoincrement())
+  userId         Int
+  user           User      @relation(fields: [userId], references: [id])
+  questionId     Int
+  question       Question  @relation(fields: [questionId], references: [id])
+  selectedAnswer String?   // null = skipped / unanswered
+  isCorrect      Boolean
+  timeMs         Int       @default(0)
+  mode           String    @default("practice") // practice | exam | review | mistake
+  attemptNumber  Int       @default(1)
+  examResultId   Int?
+  examResult     ExamResult? @relation(fields: [examResultId], references: [id])
+  createdAt      DateTime  @default(now())
+
+  @@index([userId])
+  @@index([questionId])
+  @@index([userId, createdAt])
+}
+
+// Permanent mistake journal: one row per incorrect answer, never deleted.
+model Mistake {
+  id             Int      @id @default(autoincrement())
+  userId         Int
+  user           User     @relation(fields: [userId], references: [id])
+  questionId     Int
+  question       Question @relation(fields: [questionId], references: [id])
+  selectedAnswer String
+  correctAnswer  String
+  attemptNumber  Int      @default(1)
+  resolved       Boolean  @default(false) // set true once later answered correctly
+  createdAt      DateTime @default(now())
+
+  @@index([userId])
+  @@index([questionId])
+}
+
+// Spaced-repetition scheduling state (one per user+question).
+model ReviewState {
+  id             Int      @id @default(autoincrement())
+  userId         Int
+  user           User     @relation(fields: [userId], references: [id])
+  questionId     Int
+  question       Question @relation(fields: [questionId], references: [id])
+  intervalDays   Int      @default(0)
+  streak         Int      @default(0)
+  ease           Float    @default(2.5)
+  dueAt          DateTime @default(now())
+  lastReviewed   DateTime @default(now())
+
+  @@unique([userId, questionId])
+  @@index([userId, dueAt])
+}
+
+// ----------------------------- Notes & study -----------------------------
+
+model Note {
+  id              Int      @id @default(autoincrement())
+  courseId        Int
+  course          Course   @relation(fields: [courseId], references: [id])
+  topicId         Int?     @unique
+  topic           Topic?   @relation(fields: [topicId], references: [id])
+  title           String
+  slug            String
+  overview        String
+  keyConcepts     String   // JSON string[]
+  definitions     String   // JSON {term,definition}[]
+  examples        String   // JSON {title,body}[]
+  diagram         String   // ascii/markdown diagram, may be empty
+  examTips        String   // JSON string[]
+  commonMistakes  String   // JSON string[]
+  orderIndex      Int      @default(0)
+
+  bookmarks Bookmark[]
+  progress  NoteProgress[]
+
+  @@index([courseId])
+}
+
+model Bookmark {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  noteId    Int
+  note      Note     @relation(fields: [noteId], references: [id])
+  createdAt DateTime @default(now())
+
+  @@unique([userId, noteId])
+}
+
+model NoteProgress {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+  noteId      Int
+  note        Note     @relation(fields: [noteId], references: [id])
+  completed   Boolean  @default(false)
+  highlights  String   @default("[]") // JSON string[] of highlighted snippets
+  updatedAt   DateTime @updatedAt
+
+  @@unique([userId, noteId])
+}
+
+// ----------------------------- Exams -----------------------------
+
+model Exam {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+  mode        String // quick | topic | course | weakness | mistake | simulation
+  title       String
+  config      String // JSON: how it was generated (blueprint composition, filters)
+  questionIds String // JSON number[]
+  durationSec Int      @default(0) // 0 = untimed
+  createdAt   DateTime @default(now())
+
+  result ExamResult?
+}
+
+model ExamResult {
+  id          Int      @id @default(autoincrement())
+  examId      Int      @unique
+  exam        Exam     @relation(fields: [examId], references: [id])
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+  score       Float // percentage 0..100
+  totalItems  Int
+  correct     Int
+  durationMs  Int      @default(0)
+  breakdown   String // JSON: per-course / per-difficulty / per-type results
+  passed      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  attempts QuestionAttempt[]
+}
+
+model StudyPlan {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  weeks     String // JSON: [{week, focus:[{courseId,topicId,reason,questionTarget}]}]
+  createdAt DateTime @default(now())
+  active    Boolean  @default(true)
+}

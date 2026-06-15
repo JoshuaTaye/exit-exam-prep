@@ -1,0 +1,157 @@
+{
+  "exam": {
+    "title": "BSc Software Engineering & Computing Technology — National Exit Exam",
+    "authority": "Ministry of Education, Ethiopia",
+    "totalItems": 100,
+    "totalCreditHours": 53,
+    "passMark": 50,
+    "durationMinutes": 150
+  },
+  "bloomDifficulty": {
+    "Remembering": "Easy",
+    "Understanding": "Easy",
+    "Application": "Medium",
+    "Analysis": "Hard",
+    "Evaluation": "Very Hard",
+    "Creation": "Very Hard"
+  },
+  "themes": [
+    { "no": 1, "name": "Problem Analysis & Programming", "weight": 60.38 },
+    { "no": 2, "name": "Software Requirement, Design & Architecture", "weight": 15.09 },
+    { "no": 3, "name": "Networking & Software Security", "weight": 13.21 },
+    { "no": 4, "name": "Emerging Technologies (AI/ML)", "weight": 11.32 }
+  ],
+  "courses": [
+    {
+      "no": 1, "themeNo": 1, "name": "Fundamentals of Programming", "creditHours": 8, "items": 14,
+      "generalObjective": "Investigate complex problems using research-based methods and apply knowledge of mathematics and software engineering to address complex, large-scale problems.",
+      "topics": [
+        { "name": "Programming basics & the program development process", "items": 1, "bloom": { "Understanding": 1 } },
+        { "name": "Programming constructs & techniques", "items": 3, "bloom": { "Application": 3 } },
+        { "name": "Problem-solving with program-solving techniques", "items": 3, "bloom": { "Evaluation": 1, "Creation": 2 } },
+        { "name": "Modular programming, user-defined types, file streams & vectors", "items": 4, "bloom": { "Understanding": 2, "Analysis": 2 } },
+        { "name": "Developing, debugging & testing medium-scale applications", "items": 3, "bloom": { "Remembering": 1, "Evaluation": 1, "Creation": 1 } }
+      ]
+    },
+    {
+      "no": 2, "themeNo": 1, "name": "Data Structures & Algorithms", "creditHours": 4, "items": 8,
+      "generalObjective": "Design integrated, efficient software solutions and analyze complex problems using sound algorithmic principles.",
+      "topics": [
+        { "name": "Data organization, storage & retrieval", "items": 2, "bloom": { "Remembering": 1, "Understanding": 1 } },
+        { "name": "Design & analysis of efficient algorithms", "items": 2, "bloom": { "Understanding": 1, "Application": 1 } },
+        { "name": "Core data structures (lists, queues, stacks, trees, graphs)", "items": 1, "bloom": { "Application": 1 } },
+        { "name": "Complexity of searching & sorting (empirical & theoretical)", "items": 1, "bloom": { "Remembering": 1 } },
+        { "name": "Designing algorithms for real-life problems", "items": 2, "bloom": { "Understanding": 1, "Application": 1 } }
+      ]
+    },
+    {
+      "no": 3, "themeNo": 1, "name": "Object-Oriented Programming", "creditHours": 3, "items": 6,
+      "generalObjective": "Explore object-oriented principles and gain hands-on experience building event-driven applications.",
+      "topics": [
+        { "name": "OOP concepts, object technology & environment", "items": 1, "bloom": { "Application": 1 } },
+        { "name": "Inheritance, encapsulation, polymorphism, exceptions & I/O", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Event-driven GUI components in an IDE", "items": 1, "bloom": { "Application": 1 } },
+        { "name": "Designing & developing object-oriented software", "items": 2, "bloom": { "Remembering": 1, "Application": 1 } }
+      ]
+    },
+    {
+      "no": 4, "themeNo": 1, "name": "Web Programming", "creditHours": 6, "items": 10,
+      "generalObjective": "Implement modern web applications with cutting-edge tools while upholding professional ethics.",
+      "topics": [
+        { "name": "Web protocols & web application design", "items": 3, "bloom": { "Remembering": 1, "Evaluation": 1 } },
+        { "name": "Modern tools & techniques for web development", "items": 2, "bloom": { "Understanding": 1, "Creation": 1 } },
+        { "name": "HTML, CSS, JavaScript, AJAX & server-side scripting", "items": 2, "bloom": { "Evaluation": 1, "Creation": 1 } },
+        { "name": "Dynamic pages & database connectivity", "items": 3, "bloom": { "Application": 1, "Creation": 1 } }
+      ]
+    },
+    {
+      "no": 5, "themeNo": 1, "name": "Mobile Application Development", "creditHours": 3, "items": 6,
+      "generalObjective": "Apply state-of-the-art mobile tools and ethical principles to build mobile applications.",
+      "topics": [
+        { "name": "Android components & mobile computing basics", "items": 2, "bloom": { "Remembering": 1, "Understanding": 1 } },
+        { "name": "Mobile development in an IDE", "items": 1, "bloom": { "Application": 1 } },
+        { "name": "Security concerns of mobile technologies & networks", "items": 1, "bloom": { "Application": 1 } },
+        { "name": "Legal & ethical principles of mobile frameworks", "items": 2, "bloom": { "Analysis": 1 } }
+      ]
+    },
+    {
+      "no": 6, "themeNo": 1, "name": "Fundamentals of Databases", "creditHours": 4, "items": 7,
+      "generalObjective": "Apply logical reasoning to data management while addressing societal, legal and security responsibilities.",
+      "topics": [
+        { "name": "Database concepts, models & optimization", "items": 2, "bloom": { "Remembering": 1, "Understanding": 1 } },
+        { "name": "SQL for data creation & manipulation", "items": 2, "bloom": { "Application": 1 } },
+        { "name": "Designing database models with a DBMS", "items": 2, "bloom": { "Understanding": 1, "Evaluation": 1 } },
+        { "name": "Securing data & managing data problems", "items": 1, "bloom": { "Application": 1 } }
+      ]
+    },
+    {
+      "no": 7, "themeNo": 1, "name": "Operating Systems", "creditHours": 4, "items": 8,
+      "generalObjective": "Understand OS structure and apply ethical, sustainable principles to system software.",
+      "topics": [
+        { "name": "Structure & functionality of modern operating systems", "items": 1, "bloom": { "Remembering": 1 } },
+        { "name": "Deadlock, memory, I/O, storage & file management", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Security & protection measures in operating systems", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Process management & synchronization", "items": 2, "bloom": { "Application": 1, "Evaluation": 1 } },
+        { "name": "Comparing core OS algorithms", "items": 1, "bloom": { "Analysis": 1 } }
+      ]
+    },
+    {
+      "no": 8, "themeNo": 2, "name": "Software Engineering", "creditHours": 4, "items": 8,
+      "generalObjective": "Analyze complex problems and apply software development principles, methodologies and tools.",
+      "topics": [
+        { "name": "Basic principles of software engineering", "items": 2, "bloom": { "Application": 1 } },
+        { "name": "Software process & process models", "items": 2, "bloom": { "Understanding": 1 } },
+        { "name": "Data communication, networks & system security setup", "items": 2, "bloom": { "Analysis": 1 } },
+        { "name": "Professional, ethical & normative practice", "items": 2, "bloom": { "Application": 1 } }
+      ]
+    },
+    {
+      "no": 9, "themeNo": 2, "name": "Software Project Management", "creditHours": 4, "items": 7,
+      "generalObjective": "Apply project-management principles to manage software development processes and teams.",
+      "topics": [
+        { "name": "Software project management tasks", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Work breakdown structure, scheduling & cost", "items": 2, "bloom": { "Remembering": 1, "Application": 1 } },
+        { "name": "Project management tools, techniques & skills", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Plan documents, risk & quality management", "items": 1, "bloom": { "Creation": 1 } }
+      ]
+    },
+    {
+      "no": 10, "themeNo": 3, "name": "Fundamentals of Networking", "creditHours": 4, "items": 8,
+      "generalObjective": "Master the fundamental concepts that form the backbone of computer networks.",
+      "topics": [
+        { "name": "Network fundamentals", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Networking layers", "items": 3, "bloom": { "Remembering": 1, "Application": 1, "Creation": 1 } },
+        { "name": "Designing network services for requirements", "items": 3, "bloom": { "Remembering": 1, "Application": 1, "Evaluation": 1 } }
+      ]
+    },
+    {
+      "no": 11, "themeNo": 3, "name": "Information Security", "creditHours": 3, "items": 6,
+      "generalObjective": "Apply ethical principles and security practices to protect software and information systems.",
+      "topics": [
+        { "name": "Malicious code, threats, vulnerabilities & mitigation", "items": 2, "bloom": { "Remembering": 1, "Application": 1 } },
+        { "name": "Cryptography & cryptanalysis", "items": 1, "bloom": { "Application": 1 } },
+        { "name": "Authentication & access control", "items": 2, "bloom": { "Remembering": 1, "Application": 1 } },
+        { "name": "Firewalls & intrusion detection", "items": 1, "bloom": { "Application": 1 } }
+      ]
+    },
+    {
+      "no": 12, "themeNo": 4, "name": "Artificial Intelligence", "creditHours": 3, "items": 6,
+      "generalObjective": "Understand AI principles and apply AI techniques to solve real-world problems.",
+      "topics": [
+        { "name": "AI search problem formulation & key concepts", "items": 2, "bloom": { "Remembering": 1, "Evaluation": 1 } },
+        { "name": "Search methods & algorithms", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Search complexity & Bayes nets", "items": 2, "bloom": { "Remembering": 1, "Application": 1 } }
+      ]
+    },
+    {
+      "no": 13, "themeNo": 4, "name": "Machine Learning", "creditHours": 3, "items": 6,
+      "generalObjective": "Understand ML theory and design and implement machine-learning algorithms.",
+      "topics": [
+        { "name": "ML theory & algorithmic foundations", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Formulating ML problems", "items": 1, "bloom": { "Analysis": 1 } },
+        { "name": "Applying ML algorithms across domains", "items": 2, "bloom": { "Application": 1, "Analysis": 1 } },
+        { "name": "Developing ML-based applications", "items": 1, "bloom": { "Creation": 1 } }
+      ]
+    }
+  ]
+}
