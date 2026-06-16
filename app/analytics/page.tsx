@@ -23,6 +23,15 @@ export default async function AnalyticsPage() {
     courses: snap.courses.map((c) => ({
       name: c.name, mastery: Math.round(c.mastery), attempted: c.attempted, total: c.total, weight: c.weight,
     })),
+    courseTopicProgress: snap.courses.map((c) => ({
+      id: c.id,
+      name: c.name,
+      attempted: c.attempted,
+      total: c.total,
+      topics: c.topics.map((t) => ({
+        id: t.id, name: t.name, attempted: t.attempted, total: t.total,
+      })),
+    })),
     byDifficulty: ["Easy", "Medium", "Hard", "Very Hard"].map((d) => {
       const n = (snap.byDifficulty as any)[d];
       return { name: d, mastery: n.mastery, attempted: n.attempted, total: n.total };

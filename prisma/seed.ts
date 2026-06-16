@@ -36,40 +36,35 @@ async function main() {
   const bp: Blueprint = JSON.parse(readFileSync(join(dataDir, "blueprint.json"), "utf-8"));
   const questions: RawQ[] = JSON.parse(readFileSync(join(dataDir, "questions.json"), "utf-8"));
 
-  console.log("Clearing existing data…");
-  // Order matters for FK integrity.
-  await prisma.questionAttempt.deleteMany();
-  await prisma.mistake.deleteMany();
-  await prisma.reviewState.deleteMany();
-  await prisma.bookmark.deleteMany();
-  await prisma.noteProgress.deleteMany();
-  await prisma.examResult.deleteMany();
-  await prisma.exam.deleteMany();
-  await prisma.studyPlan.deleteMany();
-  await prisma.note.deleteMany();
-  await prisma.question.deleteMany();
-  await prisma.topic.deleteMany();
-  await prisma.course.deleteMany();
-  await prisma.theme.deleteMany();
-  await prisma.user.deleteMany();
-
   // ---- Themes ----
-  console.log("Seeding themes…");
+  console.log("Upserting themes…");
   const themeIdByNo = new Map<number, number>();
   for (const t of bp.themes) {
-    const row = await prisma.theme.create({ data: { no: t.no, name: t.name, weight: t.weight } });
+    const row = await prisma.theme.upsert({
+      where: { no: t.no },
+      update: { name: t.name, weight: t.weight },
+      create: { no: t.no, name: t.name, weight: t.weight },
+    });
     themeIdByNo.set(t.no, row.id);
   }
 
   // ---- Courses + Topics + Notes ----
-  console.log("Seeding courses, topics and notes…");
+  console.log("Upserting courses, topics and notes…");
   const courseIdByNo = new Map<number, number>();
   // courseNo -> array of {id, name, items, bloom, slug} aligned to blueprint order
   const topicsByCourse = new Map<number, { id: number; name: string; items: number; bloom: Record<string, number>; slug: string }[]>();
 
   for (const c of bp.courses) {
-    const course = await prisma.course.create({
-      data: {
+    const course = await prisma.course.upsert({
+      where: { no: c.no },
+      update: {
+        name: c.name,
+        creditHours: c.creditHours,
+        items: c.items,
+        generalObjective: c.generalObjective,
+        themeId: themeIdByNo.get(c.themeNo)!,
+      },
+      create: {
         no: c.no,
         name: c.name,
         creditHours: c.creditHours,
@@ -87,8 +82,15 @@ async function main() {
     for (let i = 0; i < c.topics.length; i++) {
       const t = c.topics[i];
       const slug = slugify(t.name);
-      const topic = await prisma.topic.create({
-        data: {
+      const topic = await prisma.topic.upsert({
+        where: { courseId_slug: { courseId: course.id, slug } },
+        update: {
+          name: t.name,
+          items: t.items,
+          importance: t.items / courseTopicItems,
+          bloom: JSON.stringify(t.bloom),
+        },
+        create: {
           name: t.name,
           slug,
           items: t.items,
@@ -102,21 +104,22 @@ async function main() {
       // Note for this topic (authored content aligned by index).
       const nc = courseNotes[i];
       if (nc) {
-        await prisma.note.create({
-          data: {
-            courseId: course.id,
-            topicId: topic.id,
-            title: t.name,
-            slug,
-            overview: nc.overview,
-            keyConcepts: JSON.stringify(nc.keyConcepts),
-            definitions: JSON.stringify(nc.definitions),
-            examples: JSON.stringify(nc.examples),
-            diagram: nc.diagram ?? "",
-            examTips: JSON.stringify(nc.examTips),
-            commonMistakes: JSON.stringify(nc.commonMistakes),
-            orderIndex: i,
-          },
+        const noteData = {
+          title: t.name,
+          slug,
+          overview: nc.overview,
+          keyConcepts: JSON.stringify(nc.keyConcepts),
+          definitions: JSON.stringify(nc.definitions),
+          examples: JSON.stringify(nc.examples),
+          diagram: nc.diagram ?? "",
+          examTips: JSON.stringify(nc.examTips),
+          commonMistakes: JSON.stringify(nc.commonMistakes),
+          orderIndex: i,
+        };
+        await prisma.note.upsert({
+          where: { topicId: topic.id },
+          update: noteData,
+          create: { ...noteData, courseId: course.id, topicId: topic.id },
         });
       }
     }
@@ -124,7 +127,7 @@ async function main() {
   }
 
   // ---- Questions ----
-  console.log(`Classifying and seeding ${questions.length} questions…`);
+  console.log(`Classifying and upserting ${questions.length} questions…`);
   const diffCount: Record<string, number> = {};
   const typeCount: Record<string, number> = {};
 
@@ -136,7 +139,7 @@ async function main() {
     );
     const courseId = courseIdByNo.get(c.no)!;
 
-    const batch = courseQs.map((q) => {
+    for (const q of courseQs) {
       const topicIdx = assign(q.stem, q.options);
       const topic = topicList[topicIdx];
       const bloomScore = topicBloomScore(topic.bloom);
@@ -145,8 +148,8 @@ async function main() {
       diffCount[difficulty] = (diffCount[difficulty] ?? 0) + 1;
       typeCount[questionType] = (typeCount[questionType] ?? 0) + 1;
 
-      return {
-        externalId: `C${q.courseNo}-Q${q.qnum}`,
+      const externalId = `C${q.courseNo}-Q${q.qnum}`;
+      const data = {
         qnum: q.qnum,
         stem: q.stem,
         optionA: q.options.A ?? "",
@@ -162,16 +165,21 @@ async function main() {
         courseId,
         topicId: topic.id,
       };
-    });
 
-    // createMany is fast and fine since externalId is unique.
-    await prisma.question.createMany({ data: batch });
+      await prisma.question.upsert({
+        where: { externalId },
+        update: data,
+        create: { externalId, ...data },
+      });
+    }
   }
 
   // ---- Default user ----
-  console.log("Creating default user…");
-  await prisma.user.create({
-    data: { name: "Student", email: DEFAULT_USER_EMAIL },
+  console.log("Ensuring default user exists…");
+  await prisma.user.upsert({
+    where: { email: DEFAULT_USER_EMAIL },
+    update: {},
+    create: { name: "Student", email: DEFAULT_USER_EMAIL },
   });
 
   // ---- Summary ----

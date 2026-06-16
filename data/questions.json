@@ -566,7 +566,7 @@
   "options": {
    "A": "O(n)",
    "B": "O(n log n)",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(2n)"
   },
   "answer": "C"
@@ -1825,9 +1825,9 @@
   "qnum": 141,
   "stem": "Adjacency List space complexity for sparse graph?",
   "options": {
-   "A": "O(V²)",
+   "A": "O(V\u00b2)",
    "B": "O(V+E)",
-   "C": "O(E²)",
+   "C": "O(E\u00b2)",
    "D": "O(V)"
   },
   "answer": "B"
@@ -1864,10 +1864,10 @@
   "qnum": 144,
   "stem": "Worst case of Quick Sort and its cause?",
   "options": {
-   "A": "O(n log n) — random pivot",
-   "B": "O(n²) — worst pivot choice",
-   "C": "O(n) — sorted input",
-   "D": "O(log n) — balanced partitions"
+   "A": "O(n log n) \u2014 random pivot",
+   "B": "O(n\u00b2) \u2014 worst pivot choice",
+   "C": "O(n) \u2014 sorted input",
+   "D": "O(log n) \u2014 balanced partitions"
   },
   "answer": "B"
  },
@@ -1931,7 +1931,7 @@
   "options": {
    "A": "O(n)",
    "B": "O(log n)",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(1)"
   },
   "answer": "D"
@@ -1995,7 +1995,7 @@
   "stem": "Binary search time complexity?",
   "options": {
    "A": "O(n)",
-   "B": "O(n²)",
+   "B": "O(n\u00b2)",
    "C": "O(log n)",
    "D": "O(1)"
   },
@@ -2009,7 +2009,7 @@
   "options": {
    "A": "O(n log n)",
    "B": "O(n)",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(log n)"
   },
   "answer": "C"
@@ -2101,7 +2101,7 @@
    "A": "O(1)",
    "B": "O(log n)",
    "C": "O(n)",
-   "D": "O(n²)"
+   "D": "O(n\u00b2)"
   },
   "answer": "C"
  },
@@ -2112,7 +2112,7 @@
   "stem": "What is an AVL tree?",
   "options": {
    "A": "Binary tree with alphabetical order",
-   "B": "Self-balancing BST with |balance factor| ≤ 1",
+   "B": "Self-balancing BST with |balance factor| \u2264 1",
    "C": "B-tree variant",
    "D": "Heap with AVL property"
   },
@@ -2150,7 +2150,7 @@
   "qnum": 166,
   "stem": "Insertion sort best-case time complexity?",
   "options": {
-   "A": "O(n²)",
+   "A": "O(n\u00b2)",
    "B": "O(n log n)",
    "C": "O(n)",
    "D": "O(log n)"
@@ -2191,7 +2191,7 @@
   "options": {
    "A": "O(n)",
    "B": "O(log n)",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(1)"
   },
   "answer": "B"
@@ -2254,7 +2254,7 @@
   "qnum": 174,
   "stem": "Time complexity of Heap Sort?",
   "options": {
-   "A": "O(n²)",
+   "A": "O(n\u00b2)",
    "B": "O(n)",
    "C": "O(n log n)",
    "D": "O(log n)"
@@ -2412,7 +2412,7 @@
   "options": {
    "A": "It uses recursion",
    "B": "Swapping can change relative order of equal elements",
-   "C": "It runs in O(n²)",
+   "C": "It runs in O(n\u00b2)",
    "D": "It doesn't compare elements"
   },
   "answer": "B"
@@ -2425,7 +2425,7 @@
   "options": {
    "A": "O(b^d)",
    "B": "O(m)",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(1)"
   },
   "answer": "B"
@@ -2514,7 +2514,7 @@
   "qnum": 194,
   "stem": "Bubble sort best case (already sorted)?",
   "options": {
-   "A": "O(n²)",
+   "A": "O(n\u00b2)",
    "B": "O(n log n)",
    "C": "O(n)",
    "D": "O(1)"
@@ -2582,7 +2582,7 @@
    "A": "O(1)",
    "B": "O(log n)",
    "C": "O(n)",
-   "D": "O(n²)"
+   "D": "O(n\u00b2)"
   },
   "answer": "C"
  },
@@ -2660,7 +2660,7 @@
    "A": "O(log n) search",
    "B": "O(n) search, like a linked list",
    "C": "O(1) search",
-   "D": "O(n²) search"
+   "D": "O(n\u00b2) search"
   },
   "answer": "B"
  },
@@ -2698,7 +2698,7 @@
   "options": {
    "A": "O(n log n)",
    "B": "O(n + k) where k is value range",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(n)"
   },
   "answer": "B"
@@ -2749,7 +2749,7 @@
   "stem": "Adjacency Matrix space complexity?",
   "options": {
    "A": "O(V+E)",
-   "B": "O(V²)",
+   "B": "O(V\u00b2)",
    "C": "O(E)",
    "D": "O(V)"
   },
@@ -2800,7 +2800,7 @@
   "qnum": 216,
   "stem": "Quick sort average case time complexity?",
   "options": {
-   "A": "O(n²)",
+   "A": "O(n\u00b2)",
    "B": "O(n)",
    "C": "O(n log n)",
    "D": "O(log n)"
@@ -2865,10 +2865,10 @@
   "qnum": 221,
   "stem": "BFS time complexity for graph with V vertices and E edges?",
   "options": {
-   "A": "O(V²)",
+   "A": "O(V\u00b2)",
    "B": "O(V+E)",
    "C": "O(V log V)",
-   "D": "O(E²)"
+   "D": "O(E\u00b2)"
   },
   "answer": "B"
  },
@@ -2945,7 +2945,7 @@
   "options": {
    "A": "O(n log n)",
    "B": "O(n)",
-   "C": "O(n²)",
+   "C": "O(n\u00b2)",
    "D": "O(log n)"
   },
   "answer": "B"
@@ -2983,7 +2983,7 @@
   "stem": "What is the main drawback of Bubble Sort?",
   "options": {
    "A": "Not stable",
-   "B": "O(n²) in average/worst case — very slow on large data",
+   "B": "O(n\u00b2) in average/worst case \u2014 very slow on large data",
    "C": "Needs extra memory",
    "D": "Cannot sort integers"
   },
@@ -2998,7 +2998,7 @@
    "A": "O(n)",
    "B": "O(log n)",
    "C": "O(1)",
-   "D": "O(n²)"
+   "D": "O(n\u00b2)"
   },
   "answer": "C"
  },
@@ -3127,7 +3127,7 @@
   "options": {
    "A": "Uses extra memory",
    "B": "Swapping in heapify changes relative order of equals",
-   "C": "Runs in O(n²)",
+   "C": "Runs in O(n\u00b2)",
    "D": "Requires sorted input"
   },
   "answer": "B"
@@ -3154,7 +3154,7 @@
    "A": "O(n)",
    "B": "O(1)",
    "C": "O(log n)",
-   "D": "O(n²)"
+   "D": "O(n\u00b2)"
   },
   "answer": "B"
  },
@@ -3193,7 +3193,7 @@
    "A": "O(1) traversal",
    "B": "O(n) traversal visiting all nodes",
    "C": "O(log n) for balanced trees only",
-   "D": "O(n²) double traversal"
+   "D": "O(n\u00b2) double traversal"
   },
   "answer": "B"
  },
@@ -3256,7 +3256,7 @@
   "stem": "Big-O order: which grows fastest?",
   "options": {
    "A": "O(n log n)",
-   "B": "O(n²)",
+   "B": "O(n\u00b2)",
    "C": "O(2^n)",
    "D": "O(n!)"
   },
@@ -3698,7 +3698,7 @@
   "stem": "What is polymorphism literally meaning?",
   "options": {
    "A": "Many classes",
-   "B": "Many forms/shapes — one interface, multiple implementations",
+   "B": "Many forms/shapes \u2014 one interface, multiple implementations",
    "C": "Many parents",
    "D": "Many methods"
   },
@@ -3802,7 +3802,7 @@
   "stem": "What is the DRY principle?",
   "options": {
    "A": "Delete Redundant Years",
-   "B": "Don't Repeat Yourself — avoid code duplication",
+   "B": "Don't Repeat Yourself \u2014 avoid code duplication",
    "C": "Data Retrieval Yields",
    "D": "Dynamic Runtime Yield"
   },
@@ -4802,7 +4802,7 @@
   "qnum": 370,
   "stem": "What is the DOM?",
   "options": {
-   "A": "Document Object Model — tree representation of HTML document",
+   "A": "Document Object Model \u2014 tree representation of HTML document",
    "B": "Data Object Manager",
    "C": "Domain Operations Module",
    "D": "Dynamic Object Method"
@@ -5050,7 +5050,7 @@
   "stem": "What is npm?",
   "options": {
    "A": "Node Performance Monitor",
-   "B": "Node Package Manager — manages JavaScript dependencies",
+   "B": "Node Package Manager \u2014 manages JavaScript dependencies",
    "C": "Network Protocol Manager",
    "D": "New Programming Model"
   },
@@ -5583,7 +5583,7 @@
   "stem": "What is CORS?",
   "options": {
    "A": "Content Ordering Resource System",
-   "B": "Cross-Origin Resource Sharing — controls cross-domain HTTP requests",
+   "B": "Cross-Origin Resource Sharing \u2014 controls cross-domain HTTP requests",
    "C": "Cached Object Retrieval Service",
    "D": "Certificate Origin Request Standard"
   },
@@ -5596,7 +5596,7 @@
   "stem": "What does PDO stand for in PHP?",
   "options": {
    "A": "Public Data Object",
-   "B": "PHP Data Objects — database abstraction layer",
+   "B": "PHP Data Objects \u2014 database abstraction layer",
    "C": "Parameterised Data Output",
    "D": "Persistent Database Object"
   },
@@ -5649,7 +5649,7 @@
   "options": {
    "A": "Not Found",
    "B": "Unauthorized",
-   "C": "Forbidden — access denied",
+   "C": "Forbidden \u2014 access denied",
    "D": "Server Error"
   },
   "answer": "C"
@@ -6012,7 +6012,7 @@
   "stem": "What is HTTP/2's main advantage over HTTP/1.1?",
   "options": {
    "A": "Encryption by default",
-   "B": "Multiplexing — multiple requests over single connection",
+   "B": "Multiplexing \u2014 multiple requests over single connection",
    "C": "Larger packet size",
    "D": "Simpler headers"
   },
@@ -6298,7 +6298,7 @@
   "stem": "What is APK?",
   "options": {
    "A": "Android Program Kit",
-   "B": "Android Package — compiled app file for installation",
+   "B": "Android Package \u2014 compiled app file for installation",
    "C": "Application Programming Kit",
    "D": "App Permission Key"
   },
@@ -6415,7 +6415,7 @@
   "stem": "What is onDestroy() called for?",
   "options": {
    "A": "App installed",
-   "B": "Activity being destroyed — final cleanup",
+   "B": "Activity being destroyed \u2014 final cleanup",
    "C": "App backgrounded",
    "D": "Screen rotated always"
   },
@@ -7299,7 +7299,7 @@
   "stem": "DDL stands for?",
   "options": {
    "A": "Data Display Language",
-   "B": "Data Definition Language — CREATE, ALTER, DROP",
+   "B": "Data Definition Language \u2014 CREATE, ALTER, DROP",
    "C": "Data Deletion Logic",
    "D": "Dynamic Data Layer"
   },
@@ -7312,7 +7312,7 @@
   "stem": "DML stands for?",
   "options": {
    "A": "Data Modeling Language",
-   "B": "Data Manipulation Language — SELECT, INSERT, UPDATE, DELETE",
+   "B": "Data Manipulation Language \u2014 SELECT, INSERT, UPDATE, DELETE",
    "C": "Database Management Layer",
    "D": "Data Migration Library"
   },
@@ -7624,7 +7624,7 @@
   "stem": "What is a key-value store?",
   "options": {
    "A": "Relational table with key column",
-   "B": "Simplest NoSQL database — data stored as key-value pairs",
+   "B": "Simplest NoSQL database \u2014 data stored as key-value pairs",
    "C": "Database with primary keys only",
    "D": "Graph with labeled edges"
   },
@@ -7754,7 +7754,7 @@
   "stem": "What is a functional dependency?",
   "options": {
    "A": "A function calling another",
-   "B": "Attribute X determines attribute Y (X → Y)",
+   "B": "Attribute X determines attribute Y (X \u2192 Y)",
    "C": "Foreign key dependency",
    "D": "Procedural dependency"
   },
@@ -7949,7 +7949,7 @@
   "stem": "What is CROSS JOIN?",
   "options": {
    "A": "Join matching rows only",
-   "B": "Cartesian product — every row in left with every row in right",
+   "B": "Cartesian product \u2014 every row in left with every row in right",
    "C": "Join on primary-foreign key",
    "D": "Join removing duplicates"
   },
@@ -8079,7 +8079,7 @@
   "stem": "What is CAP theorem for distributed databases?",
   "options": {
    "A": "Cost, Availability, Performance",
-   "B": "Consistency, Availability, Partition tolerance — can only guarantee 2 of 3",
+   "B": "Consistency, Availability, Partition tolerance \u2014 can only guarantee 2 of 3",
    "C": "Caching, Atomicity, Persistence",
    "D": "Concurrency, Atomicity, Performance"
   },
@@ -8104,8 +8104,8 @@
   "qnum": 624,
   "stem": "What is an OLTP system?",
   "options": {
-   "A": "Online Analytical Processing — reporting",
-   "B": "Online Transaction Processing — many short transactions",
+   "A": "Online Analytical Processing \u2014 reporting",
+   "B": "Online Transaction Processing \u2014 many short transactions",
    "C": "Offline Transaction Protocol",
    "D": "Object-Level Transfer Protocol"
   },
@@ -8118,7 +8118,7 @@
   "stem": "What is an OLAP system?",
   "options": {
    "A": "Online Transaction Processing",
-   "B": "Online Analytical Processing — complex analytical queries on large data",
+   "B": "Online Analytical Processing \u2014 complex analytical queries on large data",
    "C": "Offline Log Analytics Platform",
    "D": "Object-Level Access Protocol"
   },
@@ -8144,7 +8144,7 @@
   "stem": "What is ETL?",
   "options": {
    "A": "External Table Link",
-   "B": "Extract, Transform, Load — process moving data to warehouse",
+   "B": "Extract, Transform, Load \u2014 process moving data to warehouse",
    "C": "Encrypted Table Layer",
    "D": "Execution, Test, Launch"
   },
@@ -8534,7 +8534,7 @@
   "stem": "FCFS scheduling: main problem?",
   "options": {
    "A": "Complex to implement",
-   "B": "Convoy effect — long jobs block short ones",
+   "B": "Convoy effect \u2014 long jobs block short ones",
    "C": "Starvation of all processes",
    "D": "Requires burst time"
   },
@@ -9782,7 +9782,7 @@
   "stem": "What is verification in testing?",
   "options": {
    "A": "Meets user needs",
-   "B": "Meets specification — are we building it right?",
+   "B": "Meets specification \u2014 are we building it right?",
    "C": "Performance meets benchmarks",
    "D": "Code has no syntax errors"
   },
@@ -9898,7 +9898,7 @@
   "qnum": 762,
   "stem": "XP (Extreme Programming) practice: TDD means?",
   "options": {
-   "A": "Test-Driven Development — write tests before code",
+   "A": "Test-Driven Development \u2014 write tests before code",
    "B": "Technology-Driven Design",
    "C": "Test Data Development",
    "D": "Type-Driven Design"
@@ -10744,7 +10744,7 @@
   "stem": "What is CMMI?",
   "options": {
    "A": "Computer Maintenance Management Interface",
-   "B": "Capability Maturity Model Integration — framework for improving processes",
+   "B": "Capability Maturity Model Integration \u2014 framework for improving processes",
    "C": "Continuous Metrics Monitoring Integration",
    "D": "Code Management Maturity Index"
   },
@@ -10861,7 +10861,7 @@
   "stem": "Critical path in project network?",
   "options": {
    "A": "Shortest path",
-   "B": "Sequence with zero float — delay causes project delay",
+   "B": "Sequence with zero float \u2014 delay causes project delay",
    "C": "Most expensive path",
    "D": "Highest risk path"
   },
@@ -11406,10 +11406,10 @@
   "qnum": 878,
   "stem": "COCOMO Basic formula?",
   "options": {
-   "A": "Effort = KLOC × team_size",
-   "B": "Effort = a × (KLOC)^b",
-   "C": "Effort = function_points × cost_per_FP",
-   "D": "Effort = lines_per_day × developers"
+   "A": "Effort = KLOC \u00d7 team_size",
+   "B": "Effort = a \u00d7 (KLOC)^b",
+   "C": "Effort = function_points \u00d7 cost_per_FP",
+   "D": "Effort = lines_per_day \u00d7 developers"
   },
   "answer": "B"
  },
@@ -11459,7 +11459,7 @@
   "stem": "What is ROI in project context?",
   "options": {
    "A": "Rate of interest",
-   "B": "Return on Investment — benefit vs cost ratio",
+   "B": "Return on Investment \u2014 benefit vs cost ratio",
    "C": "Risk of implementation",
    "D": "Rate of incidents"
   },
@@ -11991,7 +11991,7 @@
   "qnum": 923,
   "stem": "What is ARP?",
   "options": {
-   "A": "Address Resolution Protocol — maps IP to MAC address",
+   "A": "Address Resolution Protocol \u2014 maps IP to MAC address",
    "B": "Automatic Routing Protocol",
    "C": "Application Request Protocol",
    "D": "Address Registration Protocol"
@@ -12083,7 +12083,7 @@
   "stem": "What is OSPF?",
   "options": {
    "A": "File transfer protocol",
-   "B": "Open Shortest Path First — link-state interior routing protocol",
+   "B": "Open Shortest Path First \u2014 link-state interior routing protocol",
    "C": "Email protocol",
    "D": "Security protocol"
   },
@@ -12096,7 +12096,7 @@
   "stem": "What is BGP?",
   "options": {
    "A": "Basic Gateway Protocol",
-   "B": "Border Gateway Protocol — routing between autonomous systems on internet",
+   "B": "Border Gateway Protocol \u2014 routing between autonomous systems on internet",
    "C": "Broadcast Group Protocol",
    "D": "Bandwidth Guarantee Protocol"
   },
@@ -12187,7 +12187,7 @@
   "stem": "What is a loopback address?",
   "options": {
    "A": "Router's internal address",
-   "B": "127.0.0.1 — refers to local machine itself",
+   "B": "127.0.0.1 \u2014 refers to local machine itself",
    "C": "Default gateway",
    "D": "DNS server"
   },
@@ -12304,7 +12304,7 @@
   "stem": "What is WPA2?",
   "options": {
    "A": "Web Protocol Authentication",
-   "B": "Wi-Fi Protected Access 2 — wireless security protocol",
+   "B": "Wi-Fi Protected Access 2 \u2014 wireless security protocol",
    "C": "Wide Protocol Access",
    "D": "Wireless Packet Analysis"
   },
@@ -12434,7 +12434,7 @@
   "stem": "What is CSMA/CD?",
   "options": {
    "A": "Protocol for token ring",
-   "B": "Collision detection protocol for Ethernet — detect collision and retransmit",
+   "B": "Collision detection protocol for Ethernet \u2014 detect collision and retransmit",
    "C": "Wireless protocol",
    "D": "Routing protocol"
   },
@@ -12498,7 +12498,7 @@
   "qnum": 962,
   "stem": "What is nmap used for?",
   "options": {
-   "A": "Network mapping — port scanning and host discovery",
+   "A": "Network mapping \u2014 port scanning and host discovery",
    "B": "Network monitoring",
    "C": "Packet capture",
    "D": "Firewall configuration"
@@ -12577,7 +12577,7 @@
   "stem": "What is MPLS?",
   "options": {
    "A": "Multiple Protocol Label Switching",
-   "B": "Multi-Protocol Label Switching — high-performance routing using labels",
+   "B": "Multi-Protocol Label Switching \u2014 high-performance routing using labels",
    "C": "Maximum Packet Length Standard",
    "D": "Mobile Protocol Layer System"
   },
@@ -12642,7 +12642,7 @@
   "stem": "What is CIDR?",
   "options": {
    "A": "Classful Inter-Domain Routing",
-   "B": "Classless Inter-Domain Routing — flexible IP allocation with prefix length",
+   "B": "Classless Inter-Domain Routing \u2014 flexible IP allocation with prefix length",
    "C": "Central IP Distribution Registry",
    "D": "Comprehensive Internet Domain Register"
   },
@@ -12746,7 +12746,7 @@
   "stem": "What is NTP used for?",
   "options": {
    "A": "Network transfer protocol",
-   "B": "Network Time Protocol — synchronizing clocks across network",
+   "B": "Network Time Protocol \u2014 synchronizing clocks across network",
    "C": "Name translation protocol",
    "D": "Node topology protocol"
   },
@@ -13019,7 +13019,7 @@
   "stem": "Digital signature verifies?",
   "options": {
    "A": "AES encryption used",
-   "B": "Authenticity and integrity — signed hash with private key",
+   "B": "Authenticity and integrity \u2014 signed hash with private key",
    "C": "Receiver's public key",
    "D": "Encryption speed"
   },
@@ -13097,7 +13097,7 @@
   "stem": "What is the CIA Triad?",
   "options": {
    "A": "Three-letter agency",
-   "B": "Confidentiality, Integrity, Availability — core security principles",
+   "B": "Confidentiality, Integrity, Availability \u2014 core security principles",
    "C": "Certificate, Identity, Authentication",
    "D": "Control, Integrity, Access"
   },
@@ -13565,7 +13565,7 @@
   "stem": "What is vishing?",
   "options": {
    "A": "Visual phishing",
-   "B": "Voice phishing — phone calls to extract information",
+   "B": "Voice phishing \u2014 phone calls to extract information",
    "C": "Video malware",
    "D": "Virtual spoofing"
   },
@@ -13993,7 +13993,7 @@
   "qnum": 1077,
   "stem": "What is OWASP?",
   "options": {
-   "A": "Open Web Application Security Project — web security standards",
+   "A": "Open Web Application Security Project \u2014 web security standards",
    "B": "Open Wireless Access Security Protocol",
    "C": "Online Web Analysis Security Program",
    "D": "Operating Web Access Software Protocol"
@@ -14085,7 +14085,7 @@
   "stem": "What is SAML?",
   "options": {
    "A": "Security Alert Markup Language",
-   "B": "Security Assertion Markup Language — XML standard for authentication/authorization",
+   "B": "Security Assertion Markup Language \u2014 XML standard for authentication/authorization",
    "C": "SQL Authentication Management Layer",
    "D": "Secure Access Management Login"
   },
@@ -14137,7 +14137,7 @@
   "stem": "What is a CVE?",
   "options": {
    "A": "Common Vulnerability Exposure",
-   "B": "Common Vulnerabilities and Exposures — publicly known security flaw identifier",
+   "B": "Common Vulnerabilities and Exposures \u2014 publicly known security flaw identifier",
    "C": "Cyber Vulnerability Evaluation",
    "D": "Certificate Validation Entry"
   },
@@ -14150,7 +14150,7 @@
   "stem": "What is CVSS score?",
   "options": {
    "A": "Certificate Verification Score",
-   "B": "Common Vulnerability Scoring System — standardized severity score",
+   "B": "Common Vulnerability Scoring System \u2014 standardized severity score",
    "C": "Cyber Vulnerability Standard Score",
    "D": "Code Vulnerability Safety Score"
   },
@@ -14303,7 +14303,7 @@
   "courseNo": 12,
   "courseName": "Artificial Intelligence",
   "qnum": 1101,
-  "stem": "∀x in First-Order Logic means?",
+  "stem": "\u2200x in First-Order Logic means?",
   "options": {
    "A": "At least one x",
    "B": "For all values of x",
@@ -14347,7 +14347,7 @@
    "A": "All optimal solutions",
    "B": "All states reachable from initial state",
    "C": "Memory used by search",
-   "D": "Branching factor × depth"
+   "D": "Branching factor \u00d7 depth"
   },
   "answer": "C"
  },
@@ -14449,7 +14449,7 @@
   "stem": "Consistent heuristic satisfies?",
   "options": {
    "A": "h(n) = 0 for all n",
-   "B": "h(n) ≤ c(n,n') + h(n') for all successors",
+   "B": "h(n) \u2264 c(n,n') + h(n') for all successors",
    "C": "h(n) > actual cost always",
    "D": "h(n) = g(n) always"
   },
@@ -14553,7 +14553,7 @@
   "stem": "Modus Ponens inference rule?",
   "options": {
    "A": "If P and Q then R",
-   "B": "If P and P→Q then Q",
+   "B": "If P and P\u2192Q then Q",
    "C": "If not P then Q",
    "D": "If P or Q then R"
   },
@@ -14670,7 +14670,7 @@
   "stem": "Euclidean distance heuristic is?",
   "options": {
    "A": "Always overestimating",
-   "B": "Straight-line distance — admissible for most physical spaces",
+   "B": "Straight-line distance \u2014 admissible for most physical spaces",
    "C": "Only for unweighted grids",
    "D": "Not admissible"
   },
@@ -14787,7 +14787,7 @@
   "stem": "What is a stochastic environment?",
   "options": {
    "A": "Fully predictable",
-   "B": "Has uncertainty — same action may have different outcomes",
+   "B": "Has uncertainty \u2014 same action may have different outcomes",
    "C": "Static environment",
    "D": "Single agent only"
   },
@@ -14940,7 +14940,7 @@
   "courseNo": 12,
   "courseName": "Artificial Intelligence",
   "qnum": 1150,
-  "stem": "Truth table for P→Q: when is it FALSE?",
+  "stem": "Truth table for P\u2192Q: when is it FALSE?",
   "options": {
    "A": "P=T, Q=T",
    "B": "P=T, Q=F",
@@ -14953,7 +14953,7 @@
   "courseNo": 12,
   "courseName": "Artificial Intelligence",
   "qnum": 1151,
-  "stem": "Propositional logic ∧ means?",
+  "stem": "Propositional logic \u2227 means?",
   "options": {
    "A": "OR",
    "B": "AND",
@@ -14966,7 +14966,7 @@
   "courseNo": 12,
   "courseName": "Artificial Intelligence",
   "qnum": 1152,
-  "stem": "Propositional logic ∨ means?",
+  "stem": "Propositional logic \u2228 means?",
   "options": {
    "A": "AND",
    "B": "NOT",
@@ -14979,7 +14979,7 @@
   "courseNo": 12,
   "courseName": "Artificial Intelligence",
   "qnum": 1153,
-  "stem": "Propositional logic ¬ means?",
+  "stem": "Propositional logic \u00ac means?",
   "options": {
    "A": "AND",
    "B": "OR",
@@ -15099,7 +15099,7 @@
   "stem": "DFS memory advantage?",
   "options": {
    "A": "O(b^d)",
-   "B": "O(m) — only needs to store single path",
+   "B": "O(m) \u2014 only needs to store single path",
    "C": "O(1)",
    "D": "O(b^m)"
   },
@@ -15320,7 +15320,7 @@
   "stem": "Expert system advantage over neural network?",
   "options": {
    "A": "Better performance",
-   "B": "Explainable reasoning — can trace why conclusion was reached",
+   "B": "Explainable reasoning \u2014 can trace why conclusion was reached",
    "C": "Handles uncertainty better",
    "D": "Learns from data"
   },
@@ -15372,7 +15372,7 @@
   "stem": "Overfitting in ML?",
   "options": {
    "A": "High bias, poor all data",
-   "B": "Low train error, high test error — memorising noise",
+   "B": "Low train error, high test error \u2014 memorising noise",
    "C": "Generalises too well",
    "D": "Too few parameters"
   },
@@ -15749,7 +15749,7 @@
   "stem": "ReLU activation function?",
   "options": {
    "A": "max(-1, x)",
-   "B": "max(0, x) — zero for negative, x for positive",
+   "B": "max(0, x) \u2014 zero for negative, x for positive",
    "C": "1/(1+e^-x)",
    "D": "tanh(x)"
   },
@@ -15762,7 +15762,7 @@
   "stem": "Softmax activation used for?",
   "options": {
    "A": "Binary classification output",
-   "B": "Multi-class classification — outputs probability distribution summing to 1",
+   "B": "Multi-class classification \u2014 outputs probability distribution summing to 1",
    "C": "Hidden layers",
    "D": "Regression output"
   },
@@ -15905,7 +15905,7 @@
   "stem": "L1 regularisation (Lasso) promotes?",
   "options": {
    "A": "Large weights",
-   "B": "Sparse weights — some weights become exactly zero",
+   "B": "Sparse weights \u2014 some weights become exactly zero",
    "C": "Equal weights",
    "D": "Negative weights"
   },
@@ -15918,7 +15918,7 @@
   "stem": "L2 regularisation (Ridge) promotes?",
   "options": {
    "A": "Sparse weights",
-   "B": "Small weights — penalises large weights without making them zero",
+   "B": "Small weights \u2014 penalises large weights without making them zero",
    "C": "Zero weights",
    "D": "Equal weights"
   },
@@ -15933,7 +15933,7 @@
    "A": "TP/(TP+FN)",
    "B": "TP/(TP+FP)",
    "C": "(TP+TN)/Total",
-   "D": "2×P×R/(P+R)"
+   "D": "2\u00d7P\u00d7R/(P+R)"
   },
   "answer": "B"
  },
@@ -15957,9 +15957,9 @@
   "stem": "F1 Score formula?",
   "options": {
    "A": "(P+R)/2",
-   "B": "2×(P×R)/(P+R)",
-   "C": "P×R",
-   "D": "P²+R²"
+   "B": "2\u00d7(P\u00d7R)/(P+R)",
+   "C": "P\u00d7R",
+   "D": "P\u00b2+R\u00b2"
   },
   "answer": "B"
  },
@@ -16019,7 +16019,7 @@
   "courseNo": 13,
   "courseName": "Machine Learning",
   "qnum": 1233,
-  "stem": "R² (coefficient of determination) perfect fit value?",
+  "stem": "R\u00b2 (coefficient of determination) perfect fit value?",
   "options": {
    "A": "0",
    "B": "-1",
@@ -16261,5 +16261,3294 @@
    "D": "Encrypting tokens"
   },
   "answer": "B"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1252,
+  "stem": "What is the purpose of the box-sizing property in CSS?",
+  "options": {
+   "A": "To apply a shadow and margin to the box",
+   "B": "To define the size of the total content and margin box",
+   "C": "To set the total margin of the box",
+   "D": "To include padding and border in the element's total size"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1253,
+  "stem": "In the COCOMO model, the initial effort estimate Ei is given by which formula?",
+  "options": {
+   "A": "b(KLOC)^a",
+   "B": "b * (KLOC) * a",
+   "C": "a(KLOC)^b",
+   "D": "a * (KLOC) * b"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1254,
+  "stem": "Sara is a database manager. She is allowed to add new users to the database, remove current users, and create new usage functions for the users, but she is not allowed to read the data in the fields of the database itself. This is an example of:",
+  "options": {
+   "A": "Discretionary Access Control",
+   "B": "Mandatory Access Control",
+   "C": "Role Based Access Control",
+   "D": "Behavior Based Access Control"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1255,
+  "stem": "A cybersecurity expert runs a vulnerability scan and sees an alert that host 192.168.1.10 (Apache httpd 2.4.33) is vulnerable to a mod_auth exploit. She verifies that the mod_auth module has not been installed or enabled on the server. Which of the following BEST explains this scenario?",
+  "options": {
+   "A": "A false negative",
+   "B": "The result of a credentialed scan",
+   "C": "The result of a non-credentialed scan",
+   "D": "A false positive"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1256,
+  "stem": "________ involves generating, collecting, disseminating, and storing project information.",
+  "options": {
+   "A": "Communication Management",
+   "B": "Configuration Management",
+   "C": "Concurrent Management",
+   "D": "Critical Management"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1257,
+  "stem": "Which of the following is the primary goal of software engineering?",
+  "options": {
+   "A": "To produce reliable, efficient, and maintainable software",
+   "B": "To increase hardware performance",
+   "C": "To create visually appealing user interfaces",
+   "D": "To develop low-level machine code"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1258,
+  "stem": "The bias-variance trade-off implies that:",
+  "options": {
+   "A": "Underfitting is caused by low variance",
+   "B": "Increasing model complexity reduces both bias and variance",
+   "C": "Overfitting occurs when bias is too high",
+   "D": "Simple models have high bias and low variance"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1259,
+  "stem": "Your organization has added a hot site, and users at the hot site are unable to access websites on the internet. Firewall 3 is configured with these rules: HTTPS Outbound (source 10.0.3.0/24, dest Any, protocol HTTPS, action Allow); HTTP Outbound (source 10.0.3.0/24, dest Any, protocol HTTP, action Block); DNS (source 10.0.1.0/24, dest Any, protocol DNS, action Allow); HTTPS Inbound (source Any, dest 10.0.3.0/24, protocol HTTPS, action Allow); HTTP Inbound (source Any, dest 10.0.3.0/24, protocol HTTP, action Block); Telnet (source Any, dest 10.0.3.0/24, protocol Telnet, action Block); SSH (source Any, dest 10.0.3.0/24, protocol SSH, action Allow). The hot site's subnet is 10.0.3.0/24. Which rule, if any, should be changed in Firewall 3 to fix the issue?",
+  "options": {
+   "A": "HTTP Outbound",
+   "B": "DNS",
+   "C": "HTTPS Outbound",
+   "D": "Telnet"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1260,
+  "stem": "In Python, how do you check whether an element exists in a set?",
+  "options": {
+   "A": "Using the in keyword",
+   "B": "Using check()",
+   "C": "Using exists()",
+   "D": "Using contains()"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1261,
+  "stem": "Which principle refers to minimizing the interdependence between software modules?",
+  "options": {
+   "A": "Abstraction",
+   "B": "Coupling",
+   "C": "Cohesion",
+   "D": "Modularity"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1262,
+  "stem": "A process goes from the running state to the blocked state whenever the running process:",
+  "options": {
+   "A": "is moved to secondary storage because of a memory shortage",
+   "B": "needs to get input/output in the middle of execution",
+   "C": "is interrupted by a higher priority process",
+   "D": "causes the CPU to execute a context switch"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1263,
+  "stem": "Which CSS property is used to control the stacking order of positioned elements?",
+  "options": {
+   "A": "z-index",
+   "B": "float",
+   "C": "position",
+   "D": "display"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1264,
+  "stem": "Consider the following Java method: public void setValue(int position, String valueIn) { list[position-1] = valueIn; } Assuming list has been declared as an array of Strings, which of the following might cause setValue to throw an ArrayIndexOutOfBoundsException?",
+  "options": {
+   "A": "The value of the first parameter, position",
+   "B": "Not declaring the method static",
+   "C": "The method having more than one parameter",
+   "D": "The type of the parameter position being declared as an int"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1265,
+  "stem": "When you want to navigate to a specific Activity within your application, which type of Intent is typically used?",
+  "options": {
+   "A": "Explicit intent",
+   "B": "Broadcast intent",
+   "C": "Pending intent",
+   "D": "Implicit intent"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1266,
+  "stem": "In a neural network, the activation function introduces:",
+  "options": {
+   "A": "Dimensionality reduction",
+   "B": "Regularization to prevent overfitting",
+   "C": "Linear decision boundaries",
+   "D": "Non-linearity to model complex patterns"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1267,
+  "stem": "How can web developers accommodate users with mobility impairments?",
+  "options": {
+   "A": "By ensuring all controls are accessible via keyboard",
+   "B": "By limiting access to only touch-screen devices",
+   "C": "By removing all interactive elements",
+   "D": "By making users rely on a mouse for navigation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1268,
+  "stem": "Which CSS property is used to control the space between an element's content and its border?",
+  "options": {
+   "A": "border-spacing",
+   "B": "padding",
+   "C": "margin",
+   "D": "spacing"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1269,
+  "stem": "The values appearing in given attributes of any tuple in the referencing relation must occur in specified attributes of at least one tuple in the referenced relation. Which integrity constraint dictates this?",
+  "options": {
+   "A": "Referential integrity",
+   "B": "Specific integrity",
+   "C": "Referencing integrity",
+   "D": "Primary integrity"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1270,
+  "stem": "Which class of IP addresses is reserved for experimental use?",
+  "options": {
+   "A": "Class E",
+   "B": "Class A",
+   "C": "Class D",
+   "D": "Class C"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1271,
+  "stem": "What is printed by the following code? Str1 = \"PYTHON programming\"; print(Str1[2] * Str1.index(\"O\"))",
+  "options": {
+   "A": "THON",
+   "B": "OOOO",
+   "C": "YYYY",
+   "D": "TTTT"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1272,
+  "stem": "Which of the following is a literal?",
+  "options": {
+   "A": "True",
+   "B": "a = x + 3",
+   "C": "num = 2.0 + 3.0",
+   "D": "hello"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1273,
+  "stem": "Decision trees classify data points by recursively splitting the data space based on ______ features.",
+  "options": {
+   "A": "all available",
+   "B": "numerical",
+   "C": "most relevant",
+   "D": "most correlated"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1274,
+  "stem": "A startup is building an e-commerce platform expecting rapid growth. It needs an architecture that allows independent scaling of the product catalog, payment processing, and recommendation engine. Which architectural style is most suitable?",
+  "options": {
+   "A": "Single-tier architecture (all logic on the client side)",
+   "B": "Shared-database architecture (all services use one database)",
+   "C": "Microservices architecture (independent, loosely coupled services)",
+   "D": "Monolithic architecture (all components in one codebase)"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1275,
+  "stem": "The specific set of sequential tasks upon which the project completion date depends, or the longest full path through the project network, is called:",
+  "options": {
+   "A": "Complete Path",
+   "B": "Project Path",
+   "C": "Critical Path",
+   "D": "Full Path"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1276,
+  "stem": "How do you create a CSS rule that applies only to screen devices with a maximum width of 600px?",
+  "options": {
+   "A": "@media screen and (max-width: 600px) { ... }",
+   "B": "@media screen and (min-width: 600px) { ... }",
+   "C": "@media print screen and (max-width: 600px) { ... }",
+   "D": "@media all and (max-width: 600px) { ... }"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1277,
+  "stem": "The Delphi approach is also called a _______ group consensus technique.",
+  "options": {
+   "A": "Fully Consultative",
+   "B": "Consultative",
+   "C": "Non-Consultative",
+   "D": "Partially Consultative"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1278,
+  "stem": "What is printed by the following code? tuple1 = (1, 2, 3, 4); print(tuple1[1:-1])",
+  "options": {
+   "A": "Error: tuples cannot be sliced",
+   "B": "(1, 2, 3, 4)",
+   "C": "(2, 3)",
+   "D": "(2, 3, 4)"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1279,
+  "stem": "What is the worst-case time complexity of Merge Sort?",
+  "options": {
+   "A": "O(n)",
+   "B": "O(n log n)",
+   "C": "O(log n)",
+   "D": "O(n^2)"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1280,
+  "stem": "Which of the following describes the possible alternative ways in which files on a disk can be accessed?",
+  "options": {
+   "A": "random or binary",
+   "B": "text or binary",
+   "C": "serial or random",
+   "D": "object or serial"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1281,
+  "stem": "Your organization's backup policy for a file server dictates that the time needed to restore backups should be minimized. Which of the following backup plans would BEST meet this need?",
+  "options": {
+   "A": "Full backups on Sunday and differential backups on the other six days of the week",
+   "B": "Full backups on Sunday and incremental backups on the other six days of the week",
+   "C": "Differential backups on Sunday and incremental backups on the other six days of the week",
+   "D": "Incremental backups on Sunday and differential backups on the other six days of the week"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1282,
+  "stem": "Which of the following best describes the role of a file system in an operating system?",
+  "options": {
+   "A": "It provides a structured way to store, organize, retrieve, and manage files on storage devices",
+   "B": "It optimizes network bandwidth usage for file transfers over the internet",
+   "C": "It handles user authentication and access control for logging into the system",
+   "D": "It manages the computer's hardware resources, such as CPU and memory"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1283,
+  "stem": "Which type of data can be stored in a database?",
+  "options": {
+   "A": "All of the above (text, images, audio, and video)",
+   "B": "Text and files containing data",
+   "C": "Image-oriented data",
+   "D": "Data in the form of audio or video"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1284,
+  "stem": "What is the primary purpose of WAI-ARIA?",
+  "options": {
+   "A": "To improve website SEO rankings",
+   "B": "To replace HTML with a new accessibility standard",
+   "C": "To increase website loading speed",
+   "D": "To make web applications more accessible"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1285,
+  "stem": "Which relational algebra operation is used to extract specified columns from a table?",
+  "options": {
+   "A": "Project",
+   "B": "Join",
+   "C": "Substitute",
+   "D": "Extract"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1286,
+  "stem": "Which software process model emphasizes a strict sequential flow between phases?",
+  "options": {
+   "A": "Incremental Model",
+   "B": "Agile Model",
+   "C": "Spiral Model",
+   "D": "Waterfall Model"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1287,
+  "stem": "Which Activity lifecycle callback is the first one called after the Activity is launched, and is where initial setup such as inflating the UI layout typically occurs?",
+  "options": {
+   "A": "onResume()",
+   "B": "onStart()",
+   "C": "onAttach()",
+   "D": "onCreate()"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1288,
+  "stem": "What does empirical analysis of an algorithm typically involve?",
+  "options": {
+   "A": "Deriving mathematical formulas for performance",
+   "B": "Estimating time complexity using Big-O notation",
+   "C": "Measuring runtime and memory usage through experiments",
+   "D": "Analyzing code without running it"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1289,
+  "stem": "What is the main idea behind dynamic programming?",
+  "options": {
+   "A": "Store solutions of subproblems to avoid recomputation",
+   "B": "Solve only the simplest problem",
+   "C": "Solve every subproblem independently",
+   "D": "Divide the problem into unrelated subproblems"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1290,
+  "stem": "Hidden Markov Models (HMMs) are useful for modeling sequential data where the underlying states are _.",
+  "options": {
+   "A": "pre-defined",
+   "B": "completely random",
+   "C": "partially observable",
+   "D": "always observable"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1291,
+  "stem": "What is the output of the following code? my_list = [1,2,3,4,5,6,7,8,9,10]; print(my_list[5::-2])",
+  "options": {
+   "A": "[6, 4, 2]",
+   "B": "[]",
+   "C": "[5, 7, 9]",
+   "D": "[5, 4, 3, 2, 1]"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1292,
+  "stem": "Which of the following search algorithms guarantees both completeness and optimality, assuming the heuristic is admissible and consistent?",
+  "options": {
+   "A": "Greedy Best-First Search",
+   "B": "A* Search",
+   "C": "Hill Climbing",
+   "D": "Depth-First Search"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1293,
+  "stem": "What is the output of the following code? var x = 5; var y = '5'; console.log(x == y);",
+  "options": {
+   "A": "null",
+   "B": "undefined",
+   "C": "false",
+   "D": "true"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1294,
+  "stem": "Which evaluation metric is most suitable for imbalanced classification problems?",
+  "options": {
+   "A": "Accuracy",
+   "B": "R-squared",
+   "C": "F1-Score",
+   "D": "Mean Squared Error (MSE)"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1295,
+  "stem": "Which statement about ensemble methods (e.g., Random Forests) is TRUE?",
+  "options": {
+   "A": "They average predictions to decrease variance",
+   "B": "They combine weak learners to reduce bias only",
+   "C": "They require all base models to be identical",
+   "D": "They perform poorly compared to single models"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1296,
+  "stem": "In a graph, what does a cycle represent?",
+  "options": {
+   "A": "A path that starts and ends at the same vertex",
+   "B": "A linear path",
+   "C": "A set of disconnected vertices",
+   "D": "A spanning tree"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1297,
+  "stem": "_____________ is a hierarchical and incremental decomposition of the project into phases, deliverables, and work packages.",
+  "options": {
+   "A": "Work Breakdown Structure",
+   "B": "Work Integration Structure",
+   "C": "Task Integration Structure",
+   "D": "Bottom-up Integration Structure"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1298,
+  "stem": "In a CIDR block of 192.168.100.0/23, what is the broadcast address?",
+  "options": {
+   "A": "192.168.100.255",
+   "B": "192.168.102.0",
+   "C": "192.168.100.1",
+   "D": "192.168.101.255"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1299,
+  "stem": "Which of the following scheduling algorithms is most likely to cause starvation?",
+  "options": {
+   "A": "Round-Robin (RR)",
+   "B": "First-Come, First-Served (FCFS)",
+   "C": "Priority-Based With Aging",
+   "D": "Short-Job-First (SJF)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1300,
+  "stem": "What is a characteristic of Guidelines in ConstraintLayout?",
+  "options": {
+   "A": "They are visible to the user on the device screen",
+   "B": "They are positioning aids that are not drawn on the device",
+   "C": "They automatically group related Views together",
+   "D": "They are used to define the maximum size of a View"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1301,
+  "stem": "Which of the following is a divide-and-conquer algorithm?",
+  "options": {
+   "A": "Linear Search",
+   "B": "Bubble Sort",
+   "C": "Binary Search",
+   "D": "Insertion Sort"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1302,
+  "stem": "Which algorithm is most appropriate when the cost of actions varies and finding the least-cost solution is important?",
+  "options": {
+   "A": "Uniform Cost Search",
+   "B": "Breadth-First Search",
+   "C": "Greedy Best-First Search",
+   "D": "Depth-First Search"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1303,
+  "stem": "Which of the following is a key challenge in reinforcement learning?",
+  "options": {
+   "A": "Requirement of perfectly balanced datasets",
+   "B": "Lack of labeled training data",
+   "C": "High computational cost of matrix operations",
+   "D": "The trade-off between exploration and exploitation"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1304,
+  "stem": "Which of the following is an example of a \"something you know\" authentication factor?",
+  "options": {
+   "A": "Fingerprinting",
+   "B": "GPS location",
+   "C": "ATM card",
+   "D": "Password"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1305,
+  "stem": "Which command can display the current ARP cache on a Windows system?",
+  "options": {
+   "A": "netstat -r",
+   "B": "ping",
+   "C": "ipconfig",
+   "D": "arp -a"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1306,
+  "stem": "Slack (float) in project scheduling is calculated as:",
+  "options": {
+   "A": "ES - LS",
+   "B": "ES - LF",
+   "C": "LS - EF",
+   "D": "LF - EF"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1307,
+  "stem": "Which of the following mechanisms allows execution of multiple processes by switching the CPU even if the currently executing process is not yet complete?",
+  "options": {
+   "A": "Multiprocessing",
+   "B": "Monoprogramming",
+   "C": "Multiprogramming",
+   "D": "Time-sharing"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1308,
+  "stem": "What is the primary objective of virtual memory in a computer system?",
+  "options": {
+   "A": "To secure part of memory from being accessed by other processes",
+   "B": "To allow processes to use more memory than is physically available",
+   "C": "To increase execution speed by caching frequently used data",
+   "D": "To increase the physical memory capacity"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1309,
+  "stem": "A class called Network has private attributes maxNumberOfUsers (int) and currentNumberOfUsers (int), a public method setMaxNumberOfUsers(int), and a public method getMaxNumberOfUsers() that returns an int. A class SubNet is declared as: class SubNet extends Network. In a program that declares and initializes an object sub of class SubNet, which of the following statements would NOT cause a compiler error?",
+  "options": {
+   "A": "sub.currentNumberOfUsers = sub.getMaxNumberOfUsers();",
+   "B": "sub.setMaxNumberOfUsers(sub.getMaxNumberOfUsers());",
+   "C": "sub.maxNumberOfUsers = 3;",
+   "D": "sub.setMaxNumberOfUsers(\"3\");"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1310,
+  "stem": "Which of the following sorting algorithms has the best average-case time complexity?",
+  "options": {
+   "A": "Insertion Sort",
+   "B": "Bubble Sort",
+   "C": "Quick Sort",
+   "D": "Selection Sort"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1311,
+  "stem": "What is the primary purpose of the RecyclerView widget in Android?",
+  "options": {
+   "A": "To provide a simple button with click functionality",
+   "B": "To display a single image on the screen",
+   "C": "To display lists of data by efficiently reusing item views",
+   "D": "To manage background tasks efficiently"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1312,
+  "stem": "If an algorithm has a time complexity of O(n^2), what happens to the running time if the input size is doubled?",
+  "options": {
+   "A": "It remains the same",
+   "B": "It quadruples",
+   "C": "It doubles",
+   "D": "It triples"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1313,
+  "stem": "Which of the following is NOT true about functions in Python?",
+  "options": {
+   "A": "Function definitions can alter the flow of execution",
+   "B": "Functions are reusable pieces of a program",
+   "C": "Python allows user-defined functions",
+   "D": "Functions provide better modularity for your programs"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1314,
+  "stem": "Which of the following data structures uses the LIFO (Last In, First Out) principle?",
+  "options": {
+   "A": "Stack",
+   "B": "Linked List",
+   "C": "Binary Tree",
+   "D": "Queue"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1315,
+  "stem": "What is the main difference between TCP flow control and congestion control?",
+  "options": {
+   "A": "Flow control manages the sender's rate based on the receiver's capacity; congestion control manages the sender's rate based on network/router capacity",
+   "B": "They are the same mechanism",
+   "C": "Congestion control prevents physical collisions",
+   "D": "Flow control works only on wireless networks"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1316,
+  "stem": "A memory management mechanism in which each process is divided into equal-sized units and memory is divided into equal-sized frames, so that each fragment of a process fits into a frame, is called:",
+  "options": {
+   "A": "Paging",
+   "B": "Segmentation",
+   "C": "Memory hierarchy",
+   "D": "Swapping"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1317,
+  "stem": "What is the main function of the three-way handshake in TCP?",
+  "options": {
+   "A": "Authentication",
+   "B": "Reliable data delivery",
+   "C": "Connection setup and synchronization",
+   "D": "Flow control"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1318,
+  "stem": "In the TCP/IP model, which layer corresponds to the Transport layer of the OSI model?",
+  "options": {
+   "A": "Application",
+   "B": "Internet",
+   "C": "Network Access",
+   "D": "Transport"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1319,
+  "stem": "Return on Investment (ROI) = ________________________",
+  "options": {
+   "A": "(Cost - Gain) / Cost",
+   "B": "(Cost - Gain) / Gain",
+   "C": "(Gain - Cost) / Cost",
+   "D": "(Gain - Cost) / Gain"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1320,
+  "stem": "Which parameter is used to assess and evaluate software architectures?",
+  "options": {
+   "A": "Responsiveness of architectures",
+   "B": "Durability of architectures",
+   "C": "Architectural quality attributes",
+   "D": "Number of components in the architecture"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1321,
+  "stem": "What do we use to pass data between activities in Android?",
+  "options": {
+   "A": "Broadcast receiver",
+   "B": "PostgreSQL database",
+   "C": "Intent",
+   "D": "Content provider"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1322,
+  "stem": "A Student class is declared with private attributes Name (String), Department (String), Phone (String), and Age (int), a constructor Student(String, String, String, int), and public methods SetDept(String), GetName():String, GetDept():String, GetYearOfBirth():int, and CalculateAge():int. Which of the following statements would NOT raise an error when run?",
+  "options": {
+   "A": "Student st1 = new Student(\"john\", \"SE\", \"0913222222\", 20);",
+   "B": "st1 Student = new Student(\"john\", \"CS\", \"02085332455\", 23);",
+   "C": "Student st1 = new Student(\"john\", \"IT\", \"2000\",);",
+   "D": "Student st1 = new Student(\"john\", \"CS\", \"0913222222\", \"25\");"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1323,
+  "stem": "What is the output of the following JavaScript code? var a = \"exitexam\"; var result = a.substring(2,6); document.write(result);",
+  "options": {
+   "A": "texam",
+   "B": "xite",
+   "C": "itex",
+   "D": "xitex"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1324,
+  "stem": "Which one of the following statements is WRONG regarding interfaces?",
+  "options": {
+   "A": "Like a class, an interface is a reference data type",
+   "B": "Interface abstract methods are accessed using interface instances",
+   "C": "An interface includes abstract methods",
+   "D": "One class can implement multiple interfaces"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1325,
+  "stem": "For the schema Hotel(Hotel_id: integer, Hotel_name: String, Sub_city: String), where Hotel_id is the primary key, which SQL statement correctly inserts a tuple into the Hotel relation?",
+  "options": {
+   "A": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES ('Hilton','Yeka')",
+   "B": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1,'Hilton','Yeka')",
+   "C": "INSERT INTO HOTEL (1,'Hilton','Yeka')",
+   "D": "INSERT VALUES INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1,'Hilton','Yeka')"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1326,
+  "stem": "Which of the following shows the five stages of Tuckman's model of team development, in sequential order?",
+  "options": {
+   "A": "Forming, storming, performing, norming and adjourning",
+   "B": "Norming, forming, storming, performing and adjourning",
+   "C": "Storming, forming, norming, performing and adjourning",
+   "D": "Forming, storming, norming, performing and adjourning"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1327,
+  "stem": "Which statement is correct about the difference between functional and non-functional requirements?",
+  "options": {
+   "A": "Unlike functional requirements, non-functional requirements are stable",
+   "B": "Both are the same most of the time and only vary under certain contexts",
+   "C": "Functional requirements are decided by the customer while non-functional requirements are decided by developers",
+   "D": "Functional requirements are the services the system provides, while non-functional requirements are constraints on those services or functions"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1328,
+  "stem": "If the estimated total discounted benefits for a project are 120,000 birr and the total discounted cost is 100,000 birr, what is the estimated Return on Investment (ROI) percentage?",
+  "options": {
+   "A": "20%",
+   "B": "12%",
+   "C": "30%",
+   "D": "10%"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1329,
+  "stem": "A queue in which the item most recently added is always the first one out refers to:",
+  "options": {
+   "A": "LIFO queue",
+   "B": "FIFO queue",
+   "C": "Real time queue",
+   "D": "Priority queue"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1330,
+  "stem": "A firewall is used in a system connected to a wide area network to:",
+  "options": {
+   "A": "Spread fire via network cables",
+   "B": "Avoid the spread of fire in the network",
+   "C": "Stop unauthorized access by hackers",
+   "D": "Scan for viruses in various files"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1331,
+  "stem": "The permission -rwxr--r-- represented in octal expression will be:",
+  "options": {
+   "A": "766",
+   "B": "700",
+   "C": "744",
+   "D": "755"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1332,
+  "stem": "Which of the following is the correct order of protocol data units as data moves through the OSI reference model from the bottom (Physical) to the top (Transport) layer?",
+  "options": {
+   "A": "Segment, Packet, Frame, Bit",
+   "B": "Segment, Frame, Packet, Bit",
+   "C": "Bit, Frame, Packet, Segment",
+   "D": "Bit, Packet, Frame, Segment"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1333,
+  "stem": "Which of the following statements is true regarding Triple DES?",
+  "options": {
+   "A": "It uses 192-bit keys on 64-bit blocks of plain text",
+   "B": "It uses 128-bit blocks of plain text and 92-bit keys and applies the DES algorithm thrice",
+   "C": "It works with 192-bit blocks of plain text and applies the DES algorithm once",
+   "D": "It functions on 64-bit blocks of plain text and 56-bit keys by applying the DES algorithm for three rounds"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1334,
+  "stem": "An HTTP request message always contains:",
+  "options": {
+   "A": "A status line, a header, and a body",
+   "B": "A header only",
+   "C": "A header and a body",
+   "D": "A request line and a header"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1335,
+  "stem": "Which of the following refers to the unauthorized disclosure of information?",
+  "options": {
+   "A": "Authorization",
+   "B": "Authentication",
+   "C": "Integrity",
+   "D": "Confidentiality"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1336,
+  "stem": "Anything that can perceive its environment through sensors and act upon that environment through effectors is called:",
+  "options": {
+   "A": "Agent",
+   "B": "Expert system",
+   "C": "Intelligence",
+   "D": "API"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1337,
+  "stem": "Assume there is a Pet family from which Dog and Cat share a common 'name' attribute and a 'speak' behavior, while only Dog has a specific 'fetch' behavior. Which object-oriented design principle would be most suitable for modeling this scenario?",
+  "options": {
+   "A": "Information hiding",
+   "B": "Encapsulation",
+   "C": "Polymorphism",
+   "D": "Inheritance"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1338,
+  "stem": "Which of the following statements does NOT correctly describe the banker's algorithm?",
+  "options": {
+   "A": "The banker's algorithm considers each request as it occurs",
+   "B": "It is an extension of the deadlock detection algorithm",
+   "C": "It is modeled on the way a small-town banker might deal with a group of customers to whom credit lines have been granted",
+   "D": "It is a scheduling algorithm"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1339,
+  "stem": "An informed search algorithm that has exponential time complexity in the worst case but guarantees optimality when a solution is found is:",
+  "options": {
+   "A": "A* search",
+   "B": "Greedy best-first search",
+   "C": "Uniform cost search",
+   "D": "Iterative deepening A* search"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1340,
+  "stem": "Which principle states that 80% of the problems can be fixed with 20% of the entire effort?",
+  "options": {
+   "A": "Pareto principle",
+   "B": "Parametric principle",
+   "C": "Pairwise principle",
+   "D": "Partition principle"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1341,
+  "stem": "Which one of the following is an appropriate sequence depicting the model development process in data mining?",
+  "options": {
+   "A": "Model training, model testing, model evaluation, model deployment",
+   "B": "Model evaluation, model training, model testing, model deployment",
+   "C": "Model training, model testing, model deployment, model evaluation",
+   "D": "Model training, model evaluation, model testing, model deployment"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1342,
+  "stem": "Which method has the same name as that of its class?",
+  "options": {
+   "A": "delete",
+   "B": "class",
+   "C": "constructor",
+   "D": "finalize"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1343,
+  "stem": "Within OAuth, which component validates the user's identity?",
+  "options": {
+   "A": "Authorization server",
+   "B": "Resource server",
+   "C": "Browser",
+   "D": "Client"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1344,
+  "stem": "What is printed by the following program? class PrintResult { public static void main(String args[]) { int arr[] = {3,4,5,6,7}; for(int i=0; i<=arr.length-2; ++i) { System.out.println(arr[i] + \",\"); } } }",
+  "options": {
+   "A": "3,4",
+   "B": "3,4,5",
+   "C": "3,4,5,6,7",
+   "D": "3,4,5,6"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1345,
+  "stem": "If a relation has no multivalued attributes and no partial dependencies, the relation is in what normal form?",
+  "options": {
+   "A": "1NF",
+   "B": "3NF",
+   "C": "4NF",
+   "D": "2NF"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1346,
+  "stem": "A technique for generating plans with conditionals and loops that is almost identical to techniques for generating programs from logical specifications is called:",
+  "options": {
+   "A": "Automatic programming",
+   "B": "Automatic monitoring",
+   "C": "Automatic recursion",
+   "D": "Automatic learning"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1347,
+  "stem": "Which one of the following is a correct identifier in C++?",
+  "options": {
+   "A": "7variable",
+   "B": "7VARIABLE",
+   "C": "$variable",
+   "D": "variable_1234"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1348,
+  "stem": "Which of the following is true about an abstract class?",
+  "options": {
+   "A": "It cannot be inherited",
+   "B": "It is a mechanism of encapsulation",
+   "C": "It cannot be instantiated",
+   "D": "It can contain both abstract and non-abstract methods"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1349,
+  "stem": "In software risk management, accepting that a risk may happen but choosing not to do anything about it is known as:",
+  "options": {
+   "A": "Risk transfer",
+   "B": "Risk retention",
+   "C": "Risk avoidance",
+   "D": "Risk reduction"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1350,
+  "stem": "When a process in the 'Blocked' state finishes waiting for an input/output service, it moves to a state known as:",
+  "options": {
+   "A": "Suspended",
+   "B": "Terminated",
+   "C": "Running",
+   "D": "Ready"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1351,
+  "stem": "\"The system architecture should be designed using fine-grained, self-contained components. Producers of data should be separated from consumers, and shared data structures should be avoided.\" Which quality requirement does this architectural description address?",
+  "options": {
+   "A": "Availability",
+   "B": "Maintainability",
+   "C": "Performance",
+   "D": "Security"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1352,
+  "stem": "Which slogan goes AGAINST the agile method philosophy?",
+  "options": {
+   "A": "Following a plan over responding to change",
+   "B": "Individuals and interactions over processes and tools",
+   "C": "Customer collaboration over contract negotiation",
+   "D": "Working software over comprehensive documentation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1353,
+  "stem": "APK stands for:",
+  "options": {
+   "A": "Android Package Kit",
+   "B": "Android Platform Kit",
+   "C": "Android Phone Kit",
+   "D": "Android Page Kit"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1354,
+  "stem": "Which statement best describes the main goal of software testing as part of the quality assurance process?",
+  "options": {
+   "A": "To achieve project timelines and deadlines",
+   "B": "To generate software requirement and design documentation",
+   "C": "To guarantee that the software meets the specified requirements",
+   "D": "To monitor the entire SDLC"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1355,
+  "stem": "The correct structure of the for loop statement is:",
+  "options": {
+   "A": "for(initialization; condition)",
+   "B": "for(increment/decrement; initialization; condition)",
+   "C": "for(condition, initialization, increment/decrement)",
+   "D": "for(initialization; condition; increment/decrement)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1356,
+  "stem": "Which of the following is NOT true regarding algorithm development during problem solving?",
+  "options": {
+   "A": "It should be developed by considering the platform on which it runs",
+   "B": "It is a step-wise logical description of how to solve the problem",
+   "C": "It is developed by considering the details of the programming language",
+   "D": "It is equivalent to the programming language code"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1357,
+  "stem": "What would be the most likely consequence if every software stakeholder rushed to get their requirements approved without discussing them with other stakeholders?",
+  "options": {
+   "A": "It attains the project schedule",
+   "B": "It results in excess requirements",
+   "C": "It leads to conflicting requirements",
+   "D": "Requirements become unambiguous"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1358,
+  "stem": "Which of the following is true regarding model development in machine learning?",
+  "options": {
+   "A": "Much more focus should be given to test data than training data",
+   "B": "Training with a large dataset boosts model performance",
+   "C": "The test set and training set should have fifty-fifty overlap",
+   "D": "The proportion of the dataset used for training should be less than for testing"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1359,
+  "stem": "All Android layout classes are subclasses of which of the following?",
+  "options": {
+   "A": "android.view.RelativeLayout",
+   "B": "android.view.Layout",
+   "C": "android.view.ViewGroup",
+   "D": "android.view.Widget"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1360,
+  "stem": "What is the output of the following C++ code if the user enters 4 and 3 for b and e respectively? #include<iostream> using namespace std; int main(){ int b, e, r=1; cin>>b>>e; for(int i=1; i<=e; i++){ r=r*b; } cout<<r; return 0; }",
+  "options": {
+   "A": "81",
+   "B": "12",
+   "C": "64",
+   "D": "256"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1361,
+  "stem": "Which of the following is NOT a valid host address within the network 172.17.128.0/21?",
+  "options": {
+   "A": "172.17.128.1/21",
+   "B": "172.17.135.255/21",
+   "C": "172.17.128.255/21",
+   "D": "172.17.135.0/21"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1362,
+  "stem": "Which of the following is the correct sequence followed during the software evolution process?",
+  "options": {
+   "A": "Change request, release planning, change implementation, impact analysis, system release",
+   "B": "Impact analysis, change request, change implementation, release planning, system release",
+   "C": "Change request, impact analysis, change implementation, release planning, system release",
+   "D": "Change request, impact analysis, release planning, change implementation, system release"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1363,
+  "stem": "Identify the lowest layer of the Android architecture.",
+  "options": {
+   "A": "Linux kernel",
+   "B": "Database",
+   "C": "Application framework",
+   "D": "Application"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1364,
+  "stem": "Which of the following is true regarding the use of switches and hubs for network connectivity?",
+  "options": {
+   "A": "Switches do not forward broadcasts",
+   "B": "Switches increase the number of collision domains in the network",
+   "C": "Switches take less time to process frames than hubs take",
+   "D": "Hubs can filter frames"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1365,
+  "stem": "Select the statement that is NOT correct regarding generalization in system modeling.",
+  "options": {
+   "A": "In generalization, the attributes and operations associated with the highest-level classes are also associated with the lowest-level classes",
+   "B": "Common information is maintained in one place",
+   "C": "It facilitates easy modification of data",
+   "D": "The higher-level classes are more specific than the lower-level classes by adding specific attributes and operations"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1366,
+  "stem": "A process that is waiting for a resource that is owned by another process refers to:",
+  "options": {
+   "A": "Deadlock",
+   "B": "Preemption",
+   "C": "Overloading",
+   "D": "Queueing"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1367,
+  "stem": "\"A database is a logically coherent collection of data with some inherent meaning.\" This implies that:",
+  "options": {
+   "A": "All attributes of the entity should be related",
+   "B": "There should be one primary key attribute",
+   "C": "The entity should represent a physical object",
+   "D": "The number of attributes should be limited"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1368,
+  "stem": "Which of the following is a resource optimization technique in which start and finish dates are adjusted based on resource constraints, with the goal of balancing the demand for resources with the available supply?",
+  "options": {
+   "A": "Responsibility assignment matrix",
+   "B": "Resource smoothing",
+   "C": "Resource leveling",
+   "D": "Resource grouping"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1369,
+  "stem": "Business people remodel their business by closely studying customer purchasing habits. A salesperson at a shop noticed that people who buy shoes also tend to buy socks with a probability of 0.75, and decided to place shoes and socks side by side. Which big data analytics technique does this represent?",
+  "options": {
+   "A": "Regression modeling",
+   "B": "Clustering algorithm",
+   "C": "Predictive modeling",
+   "D": "Association rule"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1370,
+  "stem": "Given a layered architecture with four layers ordered from top to bottom as A, B, C, and D, which of the following calling relations is correct and does not introduce architectural erosion (layer skipping)?",
+  "options": {
+   "A": "(A, B)",
+   "B": "(D, A)",
+   "C": "(A, C)",
+   "D": "(C, B)"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1371,
+  "stem": "Which of the following is among the benefits provided by access control list (ACL) implementation for security-based applications?",
+  "options": {
+   "A": "ACLs monitor the number of bytes and packets",
+   "B": "ACLs provide high network availability",
+   "C": "ACLs perform virus detection",
+   "D": "ACLs classify and organize network traffic"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1372,
+  "stem": "The default HTTP method used when submitting an HTML form (if not specified) is:",
+  "options": {
+   "A": "POST method",
+   "B": "GET method",
+   "C": "PUT method",
+   "D": "SET method"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1373,
+  "stem": "The process that generates activities such as the project schedule, cost estimations, and the work breakdown structure is described as:",
+  "options": {
+   "A": "Project initiating",
+   "B": "Project executing",
+   "C": "Project closing",
+   "D": "Project planning"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1374,
+  "stem": "Given the following pseudocode: if width > length then biggest_dimension = width; if height > width then biggest_dimension = height end_if; else biggest_dimension = length; if height > length then biggest_dimension = height end_if; end_if. How many test cases are required for 100% decision coverage?",
+  "options": {
+   "A": "6",
+   "B": "4",
+   "C": "2",
+   "D": "1"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1375,
+  "stem": "How can you select an HTML element with a specific class in CSS?",
+  "options": {
+   "A": "^classname",
+   "B": "-classname",
+   "C": "#classname",
+   "D": ".classname"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1376,
+  "stem": "Select the activity in the fundamental test process that includes evaluating the testability of the requirements and the system.",
+  "options": {
+   "A": "Test analysis and design",
+   "B": "Test analysis and requirements",
+   "C": "Test analysis and implementation",
+   "D": "Test analysis and planning"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1377,
+  "stem": "Which of the following is an appropriate sequence of database design processes?",
+  "options": {
+   "A": "Logical database design, enterprise data modeling, physical database design, database implementation",
+   "B": "Enterprise data modeling, logical database design, database implementation, physical database design",
+   "C": "Enterprise data modeling, logical database design, physical database design, database implementation",
+   "D": "Logical database design, enterprise data modeling, physical database design, database implementation"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1378,
+  "stem": "Which of the following is NOT among the purposes of software testing?",
+  "options": {
+   "A": "Identifying shortcomings",
+   "B": "Improving product acceptance",
+   "C": "Enhancing reliability",
+   "D": "Requesting more design and implementation time"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1379,
+  "stem": "Which software process model would you use if you want to deliver different functionalities (modules) of a software product, with different priorities, at different times?",
+  "options": {
+   "A": "Incremental model",
+   "B": "Spiral model",
+   "C": "Waterfall model",
+   "D": "Linear model"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1380,
+  "stem": "What is the time complexity of the following code? function someFunction(n) { for(var i=0; i<n*10; i++) { console.log(n); } }",
+  "options": {
+   "A": "O(n^2)",
+   "B": "O(log n)",
+   "C": "O(log2 n)",
+   "D": "O(n)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1381,
+  "stem": "Select the WRONG statement regarding traceability in software development projects.",
+  "options": {
+   "A": "Traceability shows the dependency among two or more requirements, if any",
+   "B": "Requirements should be linked to the respective stakeholders who generated them",
+   "C": "Every design element (component) should be linked back to a requirement",
+   "D": "Traceability traces the overall cost and schedule of every activity in the requirements"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1382,
+  "stem": "Which activity comes LAST in the fundamental program development process in C++?",
+  "options": {
+   "A": "Memory allocation for variables",
+   "B": "Linking",
+   "C": "Compiling the program",
+   "D": "Writing the program"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1383,
+  "stem": "Which design pattern is used to restore the state of an object to its previous state?",
+  "options": {
+   "A": "Visitor pattern",
+   "B": "Memento pattern",
+   "C": "Observer pattern",
+   "D": "Iterator pattern"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1384,
+  "stem": "Which of the following describes a set of standards and an associated network protocol that allow a secure channel to be established between a local and a remote computer?",
+  "options": {
+   "A": "Secure Sockets Layer (SSL)",
+   "B": "Secure Shell (SSH)",
+   "C": "Authentication, Authorization and Accounting (AAA)",
+   "D": "Simple Network Management Protocol (SNMP)"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1385,
+  "stem": "Which component hides the distinctions and boundaries between various microservices from the end client application?",
+  "options": {
+   "A": "A layered system",
+   "B": "API gateway",
+   "C": "API proxy",
+   "D": "API logging"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1386,
+  "stem": "Select a fundamental issue that may NOT be considered by software architects during the architectural design process.",
+  "options": {
+   "A": "Which architectural organization is best for delivering the functional requirements",
+   "B": "How to decompose structural components into sub-components",
+   "C": "How the system will be distributed across a number of cores or processors",
+   "D": "Which architectural patterns or styles to use"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1387,
+  "stem": "Which of the following statements is NOT correct regarding project life cycles?",
+  "options": {
+   "A": "In an agile life cycle, the project scope is generally determined early in the life cycle, but time and cost estimates are routinely modified",
+   "B": "In a waterfall life cycle, the project scope, time, and cost are determined in the early phase of the life cycle",
+   "C": "In agile life cycles, the project scope cannot be outlined and agreed upon before the start of an iteration",
+   "D": "In an incremental life cycle, the deliverable is produced through a series of iterations that successively add functionality within a predetermined time frame"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1388,
+  "stem": "Which of the following is NOT among the characterizing features of the database approach?",
+  "options": {
+   "A": "Application-data dependency",
+   "B": "Sharing of data",
+   "C": "Self-describing nature",
+   "D": "Data abstraction"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1389,
+  "stem": "What is an Activity in Android?",
+  "options": {
+   "A": "An Android class used to configure the Android application",
+   "B": "It is an Intent",
+   "C": "An Android package file holding all the packages used",
+   "D": "A single screen in an application with supporting Java code"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1390,
+  "stem": "Which of the following is NOT an approach used by IT security specialists to enhance the security level of a network?",
+  "options": {
+   "A": "Use of an intrusion detection system",
+   "B": "Use of the WannaCry protocol",
+   "C": "Use of physical security",
+   "D": "Use of an intrusion prevention system"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1391,
+  "stem": "As a software tester, when should configuration management procedures be implemented?",
+  "options": {
+   "A": "During test planning",
+   "B": "During test closing",
+   "C": "During test execution",
+   "D": "During test initiation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1392,
+  "stem": "Identify the activity that comes FIRST in the data mining process.",
+  "options": {
+   "A": "Data cleaning",
+   "B": "Data integration",
+   "C": "Business understanding",
+   "D": "Data selection"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1393,
+  "stem": "Which TCP/IP layer is responsible for addressing, path selection, and routing?",
+  "options": {
+   "A": "Application layer",
+   "B": "Internet layer",
+   "C": "Transport layer",
+   "D": "Network access layer"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1394,
+  "stem": "Which of the following analysis mechanisms defines the input for which an algorithm takes the least time (its fastest case)?",
+  "options": {
+   "A": "Worst case",
+   "B": "Best case",
+   "C": "Standard case",
+   "D": "Average case"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1395,
+  "stem": "Which learning algorithm is usually applied to data that does not contain any label information, so the right output is not known in advance?",
+  "options": {
+   "A": "Transfer learning",
+   "B": "Supervised learning",
+   "C": "Unsupervised learning",
+   "D": "Reinforcement learning"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1396,
+  "stem": "Depending on the organization of its elements, which of the following is a non-linear data structure?",
+  "options": {
+   "A": "Queue",
+   "B": "Stack",
+   "C": "Tree",
+   "D": "Linked list"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1397,
+  "stem": "Which one of the following can be a possible source of unstructured data?",
+  "options": {
+   "A": "Apple employee database",
+   "B": "RDBMS systems",
+   "C": "Registrar student database",
+   "D": "Google search engine results"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1398,
+  "stem": "Select the option that is NOT related to the purpose of properly documenting software architecture.",
+  "options": {
+   "A": "For stakeholder communication",
+   "B": "To easily figure out the source code flow",
+   "C": "For critical system design decisions",
+   "D": "To know how the system is organized and how its parts interoperate"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1399,
+  "stem": "Which of the following statements is correct about Artificial Intelligence (AI)?",
+  "options": {
+   "A": "It refers to the development of machines that can only perform physical tasks",
+   "B": "It refers to the development of machines that can only perform simple, repetitive tasks",
+   "C": "It refers to the development of machines that can perform tasks only in a controlled laboratory setting",
+   "D": "It refers to the development of machines that can perform tasks that typically require human intelligence"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1400,
+  "stem": "Which of the following is the process of selecting program paths so that certain branches (outgoing edges of nodes) of a control flow graph are covered by the execution of those paths?",
+  "options": {
+   "A": "Branch coverage",
+   "B": "Branch expansion",
+   "C": "Branch control",
+   "D": "Branch boundary"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1401,
+  "stem": "Given a situation where two hosts on a half-duplex Ethernet LAN attempt to send data concurrently, resulting in a collision, what will the hosts do after the collision?",
+  "options": {
+   "A": "The jam signal indicates that the collision has been cleared",
+   "B": "An electrical pulse indicates that the collision has been cleared",
+   "C": "The hosts will attempt to resume transmission after a time delay has expired",
+   "D": "The router on the segment will signal that the collision has cleared"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1402,
+  "stem": "What is the time complexity of the following function? public void function(int n) { for(int i=0; i<n; i++) for(int j=0; j<i*i; j++) if(j%i==0) { for(int k=0; k<j; k++) print(\"*\"); } }",
+  "options": {
+   "A": "O(n^2)",
+   "B": "O(n log n)",
+   "C": "O(n^7)",
+   "D": "O(n^5)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1403,
+  "stem": "Identify the design principle that does NOT apply to software systems.",
+  "options": {
+   "A": "Design should be traceable to the analysis model",
+   "B": "Design should be structured to accommodate change",
+   "C": "Design should exhibit uniformity and integration",
+   "D": "Design should reinvent the wheel from scratch"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1404,
+  "stem": "You are required to write a program that iteratively takes 50 numbers from user input and adds them up, but only if the number is positive, skipping it otherwise. Which control structure best fits the 'skip if not positive' behavior?",
+  "options": {
+   "A": "break",
+   "B": "continue",
+   "C": "for",
+   "D": "jump"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1405,
+  "stem": "Which of the following UML elements is wrongly described?",
+  "options": {
+   "A": "A class diagram shows the object classes in a system and their relations",
+   "B": "An activity diagram shows how the system reacts to internal and external events",
+   "C": "A use case diagram represents an interaction with a system",
+   "D": "A sequence diagram shows the sequence of interactions required to complete an operation"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1406,
+  "stem": "A memory management policy in which decisions must be made about which page or pages should be replaced when memory is full is known as:",
+  "options": {
+   "A": "Cleaning policy",
+   "B": "Load policy",
+   "C": "Replacement policy",
+   "D": "Fetch policy"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1407,
+  "stem": "Which software model would you apply for a business operating in a changing environment, where the initial requirements inevitably change due to internal and external factors?",
+  "options": {
+   "A": "Agile development method",
+   "B": "Spiral model",
+   "C": "Waterfall model",
+   "D": "Code-and-fix model"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1408,
+  "stem": "You are designing a dormitory management database. A dormitory is described by DORM(DormId, FloorNumber), where DormId is the primary key, and up to six students can be assigned to one dorm. Students are described by STUDENT(IdNo, Name, Department), where IdNo is the primary key. Which SQL statement correctly establishes the relationship between DORM and STUDENT, assuming DormId is a foreign key in STUDENT?",
+  "options": {
+   "A": "FOREIGN KEY (DormId) REFERENCES DORM(DormId)",
+   "B": "STUDENT table is a reference relation",
+   "C": "FOREIGN KEY (DormId) REFERENCED BY DORM(DormId)",
+   "D": "DORM table is a referencing relation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1409,
+  "stem": "Which one of the following statements is WRONG regarding the try...catch construct?",
+  "options": {
+   "A": "When an exception occurs, the execution of the try block is interrupted",
+   "B": "Execution control is moved to the catch block after an exception occurs in the try block",
+   "C": "The catch block is used to handle exceptions that occur in the try block",
+   "D": "The catch block is executed once regardless of whether an exception occurs in the try block"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1410,
+  "stem": "Which of the following is NOT a function of a crossover UTP cable?",
+  "options": {
+   "A": "To connect switch to switch",
+   "B": "To connect PC to PC",
+   "C": "To connect router to PC",
+   "D": "To connect switch to PC"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1411,
+  "stem": "Who is responsible for documenting faults found during the software development process?",
+  "options": {
+   "A": "Tester",
+   "B": "Developer",
+   "C": "Scrum master",
+   "D": "Requirement engineer"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1412,
+  "stem": "Which parameter is used to assess and evaluate software architectures?",
+  "options": {
+   "A": "Responsiveness of architectures",
+   "B": "Durability of architectures",
+   "C": "Architectural quality attributes",
+   "D": "Number of components in the architecture"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1390,
+  "stem": "What do we use to pass data between activities in Android?",
+  "options": {
+   "A": "Broadcast receiver",
+   "B": "PostgreSQL database",
+   "C": "Intent",
+   "D": "Content provider"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1410,
+  "stem": "The following UML design shows a Student class with private attributes (Name: String, Department: String, Phone: String, Age: int), a constructor Student(String, String, String, int), and public methods SetDept(String), GetName(): String, GetDept(): String, GetYearOfBirth(): int, CalculateAge(): int. Which of the following would not raise an error when you run this program?",
+  "options": {
+   "A": "Student st1 = new Student(\"john\", \"SE\", \"0913222222\", 20)",
+   "B": "st1 Student = new Student(\"john\", \"CS\", \"02085332455\", 23)",
+   "C": "Student st1 = new Student(\"john\", \"IT\", \"2000\",)",
+   "D": "Student st1 = new Student(\"john\", \"CS\", \"0913222222\", \"25\")"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1376,
+  "stem": "What will be the output of the following code snippet?\n<script type=\"text/JavaScript\" language=\"JavaScript\">\nvar a = \"exitexam\";\nvar result = a.substring(2,6);\ndocument.write(result);\n</script>",
+  "options": {
+   "A": "texam",
+   "B": "xite",
+   "C": "itex",
+   "D": "xitex"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1411,
+  "stem": "Which one of the following is wrong regarding interfaces?",
+  "options": {
+   "A": "Like a class, an interface is a reference data type.",
+   "B": "Interface abstract methods are accessed using interface instances.",
+   "C": "Interfaces include abstract methods.",
+   "D": "One class can implement multiple interfaces."
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1409,
+  "stem": "For the schema Hotel (Hotel_id: integer, Hotel_name: String, Sub_city: string), which SQL statement correctly inserts a tuple into the Hotel relation? (Assume Hotel_id is the primary key.)",
+  "options": {
+   "A": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES ('Hilton', 'Yeka')",
+   "B": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1, 'Hilton', 'Yeka')",
+   "C": "INSERT INTO HOTEL (1, 'Hilton', 'Yeka')",
+   "D": "INSERT VALUES INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1, 'Hilton', 'Yeka')"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1388,
+  "stem": "Which of the following shows the five stages in Tuckman's model of team development, in sequential order?",
+  "options": {
+   "A": "Forming, storming, performing, norming and adjourning",
+   "B": "Norming, forming, storming, performing and adjourning",
+   "C": "Storming, forming, norming, performing and adjourning",
+   "D": "Forming, storming, norming, performing and adjourning"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1413,
+  "stem": "Which statement is correct about the difference between functional and nonfunctional requirements?",
+  "options": {
+   "A": "Unlike functional requirements, nonfunctional requirements are stable.",
+   "B": "Both are the same most of the time and only vary under certain contexts.",
+   "C": "Functional requirements are decided by the customer while nonfunctional requirements are decided by developers.",
+   "D": "Functional requirements are the services the system provides while nonfunctional requirements are constraints on the services or functions offered by the system."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1403,
+  "stem": "A queue in which the item most recently added is always the first one out refers to:",
+  "options": {
+   "A": "LIFO queue",
+   "B": "FIFO queue",
+   "C": "Real time queue",
+   "D": "Priority queue"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1389,
+  "stem": "If the estimated total discounted benefits for a project is birr 120,000 and the total discounted cost is birr 100,000, what is the estimated return on investment (ROI) percentage?",
+  "options": {
+   "A": "20%",
+   "B": "12%",
+   "C": "30%",
+   "D": "10%"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1391,
+  "stem": "A firewall is used in a system connected to a wide area network to:",
+  "options": {
+   "A": "Fire spreading via the network through cables",
+   "B": "Avoid spreading of fire in the network",
+   "C": "Stop unauthorized access by hackers",
+   "D": "Scan for viruses in various files"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1407,
+  "stem": "The permission -rwxr--r-- represented in octal expression will be:",
+  "options": {
+   "A": "766",
+   "B": "700",
+   "C": "744",
+   "D": "755"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1411,
+  "stem": "Which of the following is the correct order of protocol data units as data moves through the OSI reference model from bottom to top?",
+  "options": {
+   "A": "Segment, Packet, Frame, Bit",
+   "B": "Segment, Frame, Packet, Bit",
+   "C": "Bit, Frame, Packet, Segment",
+   "D": "Bit, Packet, Frame, Segment"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1392,
+  "stem": "Which of the following statements is true regarding Triple DES?",
+  "options": {
+   "A": "Uses 192-bit keys on 64-bit blocks of plain text.",
+   "B": "Uses 128-bit blocks of plain text and 92-bit keys and applies the DES algorithm thrice.",
+   "C": "Works with 192-bit blocks of plain text and applies the DES algorithm once.",
+   "D": "Operates on 64-bit blocks of plain text and 56-bit keys by applying the DES algorithm for three rounds."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1377,
+  "stem": "An HTTP request message always contains:",
+  "options": {
+   "A": "A status line, a header, and a body",
+   "B": "A header only",
+   "C": "A header and a body",
+   "D": "A request line and a header"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1393,
+  "stem": "Which of the following refers to unauthorized disclosure of information?",
+  "options": {
+   "A": "Authorization",
+   "B": "Authentication",
+   "C": "Integrity",
+   "D": "Confidentiality"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1400,
+  "stem": "Anything that can perceive its environment through sensors and act upon the environment through effectors is called:",
+  "options": {
+   "A": "Agent",
+   "B": "Expert system",
+   "C": "Intelligence",
+   "D": "API"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1412,
+  "stem": "Assume there is a Pet family from which pets like Dog and Cat inherit common behavior, since every pet has a name. However, each pet family also has specific behaviors exhibited only by particular pets: for instance, only Dogs can fetch, while both Cats and Dogs can speak (in their own way). Which object-oriented design principle would be suitable for this case?",
+  "options": {
+   "A": "Information hiding",
+   "B": "Encapsulation",
+   "C": "Polymorphism",
+   "D": "Inheritance"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1408,
+  "stem": "Which of the following statements does not address the banker's algorithm?",
+  "options": {
+   "A": "The banker's algorithm considers each request before it occurs.",
+   "B": "It is an extension of the deadlock detection algorithm.",
+   "C": "It is modeled on the way a small-town banker might deal with a group of customers to whom he/she has granted lines of credit.",
+   "D": "It is a scheduling algorithm."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1401,
+  "stem": "An informed search algorithm that has exponential time complexity in the worst-case scenario and guarantees optimality when searching for a solution refers to:",
+  "options": {
+   "A": "A* search",
+   "B": "Greedy best-first search",
+   "C": "Uniform cost search",
+   "D": "Iterative deepening A* search"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1414,
+  "stem": "Which principle states that 80% of the problem can be fixed with 20% of the entire effort?",
+  "options": {
+   "A": "Pareto principle",
+   "B": "Parametric principle",
+   "C": "Pairwise principle",
+   "D": "Partition principle"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1398,
+  "stem": "Which one of the following is an appropriate sequence that depicts the model development process in data mining?",
+  "options": {
+   "A": "Model training, model testing, model evaluation, model deployment",
+   "B": "Model evaluation, model training, model testing, model deployment",
+   "C": "Model training, model testing, model deployment, model evaluation",
+   "D": "Model training, model evaluation, model testing, model deployment"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1413,
+  "stem": "Which method has the same name as that of its class?",
+  "options": {
+   "A": "Delete",
+   "B": "Class",
+   "C": "Constructor",
+   "D": "Finalize"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1394,
+  "stem": "Within OAuth, what component validates the user's identity?",
+  "options": {
+   "A": "Authorization server",
+   "B": "Resource server",
+   "C": "Browser",
+   "D": "Client"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1405,
+  "stem": "What will the result of the following program be after running?\nclass PrintResult {\n  public static void main(String args[]) {\n    int arr[] = {3, 4, 5, 6, 7};\n    for (int i = 0; i <= arr.length - 2; ++i) {\n      System.out.println(arr[i] + \",\");\n    }\n  }\n}",
+  "options": {
+   "A": "3,4",
+   "B": "3,4,5",
+   "C": "3,4,5,6,7",
+   "D": "3,4,5,6"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1410,
+  "stem": "While optimizing a relation, if we find that no multivalued attributes and no partial dependencies exist in the relation, then the relation is in what normal form?",
+  "options": {
+   "A": "1NF",
+   "B": "3NF",
+   "C": "4NF",
+   "D": "2NF"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1402,
+  "stem": "A technique for generating plans with conditionals and loops that is almost identical to techniques for generating programs from logical specifications is called:",
+  "options": {
+   "A": "Automatic programming",
+   "B": "Automatic monitoring",
+   "C": "Automatic recursion",
+   "D": "Automatic learning"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1406,
+  "stem": "Which one of the following is a correct identifier in C++?",
+  "options": {
+   "A": "7variable",
+   "B": "7VARIABLE",
+   "C": "$variable",
+   "D": "variable_1234"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1414,
+  "stem": "Which of the following is true about an abstract class?",
+  "options": {
+   "A": "It cannot be inherited.",
+   "B": "It is a mechanism of encapsulation.",
+   "C": "It cannot be instantiated.",
+   "D": "It can contain both abstract and non-abstract methods."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1390,
+  "stem": "In software risk management, accepting that a risk might happen but doing nothing about it is known as:",
+  "options": {
+   "A": "Risk transfer",
+   "B": "Risk retention",
+   "C": "Risk avoidance",
+   "D": "Risk reduction"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1409,
+  "stem": "When a process is in a 'Blocked' state waiting for some input/output service, after the service is completed it will go to a state known as:",
+  "options": {
+   "A": "Suspended",
+   "B": "Terminated",
+   "C": "Running",
+   "D": "Ready"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1415,
+  "stem": "\"The system architecture should be designed using fine-grain, self-contained components. Producers of data should be separated from consumers and shared data structures should be avoided.\" Which requirement does this architecture description address?",
+  "options": {
+   "A": "Availability",
+   "B": "Maintainability",
+   "C": "Performance",
+   "D": "Security"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1416,
+  "stem": "Which slogan goes against the agile method philosophy?",
+  "options": {
+   "A": "Following a plan over responding to change",
+   "B": "Individuals and interactions over processes and tools",
+   "C": "Customer collaboration over contract negotiation",
+   "D": "Working software over comprehensive documentation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1391,
+  "stem": "APK stands for:",
+  "options": {
+   "A": "Android Package Kit",
+   "B": "Android Platform Kit",
+   "C": "Android Phone Kit",
+   "D": "Android Page Kit"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1417,
+  "stem": "Which statement best describes the main goal of software testing as part of the quality assurance process?",
+  "options": {
+   "A": "To achieve project timelines and deadlines",
+   "B": "To generate software requirement and design documentation",
+   "C": "To guarantee that the software meets the specified requirements",
+   "D": "To monitor the entire SDLC"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1407,
+  "stem": "What is the correct structure of the for loop statement?",
+  "options": {
+   "A": "for (initialization; condition)",
+   "B": "for (increment/decrement; initialization; condition)",
+   "C": "for (condition, initialization, increment/decrement)",
+   "D": "for (initialization; condition; increment/decrement)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1408,
+  "stem": "Which of the following is not true regarding algorithm development during problem solving?",
+  "options": {
+   "A": "It should be developed by considering the platform on which it runs.",
+   "B": "It is a step-wise logical description of how to solve the problem.",
+   "C": "It is developed without considering the details of the programming language.",
+   "D": "It is equivalent to the programming language code."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1418,
+  "stem": "What would be the most likely consequence if every software stakeholder were rushing to get their requirements approved without discussing with other stakeholders?",
+  "options": {
+   "A": "It attains the project schedule",
+   "B": "It results in excess requirements",
+   "C": "It leads to conflicting requirements",
+   "D": "Requirements become unambiguous"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1399,
+  "stem": "Which of the following is true regarding model development in machine learning?",
+  "options": {
+   "A": "Much more focus should be given to test data than training data.",
+   "B": "Training with a large dataset boosts model performance.",
+   "C": "The test set and training set should have a fifty-fifty overlap.",
+   "D": "The proportion of the dataset used for training should be less than the test set."
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1392,
+  "stem": "All layout classes are subclasses of which of the following?",
+  "options": {
+   "A": "android.view.RelativeLayout",
+   "B": "android.view.Layout",
+   "C": "android.view.ViewGroup",
+   "D": "android.view.Widget"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1409,
+  "stem": "What will be the output of the following code if you enter 4 and 3 for b and e respectively?\n#include <iostream>\nusing namespace std;\nint main() {\n  int b, e, r = 1;\n  cout << \"enter b and e\";\n  cin >> b >> e;\n  for (int i = 1; i <= e; i++) {\n    r = r * b;\n  }\n  cout << r;\n  return 0;\n}",
+  "options": {
+   "A": "81",
+   "B": "12",
+   "C": "64",
+   "D": "256"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1412,
+  "stem": "Which of the following is not a valid host address within the network 172.17.128.0/21?",
+  "options": {
+   "A": "172.17.128.1/21",
+   "B": "172.17.135.255/21",
+   "C": "172.17.128.255/21",
+   "D": "172.17.135.0/21"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1419,
+  "stem": "Which of the following is the correct sequence followed during the software evolution process?",
+  "options": {
+   "A": "Change request, release planning, change implementation, impact analysis, system release",
+   "B": "Impact analysis, change request, change implementation, release planning, system release",
+   "C": "Change request, impact analysis, change implementation, release planning, system release",
+   "D": "Change request, impact analysis, release planning, change implementation, system release"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1393,
+  "stem": "Identify the lowest layer of the Android architecture.",
+  "options": {
+   "A": "Linux kernel",
+   "B": "Database",
+   "C": "Application framework",
+   "D": "Application"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1413,
+  "stem": "Which of the following is true regarding the use of switches and hubs for network connectivity?",
+  "options": {
+   "A": "Switches do not forward broadcasts",
+   "B": "Switches increase the number of collision domains in the network",
+   "C": "Switches take less time to process frames than hubs take",
+   "D": "Hubs can filter frames"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1415,
+  "stem": "Select the statement that is not correct regarding generalization in system modeling.",
+  "options": {
+   "A": "In generalization, the attributes and operations associated with the highest-level classes are also associated with the lowest-level classes.",
+   "B": "Common information is maintained in one place.",
+   "C": "It facilitates easy modification of data.",
+   "D": "The higher-level classes are more specific than the lower-level classes by adding specific attributes and operations."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1410,
+  "stem": "A situation in process management where a process is waiting for a resource that is owned by another process refers to:",
+  "options": {
+   "A": "Deadlock",
+   "B": "Preemption",
+   "C": "Overloading",
+   "D": "Queueing"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1411,
+  "stem": "A situation in process management where a set of processes is waiting for a resource that is owned by another process refers to:",
+  "options": {
+   "A": "Deadlock",
+   "B": "Preemption",
+   "C": "Overloading",
+   "D": "Queuing"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1411,
+  "stem": "\"A database is a logically coherent collection of data with some inherent meaning.\" This describes that:",
+  "options": {
+   "A": "All attributes of the entity should be related",
+   "B": "There should be one primary key attribute",
+   "C": "The entity should be a physical object",
+   "D": "The number of attributes should be limited"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1391,
+  "stem": "Which of the following is a resource optimization technique in which start and finish dates are adjusted based on resource constraints, with the goal of balancing the demand for resources with the available supply?",
+  "options": {
+   "A": "Responsibility assignment matrix",
+   "B": "Resource smoothing",
+   "C": "Resource leveling",
+   "D": "Resource grouping"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1400,
+  "stem": "A salesperson at a shop noticed that customers who buy shoes will also buy socks with a probability of 0.75, and decided to put shoes and socks side by side for ease of accessibility. Which big data analytics technique did this salesperson employ?",
+  "options": {
+   "A": "Regression modeling",
+   "B": "Clustering algorithm",
+   "C": "Predictive modeling",
+   "D": "Association rule"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1420,
+  "stem": "Given the following layered architecture with four layers A, B, C, and D (A on top, D at the bottom), which ordering relation represents a correct call that does not introduce architectural erosion?",
+  "options": {
+   "A": "(A, B)",
+   "B": "(D, A)",
+   "C": "(A, C)",
+   "D": "(C, B)"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1395,
+  "stem": "Which of the following is among the benefits provided by access control lists (ACLs) for software security in network-based applications?",
+  "options": {
+   "A": "ACLs monitor the number of bytes and packets",
+   "B": "ACLs provide high network availability",
+   "C": "ACLs perform virus detection",
+   "D": "ACLs classify and organize network traffic"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1378,
+  "stem": "What is the default method used when submitting a form?",
+  "options": {
+   "A": "Post method",
+   "B": "Get method",
+   "C": "Put method",
+   "D": "Set method"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1392,
+  "stem": "The process that generates activities such as the project schedule, cost estimations, and work breakdown structure is described as:",
+  "options": {
+   "A": "Project initiating",
+   "B": "Project executing",
+   "C": "Project closing",
+   "D": "Project planning"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1421,
+  "stem": "Given the following fragment of code, how many tests are required for 100% decision coverage?\nif width > length\n  then biggest_dimension = width\n    if height > width\n      then biggest_dimension = height\n    end_if\nelse biggest_dimension = length\n  if height > length\n    then biggest_dimension = height\n  end_if\nend_if",
+  "options": {
+   "A": "6",
+   "B": "4",
+   "C": "2",
+   "D": "1"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 4,
+  "courseName": "Web Programming",
+  "qnum": 1379,
+  "stem": "How can we select an element with a specific class in CSS?",
+  "options": {
+   "A": "^",
+   "B": "--",
+   "C": "#",
+   "D": "."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1422,
+  "stem": "Select the activity in the fundamental test process that includes evaluation of the testability of the requirements and the system.",
+  "options": {
+   "A": "Test analysis and design",
+   "B": "Test analysis and requirements",
+   "C": "Test analysis and implementation",
+   "D": "Test analysis and planning"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1412,
+  "stem": "Which of the following is the appropriate sequence of database design processes?",
+  "options": {
+   "A": "Logical database design, enterprise data modeling, physical database design, database implementation",
+   "B": "Enterprise data modeling, logical database design, database implementation, physical database design",
+   "C": "Enterprise data modeling, logical database design, physical database design, database implementation",
+   "D": "Logical database design, enterprise data modeling, physical database design, database implementation"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1423,
+  "stem": "Which of the following is not among the purposes of software testing?",
+  "options": {
+   "A": "Identify shortcomings",
+   "B": "Improve product acceptance",
+   "C": "Enhance reliability",
+   "D": "Requesting more design and implementation time"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1424,
+  "stem": "Which software process model would you use if you want to deliver different functionalities (modules) of the software product that have different priorities at different times?",
+  "options": {
+   "A": "Incremental model",
+   "B": "Spiral model",
+   "C": "Waterfall model",
+   "D": "Linear model"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1404,
+  "stem": "What is the time complexity of the following code snippet?\nfunction someFunction(n) {\n  for (var i = 0; i < n * 10; i++) {\n    console.log(n);\n  }\n}",
+  "options": {
+   "A": "O(n^2)",
+   "B": "O(log n)",
+   "C": "O(log2 n)",
+   "D": "O(n)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1425,
+  "stem": "Select the wrong statement regarding traceability in software development projects.",
+  "options": {
+   "A": "Traceability shows the dependency among two or more requirements, if any.",
+   "B": "Requirements should be linked to the respective stakeholders who generated them.",
+   "C": "Every design element (component) should be linked back to the requirement.",
+   "D": "Traceability traces the overall cost and schedule of every activity in the requirements."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1410,
+  "stem": "Which activity comes last in the fundamental program development process in C++?",
+  "options": {
+   "A": "Memory allocation for variables",
+   "B": "Linking",
+   "C": "Compiling the program",
+   "D": "Writing the program"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1416,
+  "stem": "Which design pattern is used to restore the state of an object to its previous state?",
+  "options": {
+   "A": "Visitor pattern",
+   "B": "Memento pattern",
+   "C": "Observer pattern",
+   "D": "Iterator pattern"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1396,
+  "stem": "Which of the following describes a set of standards and an associated network protocol that allows establishing a secure channel between a local and a remote computer?",
+  "options": {
+   "A": "Secure Socket Layer (SSL)",
+   "B": "Secure Shell (SSH)",
+   "C": "Authentication, Authorization and Accounting (AAA)",
+   "D": "Simple Network Management Protocol (SNMP)"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1426,
+  "stem": "What component hides the distinctions or boundaries between various microservices from the end client application?",
+  "options": {
+   "A": "A layered system",
+   "B": "API gateway",
+   "C": "API proxy",
+   "D": "API logging"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1427,
+  "stem": "Select a fundamental issue that is not considered by software architects during the architectural design process.",
+  "options": {
+   "A": "Which architectural organization is best for delivering the functional requirements",
+   "B": "How to decompose structural components into sub-components",
+   "C": "How the system will be distributed across a number of cores or processes",
+   "D": "Which architectural patterns or styles to use"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 9,
+  "courseName": "Software Project Management",
+  "qnum": 1393,
+  "stem": "Which of the following statements is not correct regarding project life cycles?",
+  "options": {
+   "A": "In an agile life cycle, the project scope is generally determined early in the project life cycle, but time and cost estimates are routinely modified.",
+   "B": "In a waterfall life cycle, the project scope, time and cost are determined in the early phase of the life cycle.",
+   "C": "In agile life cycles, the project scope cannot be outlined and agreed before the start of iteration.",
+   "D": "In an incremental life cycle, the deliverable is produced through a series of iterations that successively add functionality within a predetermined time frame."
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1413,
+  "stem": "Which of the following is not among the characterizing features of the database approach?",
+  "options": {
+   "A": "Application-data dependency",
+   "B": "Sharing of data",
+   "C": "Self-describing",
+   "D": "Data abstraction"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 5,
+  "courseName": "Mobile Application Development",
+  "qnum": 1394,
+  "stem": "What is an activity in Android?",
+  "options": {
+   "A": "An Android class used to configure the Android application",
+   "B": "It is an intent",
+   "C": "An Android package file holding all the packages used",
+   "D": "A single screen in an application with supporting Java code"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 11,
+  "courseName": "Information Security",
+  "qnum": 1397,
+  "stem": "Which of the following is not an approach used by IT security specialists to enhance the security level of a network?",
+  "options": {
+   "A": "Use of intrusion detection systems",
+   "B": "Use of the WannaCry protocol",
+   "C": "Use of physical security",
+   "D": "Use of intrusion prevention systems"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1428,
+  "stem": "As a software tester, when do you implement configuration management procedures?",
+  "options": {
+   "A": "During test planning",
+   "B": "During test closing",
+   "C": "During test execution",
+   "D": "During test initiation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1401,
+  "stem": "Identify the activity that comes first in the data mining process.",
+  "options": {
+   "A": "Data cleaning",
+   "B": "Data integration",
+   "C": "Business understanding",
+   "D": "Data selection"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1414,
+  "stem": "A TCP/IP layer that is responsible for addressing, path selection, and routing refers to:",
+  "options": {
+   "A": "Application layer",
+   "B": "Internet layer",
+   "C": "Transport layer",
+   "D": "Network access layer"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1405,
+  "stem": "Which of the following analysis mechanisms defines the input for which the algorithm takes the least time (fastest time to complete)?",
+  "options": {
+   "A": "Worst case",
+   "B": "Best case",
+   "C": "Standard case",
+   "D": "Average case"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1402,
+  "stem": "Which learning algorithm is usually applied to data that does not contain any label information, so we do not know what the right output should be?",
+  "options": {
+   "A": "Transfer learning",
+   "B": "Supervised learning",
+   "C": "Unsupervised learning",
+   "D": "Reinforcement learning"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1406,
+  "stem": "Depending on the organization of its elements, which of the following is a non-linear data structure?",
+  "options": {
+   "A": "Queue",
+   "B": "Stack",
+   "C": "Tree",
+   "D": "Linked list"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 13,
+  "courseName": "Machine Learning",
+  "qnum": 1403,
+  "stem": "Which one of the following can be a possible source of unstructured data?",
+  "options": {
+   "A": "Apple employee database",
+   "B": "RDBMS systems",
+   "C": "Registrar student database",
+   "D": "Google search engine"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1429,
+  "stem": "Select the option that is not related to the purpose of properly documenting software architecture.",
+  "options": {
+   "A": "For stakeholder communication",
+   "B": "To easily figure out the source code flow",
+   "C": "For critical system design decisions",
+   "D": "To know how the system is organized and how its parts interoperate"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 12,
+  "courseName": "Artificial Intelligence",
+  "qnum": 1403,
+  "stem": "Which of the following statements is correct about Artificial Intelligence (AI)?",
+  "options": {
+   "A": "It refers to the development of machines that can only perform physical tasks.",
+   "B": "It refers to the development of machines that can only perform simple, repetitive tasks.",
+   "C": "It refers to the development of machines that can perform tasks only in a controlled laboratory setting.",
+   "D": "It refers to the development of machines that can perform tasks that typically require human intelligence."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1430,
+  "stem": "Which of the following is the process of selecting program paths such that certain branches (i.e., outgoing edges of nodes) of a control flow graph are covered by the execution of those paths?",
+  "options": {
+   "A": "Branch coverage",
+   "B": "Branch expansion",
+   "C": "Branch control",
+   "D": "Branch boundary"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1415,
+  "stem": "Given a situation where two hosts on a half-duplex Ethernet LAN attempt to send data concurrently, resulting in a collision, what will the hosts do subsequent to this collision?",
+  "options": {
+   "A": "The jam signal indicates that the collision has been cleared",
+   "B": "An electrical pulse indicates that the collision has cleared",
+   "C": "The hosts will attempt to resume transmission after a time delay has expired",
+   "D": "The router on the segment will signal that the collision has cleared"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 2,
+  "courseName": "Data Structures & Algorithms",
+  "qnum": 1407,
+  "stem": "What is the time complexity of the following function?\npublic void function(int n) {\n  for (int i = 0; i < n; i++)\n    for (int j = 0; j < i * i; j++)\n      if (j % i == 0) {\n        for (int k = 0; k < j; k++)\n          print(\"*\");\n      }\n}",
+  "options": {
+   "A": "O(n^2)",
+   "B": "O(n log n)",
+   "C": "O(n^7)",
+   "D": "O(n^5)"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1431,
+  "stem": "Identify the design principle that does not apply to software systems.",
+  "options": {
+   "A": "Design should be traceable to the analysis model",
+   "B": "Design should be structured to accommodate change",
+   "C": "Design should exhibit uniformity and integration",
+   "D": "Design should reinvent the wheel from scratch"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 1,
+  "courseName": "Fundamentals of Programming",
+  "qnum": 1411,
+  "stem": "You are required to write a program that iteratively takes 50 numbers from user input and adds them up only if the numbers are positive, skipping them if not. Which control structure best fits this scenario?",
+  "options": {
+   "A": "break",
+   "B": "continue",
+   "C": "for",
+   "D": "jump"
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1417,
+  "stem": "Which of the following UML elements is wrongly described?",
+  "options": {
+   "A": "A class diagram shows the object classes in a system and their relationships.",
+   "B": "An activity diagram shows how the system reacts to internal and external events.",
+   "C": "A use case diagram represents an interaction with a system.",
+   "D": "A sequence diagram shows the sequence of interactions required to complete some operation."
+  },
+  "answer": "B"
+ },
+ {
+  "courseNo": 7,
+  "courseName": "Operating Systems",
+  "qnum": 1412,
+  "stem": "A memory management policy in which decisions must be made as to which page or pages are to be replaced when memory is full is known as:",
+  "options": {
+   "A": "Cleaning policy",
+   "B": "Load policy",
+   "C": "Replacement policy",
+   "D": "Fetch policy"
+  },
+  "answer": "C"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1432,
+  "stem": "Which software model would you apply for a business operating in a changing environment, where the initial requirements inevitably change due to internal and external factors?",
+  "options": {
+   "A": "Agile development method",
+   "B": "Spiral model",
+   "C": "Waterfall model",
+   "D": "Code and run"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 6,
+  "courseName": "Fundamentals of Databases",
+  "qnum": 1414,
+  "stem": "Assume you are assigned to design a dormitory management database. A dormitory is located in some building and has attributes specified as DORM(DormId, FloorNumber), where DormId is the primary key based on the university's rule that six students can be assigned to one dorm. Students are tracked with attributes STUDENT(IdNo, Name, Department), where IdNo is the primary key. Based on this scenario, which SQL statement correctly establishes the relationship between DORM and STUDENT, assuming DormId is a foreign key in STUDENT?",
+  "options": {
+   "A": "FOREIGN KEY (DormID) REFERENCES DORM(DormID)",
+   "B": "STUDENT table is a reference relation",
+   "C": "FOREIGN KEY (DormID) REFERENCED BY DORM(DormID)",
+   "D": "DORM table is a referencing relation"
+  },
+  "answer": "A"
+ },
+ {
+  "courseNo": 3,
+  "courseName": "Object-Oriented Programming",
+  "qnum": 1418,
+  "stem": "Which one of the following statements is wrong regarding the try...catch construct?",
+  "options": {
+   "A": "When an exception occurs, the execution of the try block is interrupted.",
+   "B": "Execution control is moved to the catch block after an exception occurs in the try block.",
+   "C": "The catch block is used to handle exceptions that occur in the try block.",
+   "D": "The catch block is executed once regardless of whether an exception occurs in the try block."
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 10,
+  "courseName": "Fundamentals of Networking",
+  "qnum": 1416,
+  "stem": "Which of the following is not a function of a crossover UTP cable?",
+  "options": {
+   "A": "To connect switch to switch",
+   "B": "To connect PC to PC",
+   "C": "To connect router to PC",
+   "D": "To connect switch to PC"
+  },
+  "answer": "D"
+ },
+ {
+  "courseNo": 8,
+  "courseName": "Software Engineering",
+  "qnum": 1433,
+  "stem": "Who is responsible for documenting faults found during the software development process?",
+  "options": {
+   "A": "Tester",
+   "B": "Developer",
+   "C": "Scrum master",
+   "D": "Requirement engineer"
+  },
+  "answer": "A"
  }
 ]

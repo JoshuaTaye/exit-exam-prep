@@ -7,12 +7,14 @@ import {
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { masteryColor } from "@/lib/colors";
+import { CourseTopicProgress, type CourseProgress } from "./course-topic-progress";
 
 interface Node { id?: number; name: string; mastery: number; attempted: number; total: number }
 interface HeatTopic { topicId: number; name: string; courseName: string; mastery: number; attempted: number; band: string }
 
 export interface AnalyticsData {
   courses: { name: string; mastery: number; attempted: number; total: number; weight: number }[];
+  courseTopicProgress: CourseProgress[];
   byDifficulty: Node[];
   byType: Node[];
   progress: {
@@ -154,6 +156,9 @@ export function AnalyticsDashboard({ data }: { data: AnalyticsData }) {
           <MiniBars title="Mastery by difficulty" rows={data.byDifficulty} />
         </div>
       </div>
+
+      {/* Progress by course & topic */}
+      <CourseTopicProgress courses={data.courseTopicProgress} />
 
       {/* Heatmap */}
       <Card>

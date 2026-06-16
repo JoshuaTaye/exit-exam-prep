@@ -46,6 +46,8 @@ model Topic {
   course     Course     @relation(fields: [courseId], references: [id])
   questions  Question[]
   note       Note?
+
+  @@unique([courseId, slug])
 }
 
 // ----------------------------- Question bank -----------------------------
