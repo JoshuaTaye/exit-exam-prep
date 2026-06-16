@@ -18,6 +18,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { StatRing } from "@/components/ui/stat-ring";
 import { StartQuizButton } from "@/components/quiz/start-quiz-button";
+import { plainText } from "@/components/ui/rich-text";
 import { masteryColor, bandVariant, bandLabel } from "@/lib/colors";
 
 export const dynamic = "force-dynamic";
@@ -169,7 +170,7 @@ export default async function Dashboard() {
                 href={`/notes/${m.question.courseId}?topic=${m.question.topic.slug}#${m.question.topic.slug}`}
                 className="block rounded-lg border p-2.5 transition-colors hover:bg-accent"
               >
-                <p className="truncate text-sm">{m.question.stem}</p>
+                <p className="truncate text-sm">{plainText(m.question.stem)}</p>
                 <p className="mt-0.5 truncate text-xs text-muted-foreground">{m.question.topic.name} · {m.question.course.name}</p>
               </Link>
             ))}

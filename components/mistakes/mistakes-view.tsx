@@ -3,11 +3,12 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BookOpen, ChevronDown, CheckCircle2, Check, RotateCcw, Loader2 } from "lucide-react";
+import { BookOpen, ChevronDown, CheckCircle2, Check, RotateCcw, Loader2, FileQuestion } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { StartQuizButton } from "@/components/quiz/start-quiz-button";
+import { RichText } from "@/components/ui/rich-text";
 import { cn } from "@/lib/utils";
 import { difficultyVariant } from "@/lib/colors";
 import type { Difficulty } from "@/lib/constants";
@@ -114,19 +115,24 @@ function MistakeRow({ e }: { e: Entry }) {
           {new Date(e.createdAt).toLocaleDateString()} · {e.externalId}
         </span>
       </div>
-      <p className="text-sm font-medium">{e.stem}</p>
+      <RichText as="div" className="text-sm font-medium">{e.stem}</RichText>
       <div className="mt-2 grid gap-1.5 text-sm sm:grid-cols-2">
         <div className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-1.5">
           <span className="text-xs font-medium text-destructive">Your answer:</span>{" "}
-          <span className="font-semibold">{e.selectedAnswer}.</span> {e.selectedText}
+          <span className="font-semibold">{e.selectedAnswer}.</span>{" "}
+          <RichText as="span">{e.selectedText}</RichText>
         </div>
         <div className="rounded-md border border-success/40 bg-success/10 px-3 py-1.5">
           <span className="text-xs font-medium text-success">Correct:</span>{" "}
-          <span className="font-semibold">{e.correctAnswer}.</span> {e.correctText}
+          <span className="font-semibold">{e.correctAnswer}.</span>{" "}
+          <RichText as="span">{e.correctText}</RichText>
         </div>
       </div>
-      <p className="mt-2 text-xs text-muted-foreground">{e.explanation}</p>
+      <RichText as="div" className="mt-2 text-xs text-muted-foreground">{e.explanation}</RichText>
       <div className="mt-2 flex flex-wrap items-center gap-2">
+        <StartQuizButton spec={{ mode: "single", questionId: e.questionId }} size="sm" variant="outline">
+          <FileQuestion /> Open question
+        </StartQuizButton>
         <Link href={e.noteHref}>
           <Button size="sm" variant="outline"><BookOpen /> Open Notes</Button>
         </Link>

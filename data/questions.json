@@ -16,7 +16,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 2,
-  "stem": "What is the output of: x=5; for i=1 to 3: x=x*i; print x?",
+  "stem": "What is the output of:\n```\nx = 5\nfor i = 1 to 3:\n    x = x * i\nprint x\n```",
   "options": {
    "A": "15",
    "B": "30",
@@ -111,7 +111,7 @@
   "options": {
    "A": "<>",
    "B": "=/=",
-   "C": "!=",
+   "C": "`!=`",
    "D": "~="
   },
   "answer": "C"
@@ -185,7 +185,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 15,
-  "stem": "Last index of int arr[10] in C++?",
+  "stem": "Last index of `int arr[10]` in C++?",
   "options": {
    "A": "10",
    "B": "9",
@@ -317,10 +317,10 @@
   "qnum": 25,
   "stem": "Which of these is a relational operator?",
   "options": {
-   "A": "&&",
-   "B": "++",
-   "C": ">=",
-   "D": "<<"
+   "A": "`&&`",
+   "B": "`++`",
+   "C": "`>=`",
+   "D": "`<<`"
   },
   "answer": "C"
  },
@@ -448,8 +448,8 @@
   "stem": "What is the difference between '=' and '==' in C++?",
   "options": {
    "A": "No difference",
-   "B": "'=' assigns value; '==' checks equality",
-   "C": "'==' assigns value; '=' checks equality",
+   "B": "`=` assigns value; `==` checks equality",
+   "C": "`==` assigns value; `=` checks equality",
    "D": "Both check equality"
   },
   "answer": "B"
@@ -501,8 +501,8 @@
   "options": {
    "A": "&",
    "B": "|",
-   "C": "&&",
-   "D": "||"
+   "C": "`&&`",
+   "D": "`||`"
   },
   "answer": "C"
  },
@@ -510,7 +510,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 40,
-  "stem": "What is the output of: x=10; x+=5; print x?",
+  "stem": "What is the output of:\n```\nx = 10\nx += 5\nprint x\n```",
   "options": {
    "A": "5",
    "B": "10",
@@ -538,10 +538,10 @@
   "qnum": 42,
   "stem": "Which is the correct way to declare a constant in C++?",
   "options": {
-   "A": "var PI = 3.14",
-   "B": "const float PI = 3.14;",
-   "C": "final float PI = 3.14;",
-   "D": "static PI = 3.14;"
+   "A": "`var PI = 3.14`",
+   "B": "`const float PI = 3.14;`",
+   "C": "`final float PI = 3.14;`",
+   "D": "`static PI = 3.14;`"
   },
   "answer": "B"
  },
@@ -549,7 +549,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 43,
-  "stem": "What does 'void' mean as a function return type?",
+  "stem": "What does `void` mean as a function return type?",
   "options": {
    "A": "Returns zero",
    "B": "Returns nothing",
@@ -564,10 +564,10 @@
   "qnum": 44,
   "stem": "Nested loops have what time complexity when both run n times?",
   "options": {
-   "A": "O(n)",
-   "B": "O(n log n)",
-   "C": "O(n\u00b2)",
-   "D": "O(2n)"
+   "A": "`O(n)`",
+   "B": "`O(n log n)`",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(2n)`"
   },
   "answer": "C"
  },
@@ -720,10 +720,10 @@
   "qnum": 56,
   "stem": "Which of these correctly initializes a 1D array of 5 integers in C++?",
   "options": {
-   "A": "int arr = {1,2,3,4,5};",
-   "B": "int arr[5] = {1,2,3,4,5};",
-   "C": "array<int> arr(5);",
-   "D": "int[5] arr;"
+   "A": "`int arr = {1,2,3,4,5};`",
+   "B": "`int arr[5] = {1,2,3,4,5};`",
+   "C": "`array<int> arr(5);`",
+   "D": "`int[5] arr;`"
   },
   "answer": "B"
  },
@@ -770,7 +770,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 60,
-  "stem": "What is the purpose of 'return' in a non-void function?",
+  "stem": "What is the purpose of `return` in a non-`void` function?",
   "options": {
    "A": "Exits the program",
    "B": "Sends a value back to the caller",
@@ -785,10 +785,10 @@
   "qnum": 61,
   "stem": "Which of the following is a logical operator?",
   "options": {
-   "A": "!=",
-   "B": "||",
-   "C": ">=",
-   "D": "++"
+   "A": "`!=`",
+   "B": "`||`",
+   "C": "`>=`",
+   "D": "`++`"
   },
   "answer": "B"
  },
@@ -850,9 +850,9 @@
   "qnum": 66,
   "stem": "Which keyword in C++ declares a variable whose value cannot change after initialization?",
   "options": {
-   "A": "static",
+   "A": "`static`",
    "B": "extern",
-   "C": "const",
+   "C": "`const`",
    "D": "volatile"
   },
   "answer": "C"
@@ -900,7 +900,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 70,
-  "stem": "What is the output of: for(int i=0;i<3;i++) cout<<i;",
+  "stem": "What is the output of:\n```cpp\nfor (int i = 0; i < 3; i++)\n    cout << i;\n```",
   "options": {
    "A": "123",
    "B": "012",
@@ -1008,7 +1008,7 @@
   "options": {
    "A": "null",
    "B": "none",
-   "C": "void",
+   "C": "`void`",
    "D": "empty"
   },
   "answer": "C"
@@ -1017,7 +1017,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 79,
-  "stem": "What is the output of: int x=3; cout << x*x+1;",
+  "stem": "What is the output of:\n```cpp\nint x = 3;\ncout << x * x + 1;\n```",
   "options": {
    "A": "7",
    "B": "10",
@@ -1069,7 +1069,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 83,
-  "stem": "What is the size of int in most 32-bit C++ systems?",
+  "stem": "What is the size of `int` in most 32-bit C++ systems?",
   "options": {
    "A": "1 byte",
    "B": "2 bytes",
@@ -1086,7 +1086,7 @@
   "options": {
    "A": "auto",
    "B": "register",
-   "C": "static",
+   "C": "`static`",
    "D": "extern"
   },
   "answer": "C"
@@ -1147,7 +1147,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 89,
-  "stem": "What is the output of: int a=5,b=3; cout<<(a>b?a:b);",
+  "stem": "What is the output of:\n```cpp\nint a = 5, b = 3;\ncout << (a > b ? a : b);\n```",
   "options": {
    "A": "3",
    "B": "5",
@@ -1212,7 +1212,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 94,
-  "stem": "What is the output of: cout<<(10/3);",
+  "stem": "What is the output of:\n```cpp\ncout << (10 / 3);\n```",
   "options": {
    "A": "3.33",
    "B": "3",
@@ -1225,7 +1225,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 95,
-  "stem": "What is the output of: cout<<(10.0/3);",
+  "stem": "What is the output of:\n```cpp\ncout << (10.0 / 3);\n```",
   "options": {
    "A": "3",
    "B": "3.33333",
@@ -1294,7 +1294,7 @@
   "options": {
    "A": ".",
    "B": "->",
-   "C": "::",
+   "C": "`::`",
    "D": "*"
   },
   "answer": "B"
@@ -1344,10 +1344,10 @@
   "qnum": 104,
   "stem": "Which of the following correctly swaps two integer variables a and b without a temp variable?",
   "options": {
-   "A": "a=b; b=a;",
-   "B": "a=a+b; b=a-b; a=a-b;",
+   "A": "`a=b; b=a;`",
+   "B": "`a=a+b; b=a-b; a=a-b;`",
    "C": "swap(a,b) only",
-   "D": "a*=b; b/=a; a/=b;"
+   "D": "`a*=b; b/=a; a/=b;`"
   },
   "answer": "B"
  },
@@ -1407,7 +1407,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 109,
-  "stem": "What is the output of: int arr[]={1,2,3}; cout<<arr[1];",
+  "stem": "What is the output of:\n```cpp\nint arr[] = {1, 2, 3};\ncout << arr[1];\n```",
   "options": {
    "A": "1",
    "B": "2",
@@ -1446,7 +1446,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 112,
-  "stem": "What is the output of: int x=1; while(x<5){x*=2;} cout<<x;",
+  "stem": "What is the output of:\n```cpp\nint x = 1;\nwhile (x < 5) { x *= 2; }\ncout << x;\n```",
   "options": {
    "A": "4",
    "B": "8",
@@ -1526,10 +1526,10 @@
   "qnum": 118,
   "stem": "Which of the following is an example of an assignment operator?",
   "options": {
-   "A": "==",
-   "B": "!=",
+   "A": "`==`",
+   "B": "`!=`",
    "C": "+=",
-   "D": ">="
+   "D": "`>=`"
   },
   "answer": "C"
  },
@@ -1537,7 +1537,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 119,
-  "stem": "What is the output of: int x=5; x-=3; cout<<x;",
+  "stem": "What is the output of:\n```cpp\nint x = 5;\nx -= 3;\ncout << x;\n```",
   "options": {
    "A": "8",
    "B": "2",
@@ -1550,7 +1550,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 120,
-  "stem": "A 'while' loop with condition 'while(true)' creates:",
+  "stem": "A `while` loop with condition `while (true)` creates:",
   "options": {
    "A": "A loop that runs once",
    "B": "An infinite loop",
@@ -1576,7 +1576,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 122,
-  "stem": "What is the output of: for(int i=5;i>0;i--) cout<<i<<\" \";",
+  "stem": "What is the output of:\n```cpp\nfor (int i = 5; i > 0; i--)\n    cout << i << \" \";\n```",
   "options": {
    "A": "1 2 3 4 5",
    "B": "5 4 3 2 1",
@@ -1602,7 +1602,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 124,
-  "stem": "What is the output of: cout<<(5==5);",
+  "stem": "What is the output of:\n```cpp\ncout << (5 == 5);\n```",
   "options": {
    "A": "5",
    "B": "true",
@@ -1693,7 +1693,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 131,
-  "stem": "If int arr[3]={10,20,30}, what is arr[2]?",
+  "stem": "If `int arr[3] = {10, 20, 30}`, what is `arr[2]`?",
   "options": {
    "A": "10",
    "B": "20",
@@ -1719,7 +1719,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 133,
-  "stem": "What is the output of: int a=2,b=3; cout<<a<<b;",
+  "stem": "What is the output of:\n```cpp\nint a = 2, b = 3;\ncout << a << b;\n```",
   "options": {
    "A": "5",
    "B": "23",
@@ -1747,10 +1747,10 @@
   "qnum": 135,
   "stem": "Time complexity of searching in a balanced BST?",
   "options": {
-   "A": "O(n)",
-   "B": "O(n log n)",
-   "C": "O(log n)",
-   "D": "O(1)"
+   "A": "`O(n)`",
+   "B": "`O(n log n)`",
+   "C": "`O(log n)`",
+   "D": "`O(1)`"
   },
   "answer": "C"
  },
@@ -1825,10 +1825,10 @@
   "qnum": 141,
   "stem": "Adjacency List space complexity for sparse graph?",
   "options": {
-   "A": "O(V\u00b2)",
-   "B": "O(V+E)",
-   "C": "O(E\u00b2)",
-   "D": "O(V)"
+   "A": "`O(V\u00b2)`",
+   "B": "`O(V+E)`",
+   "C": "`O(E\u00b2)`",
+   "D": "`O(V)`"
   },
   "answer": "B"
  },
@@ -1864,10 +1864,10 @@
   "qnum": 144,
   "stem": "Worst case of Quick Sort and its cause?",
   "options": {
-   "A": "O(n log n) \u2014 random pivot",
-   "B": "O(n\u00b2) \u2014 worst pivot choice",
-   "C": "O(n) \u2014 sorted input",
-   "D": "O(log n) \u2014 balanced partitions"
+   "A": "`O(n log n)` \u2014 random pivot",
+   "B": "`O(n\u00b2)` \u2014 worst pivot choice",
+   "C": "`O(n)` \u2014 sorted input",
+   "D": "`O(log n)` \u2014 balanced partitions"
   },
   "answer": "B"
  },
@@ -1903,7 +1903,7 @@
   "qnum": 147,
   "stem": "Doubly linked list differs from singly by having:",
   "options": {
-   "A": "O(1) search",
+   "A": "`O(1)` search",
    "B": "Both next and prev pointers",
    "C": "Circular traversal",
    "D": "Less memory"
@@ -1929,10 +1929,10 @@
   "qnum": 149,
   "stem": "Time to insert at HEAD of singly linked list?",
   "options": {
-   "A": "O(n)",
-   "B": "O(log n)",
-   "C": "O(n\u00b2)",
-   "D": "O(1)"
+   "A": "`O(n)`",
+   "B": "`O(log n)`",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(1)`"
   },
   "answer": "D"
  },
@@ -1994,10 +1994,10 @@
   "qnum": 154,
   "stem": "Binary search time complexity?",
   "options": {
-   "A": "O(n)",
-   "B": "O(n\u00b2)",
-   "C": "O(log n)",
-   "D": "O(1)"
+   "A": "`O(n)`",
+   "B": "`O(n\u00b2)`",
+   "C": "`O(log n)`",
+   "D": "`O(1)`"
   },
   "answer": "C"
  },
@@ -2007,10 +2007,10 @@
   "qnum": 155,
   "stem": "Bubble sort worst case?",
   "options": {
-   "A": "O(n log n)",
-   "B": "O(n)",
-   "C": "O(n\u00b2)",
-   "D": "O(log n)"
+   "A": "`O(n log n)`",
+   "B": "`O(n)`",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(log n)`"
   },
   "answer": "C"
  },
@@ -2098,10 +2098,10 @@
   "qnum": 162,
   "stem": "Merge Sort space complexity?",
   "options": {
-   "A": "O(1)",
-   "B": "O(log n)",
-   "C": "O(n)",
-   "D": "O(n\u00b2)"
+   "A": "`O(1)`",
+   "B": "`O(log n)`",
+   "C": "`O(n)`",
+   "D": "`O(n\u00b2)`"
   },
   "answer": "C"
  },
@@ -2150,10 +2150,10 @@
   "qnum": 166,
   "stem": "Insertion sort best-case time complexity?",
   "options": {
-   "A": "O(n\u00b2)",
-   "B": "O(n log n)",
-   "C": "O(n)",
-   "D": "O(log n)"
+   "A": "`O(n\u00b2)`",
+   "B": "`O(n log n)`",
+   "C": "`O(n)`",
+   "D": "`O(log n)`"
   },
   "answer": "C"
  },
@@ -2178,7 +2178,7 @@
   "options": {
    "A": "Never crashes",
    "B": "Preserves relative order of equal elements",
-   "C": "Runs in O(n log n)",
+   "C": "Runs in `O(n log n)`",
    "D": "Works on linked lists"
   },
   "answer": "B"
@@ -2189,10 +2189,10 @@
   "qnum": 169,
   "stem": "What is the height of a balanced BST with n nodes?",
   "options": {
-   "A": "O(n)",
-   "B": "O(log n)",
-   "C": "O(n\u00b2)",
-   "D": "O(1)"
+   "A": "`O(n)`",
+   "B": "`O(log n)`",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(1)`"
   },
   "answer": "B"
  },
@@ -2254,10 +2254,10 @@
   "qnum": 174,
   "stem": "Time complexity of Heap Sort?",
   "options": {
-   "A": "O(n\u00b2)",
-   "B": "O(n)",
-   "C": "O(n log n)",
-   "D": "O(log n)"
+   "A": "`O(n\u00b2)`",
+   "B": "`O(n)`",
+   "C": "`O(n log n)`",
+   "D": "`O(log n)`"
   },
   "answer": "C"
  },
@@ -2345,10 +2345,10 @@
   "qnum": 181,
   "stem": "Time complexity of linear search?",
   "options": {
-   "A": "O(log n)",
-   "B": "O(1)",
-   "C": "O(n)",
-   "D": "O(n log n)"
+   "A": "`O(log n)`",
+   "B": "`O(1)`",
+   "C": "`O(n)`",
+   "D": "`O(n log n)`"
   },
   "answer": "C"
  },
@@ -2412,7 +2412,7 @@
   "options": {
    "A": "It uses recursion",
    "B": "Swapping can change relative order of equal elements",
-   "C": "It runs in O(n\u00b2)",
+   "C": "It runs in `O(n\u00b2)`",
    "D": "It doesn't compare elements"
   },
   "answer": "B"
@@ -2423,10 +2423,10 @@
   "qnum": 187,
   "stem": "Space complexity of DFS with m being max depth?",
   "options": {
-   "A": "O(b^d)",
-   "B": "O(m)",
-   "C": "O(n\u00b2)",
-   "D": "O(1)"
+   "A": "`O(b^d)`",
+   "B": "`O(m)`",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(1)`"
   },
   "answer": "B"
  },
@@ -2449,10 +2449,10 @@
   "qnum": 189,
   "stem": "Heap insert operation time complexity?",
   "options": {
-   "A": "O(n)",
-   "B": "O(log n)",
-   "C": "O(1)",
-   "D": "O(n log n)"
+   "A": "`O(n)`",
+   "B": "`O(log n)`",
+   "C": "`O(1)`",
+   "D": "`O(n log n)`"
   },
   "answer": "B"
  },
@@ -2462,10 +2462,10 @@
   "qnum": 190,
   "stem": "What is a hash table's average search time?",
   "options": {
-   "A": "O(n)",
-   "B": "O(log n)",
-   "C": "O(1)",
-   "D": "O(n log n)"
+   "A": "`O(n)`",
+   "B": "`O(log n)`",
+   "C": "`O(1)`",
+   "D": "`O(n log n)`"
   },
   "answer": "C"
  },
@@ -2514,10 +2514,10 @@
   "qnum": 194,
   "stem": "Bubble sort best case (already sorted)?",
   "options": {
-   "A": "O(n\u00b2)",
-   "B": "O(n log n)",
-   "C": "O(n)",
-   "D": "O(1)"
+   "A": "`O(n\u00b2)`",
+   "B": "`O(n log n)`",
+   "C": "`O(n)`",
+   "D": "`O(1)`"
   },
   "answer": "C"
  },
@@ -2579,10 +2579,10 @@
   "qnum": 199,
   "stem": "Time complexity of inserting into a sorted linked list?",
   "options": {
-   "A": "O(1)",
-   "B": "O(log n)",
-   "C": "O(n)",
-   "D": "O(n\u00b2)"
+   "A": "`O(1)`",
+   "B": "`O(log n)`",
+   "C": "`O(n)`",
+   "D": "`O(n\u00b2)`"
   },
   "answer": "C"
  },
@@ -2657,10 +2657,10 @@
   "qnum": 205,
   "stem": "What is the worst case for a BST that becomes unbalanced (degenerates)?",
   "options": {
-   "A": "O(log n) search",
-   "B": "O(n) search, like a linked list",
-   "C": "O(1) search",
-   "D": "O(n\u00b2) search"
+   "A": "`O(log n)` search",
+   "B": "`O(n)` search, like a linked list",
+   "C": "`O(1)` search",
+   "D": "`O(n\u00b2)` search"
   },
   "answer": "B"
  },
@@ -2696,10 +2696,10 @@
   "qnum": 208,
   "stem": "Counting sort has time complexity of:",
   "options": {
-   "A": "O(n log n)",
-   "B": "O(n + k) where k is value range",
-   "C": "O(n\u00b2)",
-   "D": "O(n)"
+   "A": "`O(n log n)`",
+   "B": "`O(n + k)` where k is value range",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(n)`"
   },
   "answer": "B"
  },
@@ -2722,10 +2722,10 @@
   "qnum": 210,
   "stem": "Time complexity to find maximum element in unsorted array?",
   "options": {
-   "A": "O(1)",
-   "B": "O(log n)",
-   "C": "O(n)",
-   "D": "O(n log n)"
+   "A": "`O(1)`",
+   "B": "`O(log n)`",
+   "C": "`O(n)`",
+   "D": "`O(n log n)`"
   },
   "answer": "C"
  },
@@ -2748,10 +2748,10 @@
   "qnum": 212,
   "stem": "Adjacency Matrix space complexity?",
   "options": {
-   "A": "O(V+E)",
-   "B": "O(V\u00b2)",
-   "C": "O(E)",
-   "D": "O(V)"
+   "A": "`O(V+E)`",
+   "B": "`O(V\u00b2)`",
+   "C": "`O(E)`",
+   "D": "`O(V)`"
   },
   "answer": "B"
  },
@@ -2800,10 +2800,10 @@
   "qnum": 216,
   "stem": "Quick sort average case time complexity?",
   "options": {
-   "A": "O(n\u00b2)",
-   "B": "O(n)",
-   "C": "O(n log n)",
-   "D": "O(log n)"
+   "A": "`O(n\u00b2)`",
+   "B": "`O(n)`",
+   "C": "`O(n log n)`",
+   "D": "`O(log n)`"
   },
   "answer": "C"
  },
@@ -2865,10 +2865,10 @@
   "qnum": 221,
   "stem": "BFS time complexity for graph with V vertices and E edges?",
   "options": {
-   "A": "O(V\u00b2)",
-   "B": "O(V+E)",
-   "C": "O(V log V)",
-   "D": "O(E\u00b2)"
+   "A": "`O(V\u00b2)`",
+   "B": "`O(V+E)`",
+   "C": "`O(V log V)`",
+   "D": "`O(E\u00b2)`"
   },
   "answer": "B"
  },
@@ -2943,10 +2943,10 @@
   "qnum": 227,
   "stem": "Time complexity of building a heap from n elements?",
   "options": {
-   "A": "O(n log n)",
-   "B": "O(n)",
-   "C": "O(n\u00b2)",
-   "D": "O(log n)"
+   "A": "`O(n log n)`",
+   "B": "`O(n)`",
+   "C": "`O(n\u00b2)`",
+   "D": "`O(log n)`"
   },
   "answer": "B"
  },
@@ -2983,7 +2983,7 @@
   "stem": "What is the main drawback of Bubble Sort?",
   "options": {
    "A": "Not stable",
-   "B": "O(n\u00b2) in average/worst case \u2014 very slow on large data",
+   "B": "`O(n\u00b2)` in average/worst case \u2014 very slow on large data",
    "C": "Needs extra memory",
    "D": "Cannot sort integers"
   },
@@ -2995,10 +2995,10 @@
   "qnum": 231,
   "stem": "Stack push/pop operations are both:",
   "options": {
-   "A": "O(n)",
-   "B": "O(log n)",
-   "C": "O(1)",
-   "D": "O(n\u00b2)"
+   "A": "`O(n)`",
+   "B": "`O(log n)`",
+   "C": "`O(1)`",
+   "D": "`O(n\u00b2)`"
   },
   "answer": "C"
  },
@@ -3071,7 +3071,7 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 237,
-  "stem": "Binary search goes to which half if target < arr[mid]?",
+  "stem": "Binary search goes to which half if `target < arr[mid]`?",
   "options": {
    "A": "Right half",
    "B": "Left half",
@@ -3127,7 +3127,7 @@
   "options": {
    "A": "Uses extra memory",
    "B": "Swapping in heapify changes relative order of equals",
-   "C": "Runs in O(n\u00b2)",
+   "C": "Runs in `O(n\u00b2)`",
    "D": "Requires sorted input"
   },
   "answer": "B"
@@ -3151,10 +3151,10 @@
   "qnum": 243,
   "stem": "What is the time to delete a node from middle of doubly linked list given pointer to it?",
   "options": {
-   "A": "O(n)",
-   "B": "O(1)",
-   "C": "O(log n)",
-   "D": "O(n\u00b2)"
+   "A": "`O(n)`",
+   "B": "`O(1)`",
+   "C": "`O(log n)`",
+   "D": "`O(n\u00b2)`"
   },
   "answer": "B"
  },
@@ -3190,10 +3190,10 @@
   "qnum": 246,
   "stem": "Counting number of nodes in a binary tree requires:",
   "options": {
-   "A": "O(1) traversal",
-   "B": "O(n) traversal visiting all nodes",
-   "C": "O(log n) for balanced trees only",
-   "D": "O(n\u00b2) double traversal"
+   "A": "`O(1)` traversal",
+   "B": "`O(n)` traversal visiting all nodes",
+   "C": "`O(log n)` for balanced trees only",
+   "D": "`O(n\u00b2)` double traversal"
   },
   "answer": "B"
  },
@@ -3216,10 +3216,10 @@
   "qnum": 248,
   "stem": "Time to access element at index i in array?",
   "options": {
-   "A": "O(n)",
-   "B": "O(i)",
-   "C": "O(1)",
-   "D": "O(log n)"
+   "A": "`O(n)`",
+   "B": "`O(i)`",
+   "C": "`O(1)`",
+   "D": "`O(log n)`"
   },
   "answer": "C"
  },
@@ -3255,10 +3255,10 @@
   "qnum": 251,
   "stem": "Big-O order: which grows fastest?",
   "options": {
-   "A": "O(n log n)",
-   "B": "O(n\u00b2)",
-   "C": "O(2^n)",
-   "D": "O(n!)"
+   "A": "`O(n log n)`",
+   "B": "`O(n\u00b2)`",
+   "C": "`O(2^n)`",
+   "D": "`O(n!)`"
   },
   "answer": "D"
  },
@@ -3281,9 +3281,9 @@
   "qnum": 253,
   "stem": "What does 'amortized O(1)' mean for dynamic array append?",
   "options": {
-   "A": "Every append is O(1)",
-   "B": "Average cost per append is O(1) over many operations despite occasional O(n) resize",
-   "C": "Append is always O(n)",
+   "A": "Every append is `O(1)`",
+   "B": "Average cost per append is `O(1)` over many operations despite occasional `O(n)` resize",
+   "C": "Append is always `O(n)`",
    "D": "Size doubles every operation"
   },
   "answer": "B"
@@ -3775,9 +3775,9 @@
   "qnum": 291,
   "stem": "Which keyword prevents a class from being subclassed in Java?",
   "options": {
-   "A": "abstract",
-   "B": "static",
-   "C": "final",
+   "A": "`abstract`",
+   "B": "`static`",
+   "C": "`final`",
    "D": "sealed"
   },
   "answer": "C"
@@ -4596,8 +4596,8 @@
   "options": {
    "A": "var",
    "B": "let",
-   "C": "const",
-   "D": "static"
+   "C": "`const`",
+   "D": "`static`"
   },
   "answer": "C"
  },
@@ -14255,7 +14255,7 @@
   "options": {
    "A": "Always overestimates",
    "B": "Never overestimates true cost to goal",
-   "C": "Computed in O(1)",
+   "C": "Computed in `O(1)`",
    "D": "Returns 0 always"
   },
   "answer": "B"
@@ -14280,7 +14280,7 @@
   "stem": "Alpha-beta pruning?",
   "options": {
    "A": "Changes minimax result",
-   "B": "Prunes branches not affecting result; O(b^d) to O(b^(d/2))",
+   "B": "Prunes branches not affecting result; `O(b^d)` to O(b^(d/2))",
    "C": "Adds learning to minimax",
    "D": "Evaluates leaf nodes only"
   },
@@ -14409,10 +14409,10 @@
   "qnum": 1109,
   "stem": "Bidirectional search complexity?",
   "options": {
-   "A": "O(b^d)",
+   "A": "`O(b^d)`",
    "B": "O(b^(d/2))",
-   "C": "O(d)",
-   "D": "O(b)"
+   "C": "`O(d)`",
+   "D": "`O(b)`"
   },
   "answer": "B"
  },
@@ -15098,10 +15098,10 @@
   "qnum": 1162,
   "stem": "DFS memory advantage?",
   "options": {
-   "A": "O(b^d)",
-   "B": "O(m) \u2014 only needs to store single path",
-   "C": "O(1)",
-   "D": "O(b^m)"
+   "A": "`O(b^d)`",
+   "B": "`O(m)` \u2014 only needs to store single path",
+   "C": "`O(1)`",
+   "D": "`O(b^m)`"
   },
   "answer": "B"
  },
@@ -15218,7 +15218,7 @@
    "A": "Same as DFS",
    "B": "Same asymptotic as BFS but lower memory",
    "C": "Worse than both BFS and DFS",
-   "D": "O(1) memory"
+   "D": "`O(1)` memory"
   },
   "answer": "B"
  },
@@ -16422,7 +16422,7 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 1264,
-  "stem": "Consider the following Java method: public void setValue(int position, String valueIn) { list[position-1] = valueIn; } Assuming list has been declared as an array of Strings, which of the following might cause setValue to throw an ArrayIndexOutOfBoundsException?",
+  "stem": "Consider the following Java method:\n```java\npublic void setValue(int position, String valueIn) {\n  list[position - 1] = valueIn;\n}\n```\nAssuming `list` has been declared as an array of Strings, which of the following might cause `setValue` to throw an `ArrayIndexOutOfBoundsException`?",
   "options": {
    "A": "The value of the first parameter, position",
    "B": "Not declaring the method static",
@@ -16513,7 +16513,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 1271,
-  "stem": "What is printed by the following code? Str1 = \"PYTHON programming\"; print(Str1[2] * Str1.index(\"O\"))",
+  "stem": "What is printed by the following code?\n```python\nStr1 = \"PYTHON programming\"\nprint(Str1[2] * Str1.index(\"O\"))\n```",
   "options": {
    "A": "THON",
    "B": "OOOO",
@@ -16604,7 +16604,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 1278,
-  "stem": "What is printed by the following code? tuple1 = (1, 2, 3, 4); print(tuple1[1:-1])",
+  "stem": "What is printed by the following code?\n```python\ntuple1 = (1, 2, 3, 4)\nprint(tuple1[1:-1])\n```",
   "options": {
    "A": "Error: tuples cannot be sliced",
    "B": "(1, 2, 3, 4)",
@@ -16619,10 +16619,10 @@
   "qnum": 1279,
   "stem": "What is the worst-case time complexity of Merge Sort?",
   "options": {
-   "A": "O(n)",
-   "B": "O(n log n)",
-   "C": "O(log n)",
-   "D": "O(n^2)"
+   "A": "`O(n)`",
+   "B": "`O(n log n)`",
+   "C": "`O(log n)`",
+   "D": "`O(n^2)`"
   },
   "answer": "B"
  },
@@ -16773,7 +16773,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 1291,
-  "stem": "What is the output of the following code? my_list = [1,2,3,4,5,6,7,8,9,10]; print(my_list[5::-2])",
+  "stem": "What is the output of the following code?\n```python\nmy_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nprint(my_list[5::-2])\n```",
   "options": {
    "A": "[6, 4, 2]",
    "B": "[]",
@@ -16799,7 +16799,7 @@
   "courseNo": 4,
   "courseName": "Web Programming",
   "qnum": 1293,
-  "stem": "What is the output of the following code? var x = 5; var y = '5'; console.log(x == y);",
+  "stem": "What is the output of the following code?\n```javascript\nvar x = 5;\nvar y = '5';\nconsole.log(x == y);\n```",
   "options": {
    "A": "null",
    "B": "undefined",
@@ -17007,12 +17007,12 @@
   "courseNo": 3,
   "courseName": "Object-Oriented Programming",
   "qnum": 1309,
-  "stem": "A class called Network has private attributes maxNumberOfUsers (int) and currentNumberOfUsers (int), a public method setMaxNumberOfUsers(int), and a public method getMaxNumberOfUsers() that returns an int. A class SubNet is declared as: class SubNet extends Network. In a program that declares and initializes an object sub of class SubNet, which of the following statements would NOT cause a compiler error?",
+  "stem": "A class called `Network` has private attributes `maxNumberOfUsers` (int) and `currentNumberOfUsers` (int), a public method `setMaxNumberOfUsers(int)`, and a public method `getMaxNumberOfUsers()` that returns an int. A class `SubNet` is declared as `class SubNet extends Network`. In a program that declares and initializes an object `sub` of class `SubNet`, which of the following statements would NOT cause a compiler error?",
   "options": {
-   "A": "sub.currentNumberOfUsers = sub.getMaxNumberOfUsers();",
-   "B": "sub.setMaxNumberOfUsers(sub.getMaxNumberOfUsers());",
-   "C": "sub.maxNumberOfUsers = 3;",
-   "D": "sub.setMaxNumberOfUsers(\"3\");"
+   "A": "`sub.currentNumberOfUsers = sub.getMaxNumberOfUsers();`",
+   "B": "`sub.setMaxNumberOfUsers(sub.getMaxNumberOfUsers());`",
+   "C": "`sub.maxNumberOfUsers = 3;`",
+   "D": "`sub.setMaxNumberOfUsers(\"3\");`"
   },
   "answer": "B"
  },
@@ -17176,12 +17176,12 @@
   "courseNo": 3,
   "courseName": "Object-Oriented Programming",
   "qnum": 1322,
-  "stem": "A Student class is declared with private attributes Name (String), Department (String), Phone (String), and Age (int), a constructor Student(String, String, String, int), and public methods SetDept(String), GetName():String, GetDept():String, GetYearOfBirth():int, and CalculateAge():int. Which of the following statements would NOT raise an error when run?",
+  "stem": "A `Student` class is declared with private attributes `Name` (String), `Department` (String), `Phone` (String), and `Age` (int), a constructor `Student(String, String, String, int)`, and public methods `SetDept(String)`, `GetName(): String`, `GetDept(): String`, `GetYearOfBirth(): int`, and `CalculateAge(): int`. Which of the following statements would NOT raise an error when run?",
   "options": {
-   "A": "Student st1 = new Student(\"john\", \"SE\", \"0913222222\", 20);",
-   "B": "st1 Student = new Student(\"john\", \"CS\", \"02085332455\", 23);",
-   "C": "Student st1 = new Student(\"john\", \"IT\", \"2000\",);",
-   "D": "Student st1 = new Student(\"john\", \"CS\", \"0913222222\", \"25\");"
+   "A": "`Student st1 = new Student(\"john\", \"SE\", \"0913222222\", 20);`",
+   "B": "`st1 Student = new Student(\"john\", \"CS\", \"02085332455\", 23);`",
+   "C": "`Student st1 = new Student(\"john\", \"IT\", \"2000\",);`",
+   "D": "`Student st1 = new Student(\"john\", \"CS\", \"0913222222\", \"25\");`"
   },
   "answer": "A"
  },
@@ -17189,7 +17189,7 @@
   "courseNo": 4,
   "courseName": "Web Programming",
   "qnum": 1323,
-  "stem": "What is the output of the following JavaScript code? var a = \"exitexam\"; var result = a.substring(2,6); document.write(result);",
+  "stem": "What is the output of the following JavaScript code?\n```javascript\nvar a = \"exitexam\";\nvar result = a.substring(2, 6);\ndocument.write(result);\n```",
   "options": {
    "A": "texam",
    "B": "xite",
@@ -17217,10 +17217,10 @@
   "qnum": 1325,
   "stem": "For the schema Hotel(Hotel_id: integer, Hotel_name: String, Sub_city: String), where Hotel_id is the primary key, which SQL statement correctly inserts a tuple into the Hotel relation?",
   "options": {
-   "A": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES ('Hilton','Yeka')",
-   "B": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1,'Hilton','Yeka')",
-   "C": "INSERT INTO HOTEL (1,'Hilton','Yeka')",
-   "D": "INSERT VALUES INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1,'Hilton','Yeka')"
+   "A": "`INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES ('Hilton','Yeka')`",
+   "B": "`INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1,'Hilton','Yeka')`",
+   "C": "`INSERT INTO HOTEL (1,'Hilton','Yeka')`",
+   "D": "`INSERT VALUES INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1,'Hilton','Yeka')`"
   },
   "answer": "B"
  },
@@ -17462,7 +17462,7 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 1344,
-  "stem": "What is printed by the following program? class PrintResult { public static void main(String args[]) { int arr[] = {3,4,5,6,7}; for(int i=0; i<=arr.length-2; ++i) { System.out.println(arr[i] + \",\"); } } }",
+  "stem": "What is printed by the following program?\n```java\nclass PrintResult {\n  public static void main(String args[]) {\n    int arr[] = {3, 4, 5, 6, 7};\n    for (int i = 0; i <= arr.length - 2; ++i) {\n      System.out.println(arr[i] + \",\");\n    }\n  }\n}\n```",
   "options": {
    "A": "3,4",
    "B": "3,4,5",
@@ -17670,7 +17670,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 1360,
-  "stem": "What is the output of the following C++ code if the user enters 4 and 3 for b and e respectively? #include<iostream> using namespace std; int main(){ int b, e, r=1; cin>>b>>e; for(int i=1; i<=e; i++){ r=r*b; } cout<<r; return 0; }",
+  "stem": "What is the output of the following C++ code if the user enters 4 and 3 for b and e respectively?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n  int b, e, r = 1;\n  cin >> b >> e;\n  for (int i = 1; i <= e; i++) {\n    r = r * b;\n  }\n  cout << r;\n  return 0;\n}\n```",
   "options": {
    "A": "81",
    "B": "12",
@@ -17852,7 +17852,7 @@
   "courseNo": 8,
   "courseName": "Software Engineering",
   "qnum": 1374,
-  "stem": "Given the following pseudocode: if width > length then biggest_dimension = width; if height > width then biggest_dimension = height end_if; else biggest_dimension = length; if height > length then biggest_dimension = height end_if; end_if. How many test cases are required for 100% decision coverage?",
+  "stem": "Given the following pseudocode:\n```\nif width > length then\n    biggest_dimension = width\n    if height > width then biggest_dimension = height end_if\nelse\n    biggest_dimension = length\n    if height > length then biggest_dimension = height end_if\nend_if\n```\nHow many test cases are required for 100% decision coverage?",
   "options": {
    "A": "6",
    "B": "4",
@@ -17930,12 +17930,12 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 1380,
-  "stem": "What is the time complexity of the following code? function someFunction(n) { for(var i=0; i<n*10; i++) { console.log(n); } }",
+  "stem": "What is the time complexity of the following code?\n```javascript\nfunction someFunction(n) {\n  for (var i = 0; i < n * 10; i++) {\n    console.log(n);\n  }\n}\n```",
   "options": {
-   "A": "O(n^2)",
-   "B": "O(log n)",
-   "C": "O(log2 n)",
-   "D": "O(n)"
+   "A": "`O(n^2)`",
+   "B": "`O(log n)`",
+   "C": "`O(log2 n)`",
+   "D": "`O(n)`"
   },
   "answer": "D"
  },
@@ -18216,12 +18216,12 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 1402,
-  "stem": "What is the time complexity of the following function? public void function(int n) { for(int i=0; i<n; i++) for(int j=0; j<i*i; j++) if(j%i==0) { for(int k=0; k<j; k++) print(\"*\"); } }",
+  "stem": "What is the time complexity of the following function?\n```java\npublic void function(int n) {\n  for (int i = 0; i < n; i++)\n    for (int j = 0; j < i * i; j++)\n      if (j % i == 0) {\n        for (int k = 0; k < j; k++)\n          print(\"*\");\n      }\n}\n```",
   "options": {
-   "A": "O(n^2)",
-   "B": "O(n log n)",
-   "C": "O(n^7)",
-   "D": "O(n^5)"
+   "A": "`O(n^2)`",
+   "B": "`O(n log n)`",
+   "C": "`O(n^7)`",
+   "D": "`O(n^5)`"
   },
   "answer": "D"
  },
@@ -18296,9 +18296,9 @@
   "qnum": 1408,
   "stem": "You are designing a dormitory management database. A dormitory is described by DORM(DormId, FloorNumber), where DormId is the primary key, and up to six students can be assigned to one dorm. Students are described by STUDENT(IdNo, Name, Department), where IdNo is the primary key. Which SQL statement correctly establishes the relationship between DORM and STUDENT, assuming DormId is a foreign key in STUDENT?",
   "options": {
-   "A": "FOREIGN KEY (DormId) REFERENCES DORM(DormId)",
+   "A": "`FOREIGN KEY (DormId) REFERENCES DORM(DormId)`",
    "B": "STUDENT table is a reference relation",
-   "C": "FOREIGN KEY (DormId) REFERENCED BY DORM(DormId)",
+   "C": "`FOREIGN KEY (DormId) REFERENCED BY DORM(DormId)`",
    "D": "DORM table is a referencing relation"
   },
   "answer": "A"
@@ -18372,12 +18372,12 @@
   "courseNo": 3,
   "courseName": "Object-Oriented Programming",
   "qnum": 1410,
-  "stem": "The following UML design shows a Student class with private attributes (Name: String, Department: String, Phone: String, Age: int), a constructor Student(String, String, String, int), and public methods SetDept(String), GetName(): String, GetDept(): String, GetYearOfBirth(): int, CalculateAge(): int. Which of the following would not raise an error when you run this program?",
+  "stem": "The following UML design shows a `Student` class with private attributes (`Name`: String, `Department`: String, `Phone`: String, `Age`: int), a constructor `Student(String, String, String, int)`, and public methods `SetDept(String)`, `GetName(): String`, `GetDept(): String`, `GetYearOfBirth(): int`, `CalculateAge(): int`. Which of the following would not raise an error when you run this program?",
   "options": {
-   "A": "Student st1 = new Student(\"john\", \"SE\", \"0913222222\", 20)",
-   "B": "st1 Student = new Student(\"john\", \"CS\", \"02085332455\", 23)",
-   "C": "Student st1 = new Student(\"john\", \"IT\", \"2000\",)",
-   "D": "Student st1 = new Student(\"john\", \"CS\", \"0913222222\", \"25\")"
+   "A": "`Student st1 = new Student(\"john\", \"SE\", \"0913222222\", 20)`",
+   "B": "`st1 Student = new Student(\"john\", \"CS\", \"02085332455\", 23)`",
+   "C": "`Student st1 = new Student(\"john\", \"IT\", \"2000\",)`",
+   "D": "`Student st1 = new Student(\"john\", \"CS\", \"0913222222\", \"25\")`"
   },
   "answer": "A"
  },
@@ -18385,7 +18385,7 @@
   "courseNo": 4,
   "courseName": "Web Programming",
   "qnum": 1376,
-  "stem": "What will be the output of the following code snippet?\n<script type=\"text/JavaScript\" language=\"JavaScript\">\nvar a = \"exitexam\";\nvar result = a.substring(2,6);\ndocument.write(result);\n</script>",
+  "stem": "What will be the output of the following code snippet?\n```html\n<script type=\"text/JavaScript\" language=\"JavaScript\">\nvar a = \"exitexam\";\nvar result = a.substring(2, 6);\ndocument.write(result);\n</script>\n```",
   "options": {
    "A": "texam",
    "B": "xite",
@@ -18413,10 +18413,10 @@
   "qnum": 1409,
   "stem": "For the schema Hotel (Hotel_id: integer, Hotel_name: String, Sub_city: string), which SQL statement correctly inserts a tuple into the Hotel relation? (Assume Hotel_id is the primary key.)",
   "options": {
-   "A": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES ('Hilton', 'Yeka')",
-   "B": "INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1, 'Hilton', 'Yeka')",
-   "C": "INSERT INTO HOTEL (1, 'Hilton', 'Yeka')",
-   "D": "INSERT VALUES INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1, 'Hilton', 'Yeka')"
+   "A": "`INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES ('Hilton', 'Yeka')`",
+   "B": "`INSERT INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1, 'Hilton', 'Yeka')`",
+   "C": "`INSERT INTO HOTEL (1, 'Hilton', 'Yeka')`",
+   "D": "`INSERT VALUES INTO HOTEL (Hotel_id, Hotel_name, Sub_city) VALUES (1, 'Hilton', 'Yeka')`"
   },
   "answer": "B"
  },
@@ -18658,7 +18658,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 1405,
-  "stem": "What will the result of the following program be after running?\nclass PrintResult {\n  public static void main(String args[]) {\n    int arr[] = {3, 4, 5, 6, 7};\n    for (int i = 0; i <= arr.length - 2; ++i) {\n      System.out.println(arr[i] + \",\");\n    }\n  }\n}",
+  "stem": "What will the result of the following program be after running?\n```java\nclass PrintResult {\n  public static void main(String args[]) {\n    int arr[] = {3, 4, 5, 6, 7};\n    for (int i = 0; i <= arr.length - 2; ++i) {\n      System.out.println(arr[i] + \",\");\n    }\n  }\n}\n```",
   "options": {
    "A": "3,4",
    "B": "3,4,5",
@@ -18866,7 +18866,7 @@
   "courseNo": 1,
   "courseName": "Fundamentals of Programming",
   "qnum": 1409,
-  "stem": "What will be the output of the following code if you enter 4 and 3 for b and e respectively?\n#include <iostream>\nusing namespace std;\nint main() {\n  int b, e, r = 1;\n  cout << \"enter b and e\";\n  cin >> b >> e;\n  for (int i = 1; i <= e; i++) {\n    r = r * b;\n  }\n  cout << r;\n  return 0;\n}",
+  "stem": "What will be the output of the following code if you enter 4 and 3 for b and e respectively?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n  int b, e, r = 1;\n  cout << \"enter b and e\";\n  cin >> b >> e;\n  for (int i = 1; i <= e; i++) {\n    r = r * b;\n  }\n  cout << r;\n  return 0;\n}\n```",
   "options": {
    "A": "81",
    "B": "12",
@@ -19077,7 +19077,7 @@
   "stem": "How can we select an element with a specific class in CSS?",
   "options": {
    "A": "^",
-   "B": "--",
+   "B": "`--`",
    "C": "#",
    "D": "."
   },
@@ -19139,12 +19139,12 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 1404,
-  "stem": "What is the time complexity of the following code snippet?\nfunction someFunction(n) {\n  for (var i = 0; i < n * 10; i++) {\n    console.log(n);\n  }\n}",
+  "stem": "What is the time complexity of the following code snippet?\n```javascript\nfunction someFunction(n) {\n  for (var i = 0; i < n * 10; i++) {\n    console.log(n);\n  }\n}\n```",
   "options": {
-   "A": "O(n^2)",
-   "B": "O(log n)",
-   "C": "O(log2 n)",
-   "D": "O(n)"
+   "A": "`O(n^2)`",
+   "B": "`O(log n)`",
+   "C": "`O(log2 n)`",
+   "D": "`O(n)`"
   },
   "answer": "D"
  },
@@ -19425,12 +19425,12 @@
   "courseNo": 2,
   "courseName": "Data Structures & Algorithms",
   "qnum": 1407,
-  "stem": "What is the time complexity of the following function?\npublic void function(int n) {\n  for (int i = 0; i < n; i++)\n    for (int j = 0; j < i * i; j++)\n      if (j % i == 0) {\n        for (int k = 0; k < j; k++)\n          print(\"*\");\n      }\n}",
+  "stem": "What is the time complexity of the following function?\n```java\npublic void function(int n) {\n  for (int i = 0; i < n; i++)\n    for (int j = 0; j < i * i; j++)\n      if (j % i == 0) {\n        for (int k = 0; k < j; k++)\n          print(\"*\");\n      }\n}\n```",
   "options": {
-   "A": "O(n^2)",
-   "B": "O(n log n)",
-   "C": "O(n^7)",
-   "D": "O(n^5)"
+   "A": "`O(n^2)`",
+   "B": "`O(n log n)`",
+   "C": "`O(n^7)`",
+   "D": "`O(n^5)`"
   },
   "answer": "D"
  },
@@ -19505,9 +19505,9 @@
   "qnum": 1414,
   "stem": "Assume you are assigned to design a dormitory management database. A dormitory is located in some building and has attributes specified as DORM(DormId, FloorNumber), where DormId is the primary key based on the university's rule that six students can be assigned to one dorm. Students are tracked with attributes STUDENT(IdNo, Name, Department), where IdNo is the primary key. Based on this scenario, which SQL statement correctly establishes the relationship between DORM and STUDENT, assuming DormId is a foreign key in STUDENT?",
   "options": {
-   "A": "FOREIGN KEY (DormID) REFERENCES DORM(DormID)",
+   "A": "`FOREIGN KEY (DormID) REFERENCES DORM(DormID)`",
    "B": "STUDENT table is a reference relation",
-   "C": "FOREIGN KEY (DormID) REFERENCED BY DORM(DormID)",
+   "C": "`FOREIGN KEY (DormID) REFERENCED BY DORM(DormID)`",
    "D": "DORM table is a referencing relation"
   },
   "answer": "A"

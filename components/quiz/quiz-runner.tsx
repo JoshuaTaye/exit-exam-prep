@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Ring } from "@/components/ui/ring";
+import { RichText } from "@/components/ui/rich-text";
 import { cn } from "@/lib/utils";
 import { difficultyVariant } from "@/lib/colors";
 import type { Difficulty } from "@/lib/constants";
@@ -224,7 +225,7 @@ export function QuizRunner({ session }: { session: Session }) {
             </button>
             <span className="text-xs text-muted-foreground">{q.externalId}</span>
           </div>
-          <CardTitle className="pt-2 text-base leading-relaxed sm:text-lg [overflow-wrap:anywhere]">{q.stem}</CardTitle>
+          <RichText as="div" className="pt-2 text-base font-semibold leading-relaxed tracking-tight sm:text-lg [overflow-wrap:anywhere]">{q.stem}</RichText>
         </CardHeader>
         <CardContent className="space-y-2.5">
           {LETTERS.map((L) => {
@@ -248,7 +249,7 @@ export function QuizRunner({ session }: { session: Session }) {
                 >
                   {L}
                 </span>
-                <span className="pt-0.5 [overflow-wrap:anywhere]">{q.options[L]}</span>
+                <RichText as="div" className="pt-0.5 [overflow-wrap:anywhere]">{q.options[L]}</RichText>
               </button>
             );
           })}
@@ -328,7 +329,7 @@ function ResultsView({
             <Badge variant={result.passed ? "success" : "destructive"} className="text-sm">
               {result.passed ? "Pass (≥ 70%)" : "Below pass mark"}
             </Badge>
-            <h2 className="text-2xl font-bold capitalize">{result.mode} complete</h2>
+            <h2 className="text-2xl font-bold capitalize">{result.mode === "single" ? "Question" : result.mode} complete</h2>
             <p className="max-w-md text-sm text-muted-foreground">
               Wrong answers are saved to your Mistake Journal and scheduled for spaced review.
               Use “Review Notes” on any question to study the underlying concept.
@@ -360,9 +361,7 @@ function ResultsView({
                   <XCircle className="mt-0.5 shrink-0 text-destructive" size={18} />
                 )}
                 <div className="flex-1">
-                  <p className="text-sm font-medium">
-                    {i + 1}. {q.stem}
-                  </p>
+                  <RichText as="div" className="text-sm font-medium">{`${i + 1}. ${q.stem}`}</RichText>
                   <div className="mt-1 flex flex-wrap gap-2 text-xs">
                     <Badge variant="secondary">{q.courseName}</Badge>
                     <Badge variant="outline">{q.topicName}</Badge>
@@ -383,7 +382,8 @@ function ResultsView({
                         isSelected && !isCorrect && "border-destructive bg-destructive/10",
                       )}
                     >
-                      <span className="font-semibold">{L}.</span> {q.options[L]}
+                      <span className="font-semibold">{L}.</span>{" "}
+                      <RichText as="span">{q.options[L]}</RichText>
                       {isCorrect && <span className="ml-2 text-xs font-medium text-success">✓ correct</span>}
                       {isSelected && !isCorrect && (
                         <span className="ml-2 text-xs font-medium text-destructive">your answer</span>
@@ -396,7 +396,7 @@ function ResultsView({
                 )}
               </div>
               <div className="ml-7 rounded-md bg-muted p-3 text-sm">
-                <p className="text-muted-foreground">{q.explanation}</p>
+                <RichText as="div" className="text-muted-foreground">{q.explanation}</RichText>
                 <div className="mt-2 flex flex-wrap gap-2">
                   <Link href={q.noteHref}>
                     <Button size="sm" variant="outline"><BookOpen /> Review Notes: {q.topicName}</Button>

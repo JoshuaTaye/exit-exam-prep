@@ -206,6 +206,15 @@ export async function buildMistakeQuiz(userId: number, n = 15): Promise<BuiltSes
   return persist(userId, "mistake", `Mistake Quiz · ${ids.length} questions`, ids, 0, { n });
 }
 
+// Single-question session: open one specific question on its own.
+export async function buildSingleQuiz(userId: number, questionId: number): Promise<BuiltSession> {
+  const q = await prisma.question.findUnique({
+    where: { id: questionId }, select: { id: true, topic: { select: { name: true } } },
+  });
+  if (!q) throw new Error("Question not found");
+  return persist(userId, "single", `Question · ${q.topic.name}`, [q.id], 0, { questionId });
+}
+
 // Full exit-exam simulation that EXACTLY matches the blueprint distribution:
 // course item counts and per-topic counts (which encode the difficulty mix).
 export async function buildSimulation(userId: number): Promise<BuiltSession> {

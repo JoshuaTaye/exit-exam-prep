@@ -3,14 +3,15 @@ import { getCurrentUser } from "@/lib/user";
 import {
   buildQuickQuiz, buildTopicQuiz, buildCourseQuiz,
   buildWeaknessQuiz, buildMistakeQuiz, buildSimulation, buildDiagnostic,
+  buildSingleQuiz,
 } from "@/lib/exam-builder";
 
 // POST /api/sessions  → create a practice/exam session and return safe questions.
 export async function POST(req: NextRequest) {
   const user = await getCurrentUser();
   const body = await req.json().catch(() => ({}));
-  const { mode, topicId, courseId, n } = body as {
-    mode: string; topicId?: number; courseId?: number; n?: number;
+  const { mode, topicId, courseId, n, questionId } = body as {
+    mode: string; topicId?: number; courseId?: number; n?: number; questionId?: number;
   };
 
   try {
@@ -27,6 +28,9 @@ export async function POST(req: NextRequest) {
       case "mistake": session = await buildMistakeQuiz(user.id, n ?? 15); break;
       case "simulation": session = await buildSimulation(user.id); break;
       case "diagnostic": session = await buildDiagnostic(user.id); break;
+      case "single":
+        if (!questionId) return NextResponse.json({ error: "questionId required" }, { status: 400 });
+        session = await buildSingleQuiz(user.id, questionId); break;
       default: return NextResponse.json({ error: "Unknown mode" }, { status: 400 });
     }
     if (session.questions.length === 0) {

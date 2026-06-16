@@ -6,9 +6,10 @@ import { Loader2 } from "lucide-react";
 import { Button, type ButtonProps } from "@/components/ui/button";
 
 export interface QuizSpec {
-  mode: "quick" | "topic" | "course" | "weakness" | "mistake" | "simulation";
+  mode: "quick" | "topic" | "course" | "weakness" | "mistake" | "simulation" | "single";
   topicId?: number;
   courseId?: number;
+  questionId?: number;
   n?: number;
 }
 

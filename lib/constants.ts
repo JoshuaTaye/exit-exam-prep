@@ -17,6 +17,7 @@ export const EXAM_MODES = [
   "mistake",
   "simulation",
   "diagnostic",
+  "single",
 ] as const;
 export type ExamMode = (typeof EXAM_MODES)[number];
 

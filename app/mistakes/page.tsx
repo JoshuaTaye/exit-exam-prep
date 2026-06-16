@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Stat } from "@/components/stat";
 import { StartQuizButton } from "@/components/quiz/start-quiz-button";
 import { MistakesView } from "@/components/mistakes/mistakes-view";
+import { plainText } from "@/components/ui/rich-text";
 
 export const dynamic = "force-dynamic";
 
@@ -70,7 +71,7 @@ export default async function MistakesPage() {
             {journal.repeatMistakes.slice(0, 8).map((r) => (
               <div key={r.questionId} className="rounded-lg border p-2.5">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="truncate text-sm">{r.stem}</span>
+                  <span className="truncate text-sm">{plainText(r.stem)}</span>
                   <Badge variant={r.resolved ? "success" : "destructive"}>×{r.times}</Badge>
                 </div>
                 <div className="mt-1 flex items-center justify-between">
