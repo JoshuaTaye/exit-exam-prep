@@ -10,8 +10,9 @@ import {
 export async function POST(req: NextRequest) {
   const user = await getCurrentUser();
   const body = await req.json().catch(() => ({}));
-  const { mode, topicId, courseId, n, questionId } = body as {
-    mode: string; topicId?: number; courseId?: number; n?: number; questionId?: number;
+  const { mode, topicId, courseId, n, questionId, questionIds } = body as {
+    mode: string; topicId?: number; courseId?: number; n?: number;
+    questionId?: number; questionIds?: number[];
   };
 
   try {
@@ -25,7 +26,7 @@ export async function POST(req: NextRequest) {
         if (!courseId) return NextResponse.json({ error: "courseId required" }, { status: 400 });
         session = await buildCourseQuiz(user.id, courseId); break;
       case "weakness": session = await buildWeaknessQuiz(user.id, n ?? 15); break;
-      case "mistake": session = await buildMistakeQuiz(user.id, n ?? 15); break;
+      case "mistake": session = await buildMistakeQuiz(user.id, n ?? 15, questionIds); break;
       case "simulation": session = await buildSimulation(user.id); break;
       case "diagnostic": session = await buildDiagnostic(user.id); break;
       case "single":

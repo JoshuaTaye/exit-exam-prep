@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {
   Flame, AlertTriangle, RefreshCw, TrendingUp, Target, ArrowRight,
-  Sparkles, BookOpen, ChevronRight,
+  Sparkles, BookOpen, ChevronRight, FileText,
 } from "lucide-react";
 import { getCurrentUser } from "@/lib/user";
 import { getMasterySnapshot } from "@/lib/mastery";
@@ -18,6 +18,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { StatRing } from "@/components/ui/stat-ring";
 import { StartQuizButton } from "@/components/quiz/start-quiz-button";
+import { ResumeBanner } from "@/components/quiz/resume-banner";
 import { plainText } from "@/components/ui/rich-text";
 import { masteryColor, bandVariant, bandLabel } from "@/lib/colors";
 
@@ -60,6 +61,26 @@ export default async function Dashboard() {
         title={`Welcome back`}
         description="What to study today, where you're struggling, and how close you are to passing — at a glance."
       />
+
+      <ResumeBanner />
+
+      {/* Exit Exam 2017 — full past paper */}
+      <Link href="/exit-exam-2017" className="block">
+        <Card hover className="border-primary/30 bg-primary/5">
+          <CardContent className="flex items-center gap-4 py-4">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <FileText size={20} />
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="font-semibold">Exit Exam 2017</p>
+              <p className="truncate text-sm text-muted-foreground">
+                All 99 past-paper questions with answers &amp; full explanations — study or self-test.
+              </p>
+            </div>
+            <ArrowRight size={18} className="shrink-0 text-muted-foreground" />
+          </CardContent>
+        </Card>
+      </Link>
 
       {/* Hero: readiness + key stats */}
       <div className="grid gap-5 lg:grid-cols-3">

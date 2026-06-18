@@ -190,7 +190,9 @@ export async function buildWeaknessQuiz(userId: number, n = 15): Promise<BuiltSe
   });
 }
 
-export async function buildMistakeQuiz(userId: number, n = 15): Promise<BuiltSession> {
+export async function buildMistakeQuiz(
+  userId: number, n = 15, only?: number[],
+): Promise<BuiltSession> {
   // Distinct questions from the mistake journal, unresolved first.
   const mistakes = await prisma.mistake.findMany({
     where: { userId },
@@ -202,7 +204,15 @@ export async function buildMistakeQuiz(userId: number, n = 15): Promise<BuiltSes
   for (const m of mistakes) {
     if (!seen.has(m.questionId)) { seen.add(m.questionId); ordered.push(m.questionId); }
   }
-  const ids = ordered.slice(0, n);
+  // `only` restricts to a caller-supplied subset (e.g. retry all mistakes for one
+  // course). Always intersected with the user's real mistakes for safety.
+  let ids = ordered;
+  if (only && only.length) {
+    const allow = new Set(only);
+    ids = ordered.filter((id) => allow.has(id));
+  } else {
+    ids = ordered.slice(0, n);
+  }
   return persist(userId, "mistake", `Mistake Quiz · ${ids.length} questions`, ids, 0, { n });
 }
 

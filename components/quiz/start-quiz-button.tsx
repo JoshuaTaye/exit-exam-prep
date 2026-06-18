@@ -10,6 +10,7 @@ export interface QuizSpec {
   topicId?: number;
   courseId?: number;
   questionId?: number;
+  questionIds?: number[];
   n?: number;
 }
 

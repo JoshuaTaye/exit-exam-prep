@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Ring } from "@/components/ui/ring";
 import { RichText } from "@/components/ui/rich-text";
+import { saveDraft, loadDraft, clearDraft } from "@/lib/quiz-draft";
 import { cn } from "@/lib/utils";
 import { difficultyVariant } from "@/lib/colors";
 import type { Difficulty } from "@/lib/constants";
@@ -72,6 +73,36 @@ export function QuizRunner({ session }: { session: Session }) {
   const timed = session.durationSec > 0;
   const [remaining, setRemaining] = useState(session.durationSec);
 
+  // ---- Draft autosave/restore (so leaving never loses progress) ----
+  const restoredRef = useRef(false);
+  useEffect(() => {
+    if (restoredRef.current) return;
+    restoredRef.current = true;
+    const d = loadDraft(session.examId);
+    if (d && d.total === questions.length) {
+      setAnswers(d.answers ?? {});
+      setFlags(d.flags ?? {});
+      setTimes(d.times ?? {});
+      setIdx(Math.min(d.idx ?? 0, questions.length - 1));
+      if (timed && typeof d.remaining === "number") setRemaining(d.remaining);
+      startRef.current = Date.now() - (d.elapsedMs ?? 0);
+      enteredRef.current = Date.now();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (result || !restoredRef.current) return;
+    if (Object.keys(answers).length === 0) return; // nothing worth saving
+    saveDraft({
+      examId: session.examId, title: session.title, mode: session.mode,
+      total: questions.length, answers, flags, times, idx,
+      elapsedMs: Date.now() - startRef.current, remaining, timed,
+      updatedAt: Date.now(),
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [answers, flags, times, idx, result]);
+
   // accumulate time on the leaving question
   function flushTime(forIdx: number) {
     const qid = questions[forIdx].id;
@@ -105,6 +136,7 @@ export function QuizRunner({ session }: { session: Session }) {
     const data = await res.json();
     setSubmitting(false);
     if (res.ok) {
+      clearDraft(session.examId);
       setResult(data);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
@@ -185,6 +217,7 @@ export function QuizRunner({ session }: { session: Session }) {
           <h1 className="text-xl font-bold">{session.title}</h1>
           <p className="text-sm text-muted-foreground">
             Question {idx + 1} of {questions.length} · {answeredCount} answered
+            {answeredCount > 0 && <span className="text-success"> · draft saved</span>}
           </p>
         </div>
         <div className="flex items-center gap-3">

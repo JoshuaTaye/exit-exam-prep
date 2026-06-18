@@ -84,13 +84,22 @@ function GroupBlock({ title, entries }: { title: string; entries: Entry[] }) {
   const [open, setOpen] = useState(false);
   return (
     <Card>
-      <button className="flex w-full items-center justify-between p-4 text-left" onClick={() => setOpen((o) => !o)}>
-        <div className="flex items-center gap-3">
-          <span className="font-semibold">{title}</span>
-          <Badge variant="destructive">{entries.length} mistake{entries.length > 1 ? "s" : ""}</Badge>
-        </div>
-        <ChevronDown className={cn("transition-transform", open && "rotate-180")} size={18} />
-      </button>
+      <div className="flex items-center gap-2 p-4">
+        <button className="flex flex-1 items-center justify-between gap-3 text-left" onClick={() => setOpen((o) => !o)}>
+          <div className="flex items-center gap-3">
+            <span className="font-semibold">{title}</span>
+            <Badge variant="destructive">{entries.length} mistake{entries.length > 1 ? "s" : ""}</Badge>
+          </div>
+          <ChevronDown className={cn("transition-transform", open && "rotate-180")} size={18} />
+        </button>
+        <StartQuizButton
+          spec={{ mode: "mistake", questionIds: entries.map((e) => e.questionId) }}
+          size="sm"
+          variant="outline"
+        >
+          <RotateCcw /> Retry all
+        </StartQuizButton>
+      </div>
       {open && (
         <CardContent className="space-y-3 border-t pt-4">
           {entries.map((e) => (
